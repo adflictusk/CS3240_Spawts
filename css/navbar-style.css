@@ -1,0 +1,6 @@
+Note: for this .css file, only do it when you have time.
+Warning: it will cause a lot of things to break in the navbar
+
+.navbar-inner {
+    height: 9999px;
+}
