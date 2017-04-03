@@ -1,0 +1,12 @@
+.searchBar {
+    margin-top: 0px;
+    padding-top: 0px;
+    background-image: url(../images/texture1.png);
+    background-color: grey;
+}
+
+.limitHeight {
+    width:300px;
+    height:175px;
+    overflow:hidden;
+}
