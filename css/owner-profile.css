@@ -71,24 +71,46 @@
 
 
 /* Right Panels */
+
+/* "My Pets" box*/
 .pet-box {
     box-shadow: 0px 0px 20px #888888;
 }
 
 .pet-title {
+    padding-top: 5px;
     padding-left: 15px;
+    padding-bottom: 5px;
     text-decoration: underline;
 }
 
+.pet-box-pic:hover {
+    opacity: 0.5;
+}
+
+/* "Live Feed" box*/
 .livefeed-box {
     box-shadow: 0px 0px 20px #888888;
 }
 
+hr {
+    margin: 0px;
+    padding-bottom: 20px;
+}
+
 .livefeed-title {
+    padding-bottom: 5px;
     padding-left: 15px;
+    padding-top: 5px;
     text-decoration: underline;
 }
 
+.date-time {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+/* Photos and Videos box*/
 .pv-box {
     box-shadow: 0px 0px 20px #888888;
 }
@@ -98,6 +120,11 @@
     text-decoration: underline;
 }
 
+.pv-pic:hover {
+    opacity: 0.5;
+}
+
+/* History box*/
 .history-box {
     box-shadow: 0px 0px 20px #888888;
 }
@@ -105,4 +132,8 @@
 .history-title {
     padding-left: 15px;
     text-decoration: underline;
+}
+
+.history-pic:hover {
+    opacity: 0.5;
 }
