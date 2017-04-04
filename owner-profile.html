@@ -50,41 +50,39 @@
 
                             <ul class="nav navbar-nav navbar-right">
                                 <li class="dropdown">
-                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-user" aria-hidden="true"></span></a>
-                                    <ul class="dropdown-menu">
-                                        <li><a href="#">My Profile</a></li>
-                                        <li role="separator" class="divider"></li>
-                                        <li><a href="#">Pet 1</a></li>
-                                        <li><a href="#">Pet 2</a></li>
-                                        <li><a href="#">Pet 3</a></li>
-                                    </ul>
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-user" aria-hidden="true"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">My Profile</a></li>
+                                    <li role="separator" class="divider"></li>
+                                    <li><a href="#">Pet 1</a></li>
+                                    <li><a href="#">Pet 2</a></li>
+                                    <li><a href="#">Pet 3</a></li>
+                                </ul>
                                 </li>
                             </ul>
 
                             <ul class="nav navbar-nav navbar-right">
                                 <li class="dropdown">
-                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-bell" aria-hidden="true"></span></a>
-                                    <ul class="dropdown-menu">
-                                        <li><a href="#">Notif 1</a></li>
-                                        <li><a href="#">Notif 2</a></li>
-                                        <li><a href="#">Notif 3</a></li>
-                                    </ul>
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-bell" aria-hidden="true"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">Notif 1</a></li>
+                                    <li><a href="#">Notif 2</a></li>
+                                    <li><a href="#">Notif 3</a></li>
+                                </ul>
                                 </li>
                             </ul>
 
                             <ul class="nav navbar-nav navbar-right">
                                 <li><a href="#">Create listing</a></li>
                                 <li class="dropdown">
-                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-comment" aria-hidden="true"></span></a>
-                                    <ul class="dropdown-menu">
-                                        <li><a href="#">Chat 1</a></li>
-                                        <li><a href="#">Chat 2</a></li>
-                                        <li><a href="#">Chat 3</a></li>
-                                    </ul>
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-comment" aria-hidden="true"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">Chat 1</a></li>
+                                    <li><a href="#">Chat 2</a></li>
+                                    <li><a href="#">Chat 3</a></li>
+                                </ul>
                                 </li>
                             </ul>
-
-
                         </ul>
                     </div><!--/.container -->                
                 </div><!-- /.navbar-collapse -->
@@ -97,12 +95,12 @@
 
         <!--The body (Owner Profile)-->
         <div class="owner-profile container">
-            <div class="col-md-3">
+            <div class="col-xs-3">
                 <!--owner pic-->
                 <div class="row">
                     <div class="panel picture-box">
                         <div id="owner-picture">
-                            <img src="img/profile-pic1.png" class="owner-picture">
+                            <img src="img/profile-pic1.png" class="img-responsive">
                         </div>
                     </div>
                 </div>
@@ -134,44 +132,116 @@
                             <h4 class="chat-owner">Chat With Me!</h4>
                         </div>
                     </a>
-                 </div>
+                </div>
 
-                 <!--map-->
-                 <div class="row map-box-div">
-                     <a href="#">
-                         <div class="panel text-center map-box">
-                             <h4 class="map-owner">Find Me On Maps!</h4>
-                         </div>
-                     </a>
-                 </div>
+                <!--map-->
+                <div class="row map-box-div">
+                    <a href="#">
+                        <div class="panel text-center map-box">
+                            <h4 class="map-owner">Find Me On Maps!</h4>
+                        </div>
+                    </a>
+                </div>
 
-                 <!--listing-->
-                 <div class="row">
+                <!--listing-->
+                <div class="row">
                     <div class="panel text-center list-box">
                         <h4 class="list-owner">Listings</h4>
                     </div>
-                 </div>
+                </div>
 
             </div>
 
-            <div class="col-md-8 pull-right">
+            <!--Right panels-->
+            <div class="col-xs-8 pull-right">
                 <!--owner pets-->
                 <div class="row">
                     <div class="panel pet-box">
                         <h4 class="pet-title">My Pets</h4>
-                        <div class="container">
-                            <p>Pet images go here</p>
+                        <div class="row center-block">
+                            <!--clickable link to pet creation-->
+                            <div class="col-xs-2">
+                                <a href="#">
+                                    <div class="pet-box-pic">
+                                        <div class="panel panel-default">
+                                            <img src="img/add.png" class="img-responsive">
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-xs-2">
+                                <!--for pets. yet to code out get json file not done-->
+                                <a href="#">
+                                    <div class="pet-box-pic">
+                                        <div class="panel panel-default">
+                                            <img src="img/add.png" class="img-responsive">
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
 
                 <!--owner live feed-->
+                <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">    
                 <div class="row">
                     <div class="panel livefeed-box">
                         <h4 class="livefeed-title">Live Feed</h4>
-                        <div class="container">
-                            <p>Live feed stuff</p>
+                        <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">    
+                        <!--status-box-->
+                        <div class="row center-block">
+                            <div class="col-xs-12">
+
+                                <div class="panel panel-default" id="status-box">
+                                    <div class="panel-body">
+                                        <input type="email" class="form-control" placeholder="What are you up to?">
+                                    </div>
+                                    <div class="panel-footer">
+                                        <div class="btn-group">
+                                            <button type="button" class="btn btn-link btn-icon"><i class="fa fa-map-marker"></i></button>
+                                            <button type="button" class="btn btn-link btn-icon"><i class="fa fa-users"></i></button>
+                                            <button type="button" class="btn btn-link btn-icon"><i class="fa fa-camera"></i></button>
+                                            <button type="button" class="btn btn-link btn-icon"><i class="fa fa-video-camera"></i></button>
+                                        </div>
+
+                                        <div class="pull-right">
+                                            <button type="button" class="btn btn-success">Post</button>
+                                        </div>  
+                                    </div> <!--panel footer-->
+                                </div> <!--status-box-->
+                            </div> <!--col-xs-->
+                        </div> <!--entire-box-->
+                        <hr>
+                        <!--Feed-->
+
+                        <div class="row center-block feed-template">
+                            <!--Post-->
+                            <div class="col-xs-9">
+                                <div class="panel panel-default">
+                                    <br><br><br>
+                                </div>
+                            </div>
+                            <!--Date and Time-->
+                            <div class="col-xs-2 col-xs-offset-1 date-time">
+                                <p id="post-date-time"></p>
+                                <script>
+                                    var dateTime = new Date();
+                                    var month = dateTime.getMonth() + 1;
+                                    var day = dateTime.getDate();
+                                    var year = dateTime.getFullYear();
+
+                                    var hour = dateTime.getHours();
+                                    var min = dateTime.getMinutes();
+
+                                    var monthNames = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+
+                                    document.getElementById("post-date-time").innerHTML = day + " " + monthNames[month] + " " + year + "\n" + hour + ":" + min;
+                                </script>
+                            </div>
+
                         </div>
+
                     </div>
                 </div>
 
@@ -179,8 +249,18 @@
                 <div class="row">
                     <div class="panel pv-box">
                         <h4 class="pv-title">Photos & Videos</h4>
-                        <div class="container">
-                            <p>Photos and Videos</p>
+                        <div class="row center-block">
+
+                            <div class="col-xs-2">
+                                <a href="#">
+                                    <div class="pv-pic">
+                                        <div class="panel panel-default">
+                                            <img src="img/add.png" class="img-responsive">
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            
                         </div>
                     </div>
                 </div>
@@ -189,9 +269,20 @@
                 <div class="row">
                     <div class="panel history-box">
                         <h4 class="history-title">History</h4>
-                        <div class="container">
-                            <p>History</p>
-                        </div>
+                           <div class="row center-block">
+
+                            <div class="col-xs-2">
+                                <a href="#">
+                                    <div class="history-pic">
+                                        <div class="panel panel-default">
+                                            <img src="img/add.png" class="img-responsive">
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            
+                        </div> 
+                    
                     </div>
                 </div>
 
