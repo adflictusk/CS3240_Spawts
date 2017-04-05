@@ -1,9 +1,13 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Spawts!</title>
-        <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
-
+        <title>Spawts</title>
+        <script
+            src="https://code.jquery.com/jquery-3.2.1.min.js"
+            integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+            crossorigin="anonymous">
+        </script>
+ 
         <!-- Latest compiled and minified CSS -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
@@ -16,10 +20,56 @@
         <link rel="stylesheet" href="css/listings.css">
         <link href="https://fonts.googleapis.com/css?family=Francois+One|Josefin+Slab|Ubuntu+Condensed" rel="stylesheet">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <script> 
+            $(document).ready(function(){
+                $("#slidable1").click(function(){
+                    $("#details1").slideToggle("fast");
+                });
+                $("#slidable2").click(function(){
+                    $("#details2").slideToggle("fast");
+                });
+                $("#slidable3").click(function(){
+                    $("#details3").slideToggle("fast");
+                });
+                
+                $("#slidable4").click(function(){
+                    $("#details4").slideToggle("fast");
+                });
+                $("#slidable5").click(function(){
+                    $("#details5").slideToggle("fast");
+                });
+                
+                $("#slidable6").click(function(){
+                    $("#details6").slideToggle("fast");
+                });
+                $("#slidable7").click(function(){
+                    $("#details7").slideToggle("fast");
+                });7
+                $("#slidable8").click(function(){
+                    $("#details8").slideToggle("fast");
+                });
+                
+                $("#slidable9").click(function(){
+                    $("#details9").slideToggle("fast");
+                });
+                $("#slidable10").click(function(){
+                    $("#details10").slideToggle("fast");
+                });
+                $("#slidable11").click(function(){
+                    $("#details11").slideToggle("fast");
+                });
+                $("#slidable12").click(function(){
+                    $("#details12").slideToggle("fast");
+                });
+            });
+        </script>
+        
+        
     </head>
     
     <body>
-        <nav class="navbar navbar-default navbar-fixed-top" style="margin-bottom: 0px">
+        <nav class="navbar navbar-default navbar-fixed-top" style="padding-top: 10px; padding-bottom: 5px">
             <div class="container-fluid">
             <!-- Brand and toggle get grouped for better mobile display -->
                 <div class="navbar-header">
@@ -29,7 +79,9 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                   </button>
-                  <a class="navbar-brand" href="#">Spawts</a>
+                  <a class="navbar-left" href="#">
+                      <img src="images/SpawtsLogo.png" alt="" style="width: 64px; height: auto; padding-left: 20px;">
+                  </a>
                 </div>
 
                 <!-- Collect the nav links, forms, and other content for toggling -->
@@ -44,10 +96,31 @@
                         <li role="separator" class="divider"></li>
                         <li><a href="#">One more separated link</a></li>
                       </ul>
-                
-                
                       
-                  <ul class="nav navbar-nav navbar-right">
+                      <ul class="nav navbar-nav">
+                   <li><a href="#">Create listing</a></li>
+                    <li class="dropdown">
+                      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-comment" aria-hidden="true"></span></a>
+                      <ul class="dropdown-menu">
+                        <li><a href="#">Chat 1</a></li>
+                        <li><a href="#">Chat 2</a></li>
+                        <li><a href="#">Chat 3</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                
+                  <ul class="nav navbar-nav">
+                    <li class="dropdown">
+                      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-bell" aria-hidden="true"></span></a>
+                      <ul class="dropdown-menu">
+                        <li><a href="#">Notif 1</a></li>
+                        <li><a href="#">Notif 2</a></li>
+                        <li><a href="#">Notif 3</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                  
+                  <ul class="nav navbar-nav">
                     <li class="dropdown">
                       <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-user" aria-hidden="true"></span></a>
                       <ul class="dropdown-menu">
@@ -60,36 +133,17 @@
                     </li>
                   </ul>
                   
-                  <ul class="nav navbar-nav navbar-right">
-                    <li class="dropdown">
-                      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-bell" aria-hidden="true"></span></a>
-                      <ul class="dropdown-menu">
-                        <li><a href="#">Notif 1</a></li>
-                        <li><a href="#">Notif 2</a></li>
-                        <li><a href="#">Notif 3</a></li>
-                      </ul>
-                    </li>
-                  </ul>
-                  
-                  <ul class="nav navbar-nav navbar-right">
-                   <li><a href="#">Create listing</a></li>
-                    <li class="dropdown">
-                      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-comment" aria-hidden="true"></span></a>
-                      <ul class="dropdown-menu">
-                        <li><a href="#">Chat 1</a></li>
-                        <li><a href="#">Chat 2</a></li>
-                        <li><a href="#">Chat 3</a></li>
-                      </ul>
-                    </li>
-                  </ul>
                 </ul>                  
                 </div><!-- /.navbar-collapse -->
             </div><!-- /.container-fluid -->
         </nav>
         
-        <div class="container-fluid searchBar" style="padding-top: 10%; padding-bottom: 4%;">
-            <div class="row">
+        <div class="container-fluid searchBar parallax" style="padding-top: 10%; padding-bottom: 6%;">
+            <div class="row" style="margin-top: 250px;">
                 <div class="col-md-8 col-md-offset-2">
+                   <div class="pageHeader">
+                       Help out a fellow owner!
+                   </div>
                     <div class="input-group">
                     <input type="text" class="form-control" placeholder="Type here...">
                         <span class="input-group-btn">
@@ -100,12 +154,12 @@
             </div>
         </div>
         
-        <div class="container-fluid" style="margin-top: 4%">
+        <div class="container-fluid bg" style="margin-top: 4%">
            <div class="row">
                 <div class="col-md-10 col-md-offset-1">
                     <div class="col-md-4">
                         <div class="thumbnail">
-                            <img src="images/BlackBallBigBall.jpg" alt="..." class="img-responsive img-rounded limitHeight">
+                            <img src="images/BlackBallBigBall.jpg" alt="..." class="img-responsive img-rounded limitHeight"  id="slidable1">
                             <div class="caption">
                                 <div class="row">
                                     <div class="col-md-9">
@@ -119,26 +173,141 @@
                                         <img src="img/profile-pic1.png" alt="..." class="img-circle profilePic">
                                     </div>
                                 </div>
+                                <div class="row">
+                                   <br>
+                                    <div class="col-md-6">
+                                        <div class="panel panel-default">
+                                            <div class="panel-body">
+                                                <span class="glyphicon glyphicon-calendar" style="font-size: 20px"></span>
+                                                <span class="pull-right" style="font-size: 14px; padding-top:3px;"> 10/4 - 18/4</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="panel panel-default">
+                                            <div class="panel-body">
+                                                <span class="glyphicon glyphicon-usd" style="font-size: 20px"></span>
+                                                <span class="pull-right" style="font-size: 16px;">80</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row" id="details1">
+                                   <br>
+                                    <div class="col-md-6">
+                                        <button type="button" class="btn btn-primary btn-lg glyphicon glyphicon-info-sign
+ center-block" data-toggle="button" aria-pressed="false" autocomplete="off" style="width: 100%">
+                                        </button>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <button type="button" class="btn btn-primary btn-lg glyphicon glyphicon-heart center-block" data-toggle="button" aria-pressed="false" autocomplete="off" style="width: 100%">
+                                        </button>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
+                    
+                    
                     <div class="col-md-4">
                         <div class="thumbnail">
-                        <img src="images/Pepper.jpeg" alt="..." class="img-responsive img-rounded limitHeight">
+                        <img src="images/Pepper.jpeg" alt="..." class="img-responsive img-rounded limitHeight" id="slidable2">
                             <div class="caption">
-                                <h3>Pepper</h3>
-                                <p>...</p>
-                                <p><a href="#" class="btn btn-primary" role="button">Info</a> <a href="#" class="btn btn-default" role="button">Like</a></p>
+                                <div class="row">
+                                    <div class="col-md-9">
+                                        <div class="panel panel-default">
+                                            <div class="panel-body">
+                                                Pepper
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class=" col-md-3">
+                                        <img src="img/profile-pic1.png" alt="..." class="img-circle profilePic">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                   <br>
+                                    <div class="col-md-6">
+                                        <div class="panel panel-default">
+                                            <div class="panel-body">
+                                                <span class="glyphicon glyphicon-calendar" style="font-size: 20px"></span>
+                                                <span class="pull-right" style="font-size: 14px; padding-top:3px;"> 10/4 - 18/4</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="panel panel-default">
+                                            <div class="panel-body">
+                                                <span class="glyphicon glyphicon-usd" style="font-size: 20px"></span>
+                                                <span class="pull-right" style="font-size: 16px;">80</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row" id="details2">
+                                   <br>
+                                    <div class="col-md-6">
+                                        <button type="button" class="btn btn-primary btn-lg glyphicon glyphicon-info-sign
+ center-block" data-toggle="button" aria-pressed="false" autocomplete="off" style="width: 100%">
+                                        </button>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <button type="button" class="btn btn-primary btn-lg glyphicon glyphicon-heart center-block" data-toggle="button" aria-pressed="false" autocomplete="off" style="width: 100%">
+                                        </button>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
+                    
+                    
                     <div class="col-md-4">
                         <div class="thumbnail">
-                        <img src="images/CookieDict.jpeg" alt="..." class="img-responsive img-rounded limitHeight">
+                        <img src="images/CookieDict.jpeg" alt="..." class="img-responsive img-rounded limitHeight" id="slidable3">
                             <div class="caption">
-                                <h3>Cookie</h3>
-                                <p>...</p>
-                                <p><a href="#" class="btn btn-primary" role="button">Info</a> <a href="#" class="btn btn-default" role="button">Like</a></p>
+                                <div class="row">
+                                    <div class="col-md-9">
+                                        <div class="panel panel-default">
+                                            <div class="panel-body">
+                                                Cookie
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class=" col-md-3">
+                                        <img src="img/profile-pic1.png" alt="..." class="img-circle profilePic">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                   <br>
+                                    <div class="col-md-6">
+                                        <div class="panel panel-default">
+                                            <div class="panel-body">
+                                                <span class="glyphicon glyphicon-calendar" style="font-size: 20px"></span>
+                                                <span class="pull-right" style="font-size: 14px; padding-top:3px;"> 10/4 - 18/4</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="panel panel-default">
+                                            <div class="panel-body">
+                                                <span class="glyphicon glyphicon-usd" style="font-size: 20px"></span>
+                                                <span class="pull-right" style="font-size: 16px;">80</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row" id="details3">
+                                   <br>
+                                    <div class="col-md-6">
+                                        <button type="button" class="btn btn-primary btn-lg glyphicon glyphicon-info-sign
+ center-block" data-toggle="button" aria-pressed="false" autocomplete="off" style="width: 100%">
+                                        </button>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <button type="button" class="btn btn-primary btn-lg glyphicon glyphicon-heart center-block" data-toggle="button" aria-pressed="false" autocomplete="off" style="width: 100%">
+                                        </button>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -146,36 +315,156 @@
            </div>
         </div>
         
-        <div class="container-fluid" style="margin-top: 4%">
+        <div class="container-fluid">
            <div class="row">
                 <div class="col-md-10 col-md-offset-1">
                     <div class="col-md-4">
                         <div class="thumbnail ">
-                            <img src="images/FuFu.JPG" alt="..." class="img-responsive img-rounded limitHeight">
+                            <img src="images/FuFu.JPG" alt="..." class="img-responsive img-rounded limitHeight" id="slidable4">
                             <div class="caption">
-                                <h3>Fu Fu</h3>
-                                <p>...</p>
-                                <p><a href="#" class="btn btn-primary" role="button">Info</a> <a href="#" class="btn btn-default" role="button">Like</a></p>
+                                <div class="row">
+                                    <div class="col-md-9">
+                                        <div class="panel panel-default">
+                                            <div class="panel-body">
+                                                Fu Fu
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class=" col-md-3">
+                                        <img src="img/profile-pic1.png" alt="..." class="img-circle profilePic">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                   <br>
+                                    <div class="col-md-6">
+                                        <div class="panel panel-default">
+                                            <div class="panel-body">
+                                                <span class="glyphicon glyphicon-calendar" style="font-size: 20px"></span>
+                                                <span class="pull-right" style="font-size: 14px; padding-top:3px;"> 10/4 - 18/4</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="panel panel-default">
+                                            <div class="panel-body">
+                                                <span class="glyphicon glyphicon-usd" style="font-size: 20px"></span>
+                                                <span class="pull-right" style="font-size: 16px;">80</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row" id="details4">
+                                   <br>
+                                    <div class="col-md-6">
+                                        <button type="button" class="btn btn-primary btn-lg glyphicon glyphicon-info-sign
+ center-block" data-toggle="button" aria-pressed="false" autocomplete="off" style="width: 100%">
+                                        </button>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <button type="button" class="btn btn-primary btn-lg glyphicon glyphicon-heart center-block" data-toggle="button" aria-pressed="false" autocomplete="off" style="width: 100%">
+                                        </button>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-4">
                         <div class="thumbnail">
-                        <img src="images/Lara.JPG" alt="..." class="img-responsive img-rounded limitHeight">
+                        <img src="images/Lara.JPG" alt="..." class="img-responsive img-rounded limitHeight" id="slidable5">
                             <div class="caption">
-                                <h3>Lara</h3>
-                                <p>...</p>
-                                <p><a href="#" class="btn btn-primary" role="button">Info</a> <a href="#" class="btn btn-default" role="button">Like</a></p>
+                                <div class="row">
+                                    <div class="col-md-9">
+                                        <div class="panel panel-default">
+                                            <div class="panel-body">
+                                                Lara
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class=" col-md-3">
+                                        <img src="img/profile-pic1.png" alt="..." class="img-circle profilePic">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                   <br>
+                                    <div class="col-md-6">
+                                        <div class="panel panel-default">
+                                            <div class="panel-body">
+                                                <span class="glyphicon glyphicon-calendar" style="font-size: 20px"></span>
+                                                <span class="pull-right" style="font-size: 14px; padding-top:3px;"> 10/4 - 18/4</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="panel panel-default">
+                                            <div class="panel-body">
+                                                <span class="glyphicon glyphicon-usd" style="font-size: 20px"></span>
+                                                <span class="pull-right" style="font-size: 16px;">80</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row" id="details5">
+                                   <br>
+                                    <div class="col-md-6">
+                                        <button type="button" class="btn btn-primary btn-lg glyphicon glyphicon-info-sign
+ center-block" data-toggle="button" aria-pressed="false" autocomplete="off" style="width: 100%">
+                                        </button>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <button type="button" class="btn btn-primary btn-lg glyphicon glyphicon-heart center-block" data-toggle="button" aria-pressed="false" autocomplete="off" style="width: 100%">
+                                        </button>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-4">
                         <div class="thumbnail">
-                        <img src="images/Hugo_2.jpg" alt="..." class="img-rounded limitHeight">
+                        <img src="images/Hugo_2.jpg" alt="..." class="img-rounded limitHeight" id="slidable6">
                             <div class="caption">
-                                <h3>Hugo</h3>
-                                <p>...</p>
-                                <p><a href="#" class="btn btn-primary" role="button">Info</a> <a href="#" class="btn btn-default" role="button">Like</a></p>
+                                <div class="row">
+                                    <div class="col-md-9">
+                                        <div class="panel panel-default">
+                                            <div class="panel-body">
+                                                Hugo
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class=" col-md-3">
+                                        <img src="img/profile-pic1.png" alt="..." class="img-circle profilePic">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                   <br>
+                                    <div class="col-md-6">
+                                        <div class="panel panel-default">
+                                            <div class="panel-body">
+                                                <span class="glyphicon glyphicon-calendar" style="font-size: 20px"></span>
+                                                <span class="pull-right" style="font-size: 14px; padding-top:3px;"> 10/4 - 18/4</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="panel panel-default">
+                                            <div class="panel-body">
+                                                <span class="glyphicon glyphicon-usd" style="font-size: 20px"></span>
+                                                <span class="pull-right" style="font-size: 16px;">80</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row" id="details6">
+                                   <br>
+                                    <div class="col-md-6">
+                                        <button type="button" class="btn btn-primary btn-lg glyphicon glyphicon-info-sign
+ center-block" data-toggle="button" aria-pressed="false" autocomplete="off" style="width: 100%">
+                                        </button>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <button type="button" class="btn btn-primary btn-lg glyphicon glyphicon-heart center-block" data-toggle="button" aria-pressed="false" autocomplete="off" style="width: 100%">
+                                        </button>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -183,36 +472,156 @@
            </div>
         </div>
         
-        <div class="container-fluid" style="margin-top: 4%">
+        <div class="container-fluid">
            <div class="row">
                 <div class="col-md-10 col-md-offset-1">
                     <div class="col-md-4">
                         <div class="thumbnail">
-                            <img src="images/Muffin.jpg" alt="..." class="img-responsive img-rounded limitHeight">
+                            <img src="images/Muffin.jpg" alt="..." class="img-responsive img-rounded limitHeight" id="slidable7">
                             <div class="caption">
-                                <h3>Muffin</h3>
-                                <p>...</p>
-                                <p><a href="#" class="btn btn-primary" role="button">Info</a> <a href="#" class="btn btn-default" role="button">Like</a></p>
+                                <div class="row">
+                                    <div class="col-md-9">
+                                        <div class="panel panel-default">
+                                            <div class="panel-body">
+                                                Muffin
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class=" col-md-3">
+                                        <img src="img/profile-pic1.png" alt="..." class="img-circle profilePic">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                   <br>
+                                    <div class="col-md-6">
+                                        <div class="panel panel-default">
+                                            <div class="panel-body">
+                                                <span class="glyphicon glyphicon-calendar" style="font-size: 20px"></span>
+                                                <span class="pull-right" style="font-size: 14px; padding-top:3px;"> 10/4 - 18/4</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="panel panel-default">
+                                            <div class="panel-body">
+                                                <span class="glyphicon glyphicon-usd" style="font-size: 20px"></span>
+                                                <span class="pull-right" style="font-size: 16px;">80</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row" id="details7">
+                                   <br>
+                                    <div class="col-md-6">
+                                        <button type="button" class="btn btn-primary btn-lg glyphicon glyphicon-info-sign
+ center-block" data-toggle="button" aria-pressed="false" autocomplete="off" style="width: 100%">
+                                        </button>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <button type="button" class="btn btn-primary btn-lg glyphicon glyphicon-heart center-block" data-toggle="button" aria-pressed="false" autocomplete="off" style="width: 100%">
+                                        </button>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-4">
                         <div class="thumbnail">
-                        <img src="images/Story.jpg" alt="..." class="img-responsive img-rounded limitHeight">
+                        <img src="images/Story.jpg" alt="..." class="img-responsive img-rounded limitHeight" id="slidable8">
                             <div class="caption">
-                                <h3>Story</h3>
-                                <p>...</p>
-                                <p><a href="#" class="btn btn-primary" role="button">Info</a> <a href="#" class="btn btn-default" role="button">Like</a></p>
+                                <div class="row">
+                                    <div class="col-md-9">
+                                        <div class="panel panel-default">
+                                            <div class="panel-body">
+                                                Story
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class=" col-md-3">
+                                        <img src="img/profile-pic1.png" alt="..." class="img-circle profilePic">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                   <br>
+                                    <div class="col-md-6">
+                                        <div class="panel panel-default">
+                                            <div class="panel-body">
+                                                <span class="glyphicon glyphicon-calendar" style="font-size: 20px"></span>
+                                                <span class="pull-right" style="font-size: 14px; padding-top:3px;"> 10/4 - 18/4</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="panel panel-default">
+                                            <div class="panel-body">
+                                                <span class="glyphicon glyphicon-usd" style="font-size: 20px"></span>
+                                                <span class="pull-right" style="font-size: 16px;">80</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row" id="details8">
+                                   <br>
+                                    <div class="col-md-6">
+                                        <button type="button" class="btn btn-primary btn-lg glyphicon glyphicon-info-sign
+ center-block" data-toggle="button" aria-pressed="false" autocomplete="off" style="width: 100%">
+                                        </button>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <button type="button" class="btn btn-primary btn-lg glyphicon glyphicon-heart center-block" data-toggle="button" aria-pressed="false" autocomplete="off" style="width: 100%">
+                                        </button>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-4">
                         <div class="thumbnail">
-                        <img src="images/Leonard.jpg" alt="..." class="img-responsive img-rounded limitHeight">
+                        <img src="images/Leonard.jpg" alt="..." class="img-responsive img-rounded limitHeight" id="slidable9">
                             <div class="caption">
-                                <h3>Leonard</h3>
-                                <p>...</p>
-                                <p><a href="#" class="btn btn-primary" role="button">Info</a> <a href="#" class="btn btn-default" role="button">Like</a></p>
+                                <div class="row">
+                                    <div class="col-md-9">
+                                        <div class="panel panel-default">
+                                            <div class="panel-body">
+                                                Leonard
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class=" col-md-3">
+                                        <img src="img/profile-pic1.png" alt="..." class="img-circle profilePic">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                   <br>
+                                    <div class="col-md-6">
+                                        <div class="panel panel-default">
+                                            <div class="panel-body">
+                                                <span class="glyphicon glyphicon-calendar" style="font-size: 20px"></span>
+                                                <span class="pull-right" style="font-size: 14px; padding-top:3px;"> 10/4 - 18/4</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="panel panel-default">
+                                            <div class="panel-body">
+                                                <span class="glyphicon glyphicon-usd" style="font-size: 20px"></span>
+                                                <span class="pull-right" style="font-size: 16px;">80</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row" id="details9">
+                                   <br>
+                                    <div class="col-md-6">
+                                        <button type="button" class="btn btn-primary btn-lg glyphicon glyphicon-info-sign
+ center-block" data-toggle="button" aria-pressed="false" autocomplete="off" style="width: 100%">
+                                        </button>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <button type="button" class="btn btn-primary btn-lg glyphicon glyphicon-heart center-block" data-toggle="button" aria-pressed="false" autocomplete="off" style="width: 100%">
+                                        </button>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -220,36 +629,156 @@
            </div>
         </div>
         
-        <div class="container-fluid" style="margin-top: 4%">
+        <div class="container-fluid">
            <div class="row">
                 <div class="col-md-10 col-md-offset-1">
                     <div class="col-md-4">
                         <div class="thumbnail">
-                            <img src="images/Lucy_1.jpg" alt="..." class="img-responsive img-rounded limitHeight">
+                            <img src="images/Lucy_1.jpg" alt="..." class="img-responsive img-rounded limitHeight" id="slidable10">
                             <div class="caption">
-                                <h3>Lucy</h3>
-                                <p>...</p>
-                                <p><a href="#" class="btn btn-primary" role="button">Info</a> <a href="#" class="btn btn-default" role="button">Like</a></p>
+                                <div class="row">
+                                    <div class="col-md-9">
+                                        <div class="panel panel-default">
+                                            <div class="panel-body">
+                                                Lucy
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class=" col-md-3">
+                                        <img src="img/profile-pic1.png" alt="..." class="img-circle profilePic">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                   <br>
+                                    <div class="col-md-6">
+                                        <div class="panel panel-default">
+                                            <div class="panel-body">
+                                                <span class="glyphicon glyphicon-calendar" style="font-size: 20px"></span>
+                                                <span class="pull-right" style="font-size: 14px; padding-top:3px;"> 10/4 - 18/4</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="panel panel-default">
+                                            <div class="panel-body">
+                                                <span class="glyphicon glyphicon-usd" style="font-size: 20px"></span>
+                                                <span class="pull-right" style="font-size: 16px;">80</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row" id="details10">
+                                   <br>
+                                    <div class="col-md-6">
+                                        <button type="button" class="btn btn-primary btn-lg glyphicon glyphicon-info-sign
+ center-block" data-toggle="button" aria-pressed="false" autocomplete="off" style="width: 100%">
+                                        </button>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <button type="button" class="btn btn-primary btn-lg glyphicon glyphicon-heart center-block" data-toggle="button" aria-pressed="false" autocomplete="off" style="width: 100%">
+                                        </button>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-4">
                         <div class="thumbnail">
-                        <img src="images/RandomDog.jpg" alt="..." class="img-responsive img-rounded limitHeight">
+                        <img src="images/RandomDog.jpg" alt="..." class="img-responsive img-rounded limitHeight" id="slidable11">
                             <div class="caption">
-                                <h3>Jon Snow</h3>
-                                <p>...</p>
-                                <p><a href="#" class="btn btn-primary" role="button">Info</a> <a href="#" class="btn btn-default" role="button">Like</a></p>
+                                <div class="row">
+                                    <div class="col-md-9">
+                                        <div class="panel panel-default">
+                                            <div class="panel-body">
+                                                Jon Snow
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class=" col-md-3">
+                                        <img src="img/profile-pic1.png" alt="..." class="img-circle profilePic">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                   <br>
+                                    <div class="col-md-6">
+                                        <div class="panel panel-default">
+                                            <div class="panel-body">
+                                                <span class="glyphicon glyphicon-calendar" style="font-size: 20px"></span>
+                                                <span class="pull-right" style="font-size: 14px; padding-top:3px;"> 10/4 - 18/4</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="panel panel-default">
+                                            <div class="panel-body">
+                                                <span class="glyphicon glyphicon-usd" style="font-size: 20px"></span>
+                                                <span class="pull-right" style="font-size: 16px;">80</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row" id="details11">
+                                   <br>
+                                    <div class="col-md-6">
+                                        <button type="button" class="btn btn-primary btn-lg glyphicon glyphicon-info-sign
+ center-block" data-toggle="button" aria-pressed="false" autocomplete="off" style="width: 100%">
+                                        </button>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <button type="button" class="btn btn-primary btn-lg glyphicon glyphicon-heart center-block" data-toggle="button" aria-pressed="false" autocomplete="off" style="width: 100%">
+                                        </button>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-4">
                         <div class="thumbnail">
-                        <img src="images/Jack_Sparrow.jpg" alt="..." class="img-responsive img-rounded limitHeight">
+                        <img src="images/Jack_Sparrow.jpg" alt="..." class="img-responsive img-rounded limitHeight" id="slidable12">
                             <div class="caption">
-                                <h3>Jack Sparrow</h3>
-                                <p>...</p>
-                                <p><a href="#" class="btn btn-primary" role="button">Info</a> <a href="#" class="btn btn-default" role="button">Like</a></p>
+                                <div class="row">
+                                    <div class="col-md-9">
+                                        <div class="panel panel-default">
+                                            <div class="panel-body">
+                                                Jack Sparrow
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class=" col-md-3">
+                                        <img src="img/profile-pic1.png" alt="..." class="img-circle profilePic">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                   <br>
+                                    <div class="col-md-6">
+                                        <div class="panel panel-default">
+                                            <div class="panel-body">
+                                                <span class="glyphicon glyphicon-calendar" style="font-size: 20px"></span>
+                                                <span class="pull-right" style="font-size: 14px; padding-top:3px;"> 10/4 - 18/4</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="panel panel-default">
+                                            <div class="panel-body">
+                                                <span class="glyphicon glyphicon-usd" style="font-size: 20px"></span>
+                                                <span class="pull-right" style="font-size: 16px;">80</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row" id="details12">
+                                   <br>
+                                    <div class="col-md-6">
+                                        <button type="button" class="btn btn-primary btn-lg glyphicon glyphicon-info-sign
+ center-block" data-toggle="button" aria-pressed="false" autocomplete="off" style="width: 100%">
+                                        </button>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <button type="button" class="btn btn-primary btn-lg glyphicon glyphicon-heart center-block" data-toggle="button" aria-pressed="false" autocomplete="off" style="width: 100%">
+                                        </button>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -258,7 +787,22 @@
         </div>
         
         
+        <nav aria-label="Page navigation" style="text-align: center">
+            <ul class="pagination">
+                <li><a href="#" aria-label="Previous">
+                <span aria-hidden="true">&laquo;</span></a>
+                </li>
+                <li class="active"><a href="#">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">4</a></li>
+                <li><a href="#">5</a></li>
+                <li>
+                    <a href="#" aria-label="Next">
+                    <span aria-hidden="true">&raquo;</span>
+                </a>
+                </li>
+            </ul>
+        </nav>
     </body>
-    
-
 </html>

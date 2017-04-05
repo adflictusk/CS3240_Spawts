@@ -1,5 +1,4 @@
 .searchBar {
-    background-image: url(../images/texture1.png);
     background-color: grey;
 }
 
@@ -13,19 +12,73 @@
     height: auto;
 }
 
-.ratio-4-3{
-    width:100%;
-    position:relative;
-    background:url() 50% 50% no-repeat;
-    background-size:cover;
-    background-clip:content-box;
-}
-.ratio-4-3:before{
-    display:block;
-    content:"";
-    padding-top:75%;
-}
-
 .panel {
     margin-bottom: 0px;
+}
+
+#details1 {
+    display: none;
+}
+
+#details2 {
+    display: none;
+}
+
+#details3 {
+    display: none;
+}
+
+#details4 {
+    display: none;
+}
+
+#details5 {
+    display: none;
+}
+
+#details6 {
+    display: none;
+}
+
+#details7 {
+    display: none;
+}
+
+#details8 {
+    display: none;
+}
+
+#details9 {
+    display: none;
+}
+
+#details10 {
+    display: none;
+}
+
+#details11 {
+    display: none;
+}
+
+#details12 {
+    display: none;
+}
+
+.parallax {
+    /* The image used */
+    background-image: url('../images/pattern1.png');
+    background-color: #E4F1FE;
+
+    /* Set a specific height */
+    min-height: 500px; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.pageHeader {
+    margin-bottom: 50px;
+    font-size: 50px;
+    color: black;
 }
