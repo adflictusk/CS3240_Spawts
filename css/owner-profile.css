@@ -152,6 +152,7 @@
     padding-left: 15px;
     padding-bottom: 5px;
     text-decoration: underline;
+    font-size: 20px;
 }
 
 .pet-box-pic:hover {
@@ -164,8 +165,8 @@
 }
 
 .feed-activities-box {
-    min-height: 461px;
-    max-height: 461px;
+    min-height: 455px;
+    max-height: 455px;
     overflow-y: scroll;
 }
 
@@ -179,6 +180,7 @@ hr {
     padding-left: 15px;
     padding-top: 5px;
     text-decoration: underline;
+    font-size: 20px;
 }
 
 .start-status {
@@ -202,7 +204,10 @@ hr {
 
 .pv-title {
     padding-left: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
     text-decoration: underline;
+    font-size: 20px;
 }
 
 .pv-pic:hover {
@@ -215,8 +220,11 @@ hr {
 }
 
 .history-title {
+    padding-top: 5px;
     padding-left: 15px;
+    padding-bottom: 5px;
     text-decoration: underline;
+    font-size: 20px;
 }
 
 .history-pic:hover {
