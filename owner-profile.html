@@ -205,7 +205,7 @@
                                             <button type="button" class="btn btn-link btn-icon"><i class="fa fa-video-camera"></i></button>
                                         </div>
 
-                                        <div class="pull-right">
+                                        <div class="pull-right post-btn">
                                             <button type="button" class="btn btn-success">Post</button>
                                         </div>  
                                     </div> <!--panel footer-->
@@ -214,6 +214,17 @@
                         </div> <!--entire-box-->
                         <hr>
                         <!--Feed-->
+                        <div class="row center-block start-status">
+                            <div class="col-xs-9">
+                                <div class="text-center">
+                                    <p>Joined Spawts today</p>
+                                </div>
+                            </div>
+
+                            <div class="col-xs-2 col-xs-offset-1 date-time">
+                                <p id="post-date-time"></p>
+                            </div>
+                        </div>
 
                         <div class="row center-block feed-template">
                             <!--Post-->
@@ -224,22 +235,8 @@
                             </div>
                             <!--Date and Time-->
                             <div class="col-xs-2 col-xs-offset-1 date-time">
-                                <p id="post-date-time"></p>
-                                <script>
-                                    var dateTime = new Date();
-                                    var month = dateTime.getMonth() + 1;
-                                    var day = dateTime.getDate();
-                                    var year = dateTime.getFullYear();
-
-                                    var hour = dateTime.getHours();
-                                    var min = dateTime.getMinutes();
-
-                                    var monthNames = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
-
-                                    document.getElementById("post-date-time").innerHTML = day + " " + monthNames[month] + " " + year + "\n" + hour + ":" + min;
-                                </script>
+                                <p id=""></p>
                             </div>
-
                         </div>
 
                     </div>
@@ -290,5 +287,39 @@
             </div>
         </div>
     </body>
+
+    <!--All Scripts-->
+
+    <!--Date time script-->
+    <script>
+    function getDateTime(idTag) {
+        var dateTime = new Date();
+        var month = dateTime.getMonth();
+        var day = dateTime.getDate();
+        var year = dateTime.getFullYear();
+
+        var hour = dateTime.getHours();
+        var min = dateTime.getMinutes();
+
+        var monthNames = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+        
+        document.getElementById(idTag).innerHTML = day + " " + monthNames[month] + " " + year + "\n" + hour + ":" + min;
+    }
+    </script>
+
+    <!--post script-->
+    <script>
+        var template = $(".feed-template");
+        
+        var postId = 1;
+        $(".post-btn").on("click", function() {
+            var newPanel = template.clone();
+            $(".start-status").prepend(newPanel.fadeIn());
+            var idDt = "date-time-" + postId;
+            newPanel.find(".date-time").attr("id", idDt);
+            getDateTime(newPanel.find(".date-time").attr("id"));
+            postId++;
+        });
+    </script>
 
 </html>
