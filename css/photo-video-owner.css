@@ -1,0 +1,27 @@
+.nav-bar-padding {
+    padding-top: 90px;
+}
+
+.photo-box {
+    box-shadow: 0px 0px 20px #888888;
+    min-height: 840px;
+    max-height: 840px;
+}
+
+.photo-picture-offset {
+    padding-left: 2em;
+    padding-right: 2em;
+}
+
+.photo-title {
+    padding-top: 10px;
+    padding-left: 28px;
+    padding-bottom: 12px;
+    text-decoration: underline;
+    font-size: 20px;
+}
+
+.panel-photo {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}

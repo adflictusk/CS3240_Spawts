@@ -2,7 +2,10 @@
 .owner-picture {
     max-height: 100%;
     max-width: 100%;
-    padding: 10px;
+}
+
+.owner-pic-img {
+    padding: 12px;
 }
 
 .name-owner {
@@ -76,11 +79,20 @@
     padding-top: 15px;
 }
 
+.gender-owner {
+    padding-top: 15px;
+}
+
 .social-media-owner {
     padding-top: 15px;
     padding-left: 2.5em;
     padding-right: 2.5em;
     padding-bottom: 15px;
+}
+
+.sm-icon {
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 
 .chat-box-div a {
@@ -134,8 +146,12 @@
     padding-bottom: 5px;
 }
 
+.list-box-pic:hover {
+    opacity: 0.5;
+}
+
 .balancer {
-    min-height: 8px;
+    min-height: 1px;
     box-shadow: 0px 0px 20px #888888;
 }
 
