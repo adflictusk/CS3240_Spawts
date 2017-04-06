@@ -1,0 +1,28 @@
+.profilePic {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    border: 3px solid black;
+}
+
+.followScroll {
+    position: fixed;
+    top: 15.5%;
+    right: 5%
+}
+
+.ownerProfile {
+    position: relative;
+    bottom: 70px;
+    left: 250px;
+    width: 100px;
+    height: auto;
+    margin: 0px;
+    padding: 0px;
+    border-radius: 100px;
+    border: 3px solid black;
+}
+
+.bg {
+    background-color: #f7f7f7;
+}
