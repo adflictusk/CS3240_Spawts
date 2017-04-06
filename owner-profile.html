@@ -112,16 +112,54 @@
                 </div>
 
                 <!--rating-->
-                <div class="row">
+                <div class="row rating-box-div">
+                    <a href="#">
                     <div class="panel text-center rating-box">
-                        <h4 class="rating-owner">Ratings & Reviews</h4>
+                        <div class="row">
+                            <h4 class="rating-owner">Ratings & Reviews</h4>
+                        </div>
+                        <div class="row center-block">
+                            <div class="five-cols rating-stars">
+                                <div class="glyphicon glyphicon-star col-xs-1"></div>
+                                <div class="glyphicon glyphicon-star col-xs-1"></div>
+                                <div class="glyphicon glyphicon-star col-xs-1"></div>
+                                <div class="glyphicon glyphicon-star col-xs-1"></div>
+                                <div class="glyphicon glyphicon-star col-xs-1"></div>
+                            </div>
+                        </div>
+                        <div class="row center-block review-link">
+                            <p>Based on 5 reviews</p>
+                            <p>Click here to read more</p>
+                        </div>
+
                     </div>
+                </a>
                 </div>
 
                 <!--personal info-->
                 <div class="row">
                     <div class="panel text-center personal-info-box">
                         <h4 class="info-owner">Personal Info</h4>
+                        <div class="row full-name-owner">
+                            <p id="title">Full Name</p>
+                            <p>Clara Marilyn Alfonso</p>
+                        </div>
+                        <div class="row age-owner">
+                            <p id="title">Age</p>
+                            <p>Secret!</p>
+                        </div>
+                        <div class="row social-media-owner">
+                            <p id="title">Find Me</p>
+                            <div class="col-xs-4">
+                                <img src="img/add.png" href="#" class="img-responsive">
+                            </div>
+                            <div class="col-xs-4">
+                                <img src="img/add.png" href="#" class="img-responsive">
+                            </div>
+                            <div class="col-xs-4">
+                                <img src="img/add.png" href="#" class="img-responsive">
+                            </div>
+                        </div>
                     </div>
                 </div>
 
@@ -147,7 +185,43 @@
                 <div class="row">
                     <div class="panel text-center list-box">
                         <h4 class="list-owner">Listings</h4>
-                    </div>
+                        <div class="row center-block">
+                            <div class="col-xs-4">
+                                <a href="#">
+                                    <div class="list-box-pic">
+                                        <div class="panel panel-default">
+                                            <img src="img/add.png" class="img-responsive">
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-xs-4">
+                                <a href="#">
+                                    <div class="list-box-pic">
+                                        <div class="panel panel-default">
+                                            <img src="img/add.png" class="img-responsive">
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-xs-4">
+                                <a href="#">
+                                    <div class="list-box-pic">
+                                        <div class="panel panel-default">
+                                            <img src="img/add.png" class="img-responsive">
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+
+                        </div><!--end row center-block-->
+                    </div><!--end list-box-->
+                </div><!--end listing row-->
+
+                <div class="row">
+                    <div class="panel balancer"></div>
+                    <div class="panel balancer"></div>
+                    <div class="panel balancer"></div>
                 </div>
 
             </div>
@@ -195,7 +269,7 @@
 
                                 <div class="panel panel-default" id="status-box">
                                     <div class="panel-body">
-                                        <input type="email" class="form-control" placeholder="What are you up to?">
+                                        <input class="form-control" id="status-box-text" placeholder="What are you up to?">
                                     </div>
                                     <div class="panel-footer">
                                         <div class="btn-group">
@@ -214,33 +288,32 @@
                         </div> <!--entire-box-->
                         <hr>
                         <!--Feed-->
-                        <div class="row center-block start-status">
-                            <div class="col-xs-9">
-                                <div class="text-center">
-                                    <p>Joined Spawts today</p>
+                        <div class="feed-activities-box">
+                            <div class="row center-block start-status">
+                                <hr>
+                                <div class="col-xs-12">
+                                    <div class="text-center">
+                                        <p id="join-status"></p>
+                                    </div>
                                 </div>
                             </div>
 
-                            <div class="col-xs-2 col-xs-offset-1 date-time">
-                                <p id="post-date-time"></p>
-                            </div>
-                        </div>
-
-                        <div class="row center-block feed-template">
-                            <!--Post-->
-                            <div class="col-xs-9">
-                                <div class="panel panel-default">
-                                    <br><br><br>
+                            <div class="row center-block feed-template" style="display: none;">
+                                <!--Post-->
+                                <div class="col-xs-9">
+                                    <div class="panel panel-default status-text">
+                                        <p id=""></p>
+                                    </div>
+                                </div>
+                                <!--Date and Time-->
+                                <div class="col-xs-2 col-xs-offset-1 date-time">
+                                    <p id=""></p>
                                 </div>
                             </div>
-                            <!--Date and Time-->
-                            <div class="col-xs-2 col-xs-offset-1 date-time">
-                                <p id=""></p>
-                            </div>
-                        </div>
+                        </div> <!--end feed-activies-->
 
-                    </div>
-                </div>
+                    </div> <!--end panel livefeed-box-->
+                </div> <!--end row-->
 
                 <!--owner photo + video-->
                 <div class="row">
@@ -307,19 +380,45 @@
     }
     </script>
 
+    <!-- text to status-->
+    <script>
+    function textToStatus(text, idTag) {
+        document.getElementById(idTag).innerHTML = text;
+    }
+    </script>
+
     <!--post script-->
     <script>
         var template = $(".feed-template");
-        
+
         var postId = 1;
         $(".post-btn").on("click", function() {
             var newPanel = template.clone();
+            var postText = $("#status-box-text").val();
+            document.getElementById("status-box-text").value = "";
+
             $(".start-status").prepend(newPanel.fadeIn());
             var idDt = "date-time-" + postId;
+            var idStatus = "status-" + postId;
             newPanel.find(".date-time").attr("id", idDt);
+            newPanel.find(".status-text").attr("id", idStatus);
+            newPanel.css("display", "inline");
             getDateTime(newPanel.find(".date-time").attr("id"));
+            textToStatus(postText, newPanel.find(".status-text").attr("id"));
             postId++;
         });
+    </script>
+
+    <!--Join status-->
+    <script>
+        var dateTime = new Date();
+        var month = dateTime.getMonth();
+        var day = dateTime.getDate();
+        var year = dateTime.getFullYear();
+
+        var monthNames = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+        
+        document.getElementById("join-status").innerHTML = "Joined Spawts on " + day + " " + monthNames[month] + " " + year;
     </script>
 
 </html>
