@@ -33,6 +33,12 @@
                     var newImg = $("#choice3").attr('src');
                     $("#mainPetPic").attr("src", newImg);
                 });
+                
+                $("#chatButton").click(function() {
+                    $("#chatButton").hide();
+                    $("#actualChat").show();
+                });
+                
             });
         </script>
         
@@ -157,37 +163,122 @@
                 </div>
                 <div class="row">
                    <div class="col-md-4 panel panel-default followScroll">
-                       <h2>Black Ball</h2>
-                       <h4><span class="label label-default glyphicon glyphicon-asterisk"> Syrian Hamster</span></h4>
-                       <h4><span class="label label-default glyphicon glyphicon-map-marker"> Yishun</span></h4>
+                       <div class="col-md-8">
+                           <h2>Black Ball</h2>
+                           <h4><span class="label label-default glyphicon glyphicon-asterisk"> Syrian Hamster</span></h4>
+                           <h4><span class="label label-default glyphicon glyphicon-map-marker"> Yishun</span></h4>
+                       </div>
+                       <div class="col-md-offset-1 col-md-3" style="padding-top:15px;">
+                           <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#reportModal">Report</button>
+                       </div>
+                       
+                       
                    </div>
                    
                     <div class="col-md-4 panel panel-default followScroll2">
                        <br>
-                        <div class="panel panel-default">
-                            <div class="panel-body">
-                                <span class="glyphicon glyphicon-calendar" style="font-size: 20px"></span>
-                                <span class="pull-right" style="font-size: 14px; padding-top:3px;"> 10/4 - 18/4</span>
+                       <div class="col-md-6">
+                            <div class="panel panel-default">
+                                <div class="panel-body">
+                                    <span class="glyphicon glyphicon-calendar" style="font-size: 20px"></span>
+                                    <span class="pull-right" style="font-size: 14px; padding-top:3px;"> 10/4 - 18/4</span>
+                                </div>
                             </div>
                         </div>
-
-                        <div class="panel panel-default">
-                            <div class="panel-body">
-                                <span class="glyphicon glyphicon-usd" style="font-size: 20px"></span>
-                                <span class="pull-right" style="font-size: 16px;">80</span>
+                        <div class="col-md-6">
+                            <div class="panel panel-default">
+                                <div class="panel-body">
+                                    <span class="glyphicon glyphicon-usd" style="font-size: 20px"></span>
+                                    <span class="pull-right" style="font-size: 16px;">80</span>
+                                </div>
                             </div>
                         </div>
                         <button type="button" class="btn btn-primary btn-lg glyphicon glyphicon-comment
-center-block" data-toggle="button" aria-pressed="false" autocomplete="off" style="width: 100%">                      <p>Chat with owner!</p>
+center-block" data-toggle="button" aria-pressed="false" autocomplete="off" style="width: 100%" id="chatButton">                      <p>Chat with owner!</p>
                         </button>
+                        
+                        <div class="panel panel-default" id="actualChat">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">Chat</h3>
+                            </div>
+                            <ul class="list-group">
+                                <li class="list-group-item me">Hello!</li>
+                                <li class="list-group-item me">Can i schedule a meetup to meet Black Ball?</li>
+                                <li class="list-group-item other">Hey! Sure!</li>
+                                <li class="list-group-item me">Alright! :)</li>
+                            </ul>
+                            
+                            <div>
+                                <input type="text" class="form-control me" placeholder="Type here...">
+                            </div>
+                        </div>
                         <br>
                     </div>
                     
-                    <div class="col-md-4 followScroll3">
-                        <button type="button" class="btn btn-danger btn-xs glyphicon glyphicon-alert
-center-block" data-toggle="button" aria-pressed="false" autocomplete="off" style="width: 100%">                      <h4>Report</h4>
-                        </button>
+                </div>
+            </div>
+        </div>
+        
+        <div class="modal fade" id="reportModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="myModalLabel">Report</h4>
                     </div>
+                    <div class="modal-body">
+                        <div class="checkbox">
+                           <div>
+                               <span>
+                                    <label>
+                                        <input type="checkbox" value="">
+                                        Animal Abuse
+                                    </label>
+                                </span>
+                                
+                                <span style="margin-left: 50px">
+                                    <label>
+                                        <input type="checkbox" value="">
+                                        Fake Listing
+                                    </label>
+                                </span>
+                                
+                                <span style="margin-left: 50px">
+                                    <label>
+                                        <input type="checkbox" value="">
+                                        Rude owner
+                                    </label>
+                                </span>
+                            </div>
+                            <div>
+                                <span>
+                                    <label>
+                                        <input type="checkbox" value="">
+                                        Exotic Animal
+                                    </label>
+                                </span>
+                                
+                                <span style="margin-left: 50px">
+                                    <label>
+                                        <input type="checkbox" value="">
+                                        Pet milling
+                                    </label>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-dismiss="modal" data-target=".thankYouModal" >Report</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="modal fade thankYouModal" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
+            <div class="modal-dialog modal-sm" role="document">
+                <div class="modal-content" style="padding: 20px; text-align: center;">
+                    Thank you for the report!
                 </div>
             </div>
         </div>

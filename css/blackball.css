@@ -7,20 +7,20 @@
 
 .followScroll {
     position: fixed;
-    top: 15.5%;
+    top: 14.%;
     right: 5%;
 }
 
 
 .followScroll2 {
     position: fixed;
-    top: 35%;
+    top: 34%;
     right: 5%;
 }
 
 .followScroll3 {
     position: fixed;
-    top: 76.5%;
+    top: 75%;
     right: 5%;
 }
 
@@ -68,4 +68,16 @@
     width: 100px;
     height: 100px;
     border: 2px solid grey;
+}
+
+#actualChat {
+    display: none;
+}
+
+.other {
+    text-align: left;
+}
+
+.me {
+    text-align: right;
 }
