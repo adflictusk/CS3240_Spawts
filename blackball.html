@@ -16,6 +16,26 @@
         <link rel="stylesheet" href="css/blackball.css">
         <link href="https://fonts.googleapis.com/css?family=Francois+One|Josefin+Slab|Ubuntu+Condensed" rel="stylesheet">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <script>
+            $(document).ready(function(){
+                $("#choice1").click(function(){
+                    var newImg = $("#choice1").attr('src');
+                    $("#mainPetPic").attr("src", newImg);
+                });
+                
+                $("#choice2").click(function(){
+                    var newImg = $("#choice2").attr('src');
+                    $("#mainPetPic").attr("src", newImg);
+                });
+                
+                $("#choice3").click(function(){
+                    var newImg = $("#choice3").attr('src');
+                    $("#mainPetPic").attr("src", newImg);
+                });
+            });
+        </script>
+        
     </head>
     
     <body class="bg">
@@ -91,19 +111,32 @@
         <div class="container" style="margin-top: 8%">
 
             <div class="row">
-                <div class="col-md-9">
+               
+                <div class="col-md-7">
                     <div class="row">
-                       <div class="col-md-5">
+                       
+                       <div class="col-md-4 jumbotron">
+                            <div> 
+                                 <img src="images/BlackBallBigBall.jpg" alt="" class="side-img img-rounded" id="choice1">
+                            </div>
+                            <br>
+                            <div> 
+                                 <img src="images/BB_2.jpg" alt="" class="side-img img-rounded" id="choice2">
+                            </div>
+                            <br>
+                            <div> 
+                                 <img src="images/BB_3.jpg" alt="" class="side-img img-rounded" id="choice3">
+                            </div>
+                       </div>
+                        
+                         
+                       <div class="col-md-8">
                            
-                           <img src="images/BlackBallBigBall.jpg" alt="..." class="profilePic">
+                           <img src="images/BlackBallBigBall.jpg" alt="..." class="profilePic" id="mainPetPic">
                            <img src="img/profile-pic1.png" alt="" class="img-responsive ownerPicStyle ownerProfile">
                            
                        </div>
-                       <div class="col-md-7 panel panel-default">
-                           <h2>Black Ball</h2>
-                           <h4><span class="label label-default glyphicon glyphicon-asterisk"> Syrian Hamster</span></h4>
-                           <h4><span class="label label-default glyphicon glyphicon-map-marker"> Yishun</span></h4>
-                       </div>
+                       
                     </div>
                     <div class="row">
                         <div class="col-md-12 panel panel-default">
@@ -121,31 +154,41 @@
                             </p>
                         </div>
                     </div>
-                    
                 </div>
-                    <div class="row">
-                        <div class="col-md-2 panel panel-default followScroll">
-                           <br>
-                            <div class="panel panel-default">
-                                <div class="panel-body">
-                                    <span class="glyphicon glyphicon-calendar" style="font-size: 20px"></span>
-                                    <span class="pull-right" style="font-size: 14px; padding-top:3px;"> 10/4 - 18/4</span>
-                                </div>
+                <div class="row">
+                   <div class="col-md-4 panel panel-default followScroll">
+                       <h2>Black Ball</h2>
+                       <h4><span class="label label-default glyphicon glyphicon-asterisk"> Syrian Hamster</span></h4>
+                       <h4><span class="label label-default glyphicon glyphicon-map-marker"> Yishun</span></h4>
+                   </div>
+                   
+                    <div class="col-md-4 panel panel-default followScroll2">
+                       <br>
+                        <div class="panel panel-default">
+                            <div class="panel-body">
+                                <span class="glyphicon glyphicon-calendar" style="font-size: 20px"></span>
+                                <span class="pull-right" style="font-size: 14px; padding-top:3px;"> 10/4 - 18/4</span>
                             </div>
-
-                            <div class="panel panel-default">
-                                <div class="panel-body">
-                                    <span class="glyphicon glyphicon-usd" style="font-size: 20px"></span>
-                                    <span class="pull-right" style="font-size: 16px;">80</span>
-                                </div>
-                            </div>
-                            <button type="button" class="btn btn-primary btn-lg glyphicon glyphicon-comment
- center-block" data-toggle="button" aria-pressed="false" autocomplete="off" style="width: 100%"> <p>Chat with owner!</p>
-                            </button>
-                            <br>
-                    
                         </div>
+
+                        <div class="panel panel-default">
+                            <div class="panel-body">
+                                <span class="glyphicon glyphicon-usd" style="font-size: 20px"></span>
+                                <span class="pull-right" style="font-size: 16px;">80</span>
+                            </div>
+                        </div>
+                        <button type="button" class="btn btn-primary btn-lg glyphicon glyphicon-comment
+center-block" data-toggle="button" aria-pressed="false" autocomplete="off" style="width: 100%">                      <p>Chat with owner!</p>
+                        </button>
+                        <br>
                     </div>
+                    
+                    <div class="col-md-4 followScroll3">
+                        <button type="button" class="btn btn-danger btn-xs glyphicon glyphicon-alert
+center-block" data-toggle="button" aria-pressed="false" autocomplete="off" style="width: 100%">                      <h4>Report</h4>
+                        </button>
+                    </div>
+                </div>
             </div>
         </div>
         
