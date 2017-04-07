@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Spawts</title>
+        <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+        <!-- Optional theme -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        <script src="js/jquery.popupoverlay.js"></script>
+        <link rel="stylesheet" href="css/mainpage.css">
+        <script>
+            $(document).ready(function () {
+                $('#openlogin').popup({
+                    //type: 'tooltip',
+                    offsettop: 100,
+                    offsetleft: -200,
+                    opacity: 0.3,
+                    transition: 'all 0.5s',
+                    outline: true
+                });
+            });
+
+            $(document).ready(function(){
+                $("#login").submit(function(e){
+
+                });
+            });
+        </script>
+    </head>
+    <body class="bg">
+        <nav class="navbar navbar-default navbar-fixed-top" style="padding-top: 10px; padding-bottom: 5px">
+            <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                  <a class="navbar-left" href="#">
+                      <img src="images/SpawtsLogo.png" alt="" style="width: 64px; height: auto; padding-left: 20px;">
+                  </a>
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a class='openlogin_open' href="#openlogin">Log In</a></li>
+                    </ul>                  
+                </div><!-- /.navbar-collapse -->
+            </div><!-- /.container-fluid -->
+        </nav>
+        <section id="home" class="main-home parallax-section">
+             <div class="container">
+                  <div class="row">
+                       <div class="col-md-12 col-sm-12">
+                            <h1>Welcome to Spawts!</h1>
+                            <h4>Word words words bla bla bla </h4>
+                            <a href="#blog" class="smoothScroll btn btn-default">Discover More</a>
+                       </div>
+
+                  </div>
+             </div>
+        </section>
+        <section id="content">
+            <div class='container'>
+                <div id="row1" class="row">
+                    <div class="col-md-12">
+                        <h2>Recent News</h2>
+                    </div>
+                </div>
+                <div id="row2" class="row">
+                    <div class="col-md-12">
+                        <h2>Top Pet-sitters This Month</h2>
+                    </div>
+                </div>
+                <div id="row3" class="row">
+                    <div class="col-md-12">
+                        <h2>Featured Pet</h2>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!---------------------------------- Pop up layout ------------------------------------------>
+        <div id="openlogin" class="openlogin-popup">
+            <form id="login" action="mainpage-loggedin.html" method="post">
+                <div class='col-md-5 formbox'>
+                    <h3 id="loginSheet">Log in</h3>
+                    <li style="list-style: none;"><label>Username: </label>
+                    <input type="text" name="username" id="username" placeholder="Username"></li>
+                    <li style="list-style: none;"><label>Password: </label>
+                    <input type="password" name="password" id="password" placeholder="Password"></li>
+                    <ul style="text-align: right"><input type="submit" value="Submit"></ul>
+                </div>
+                <div class='col-md-2'>
+                    <img id="divider" src="images/line.png">
+                </div>
+                <div class='col-md-5 formbox'>
+                    <h3 id="registerSheet">Register</h3>
+                    <li style="list-style: none;"><label>Username: </label>
+                    <input type="text" name="username" id="username" placeholder="Username"></li>
+                    <li style="list-style: none;"><label>Password: </label>
+                    <input type="password" name="password" id="password" placeholder="Password"></li>
+                    <ul style="text-align: right"><input type="submit" value="Register"></ul>
+                </div>
+            </form>
+        </div>
+    </body>
+</html>
