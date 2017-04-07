@@ -7,6 +7,10 @@
     height: 250px !important;
 }
 
+.limitHeight:hover {
+    opacity: 0.5;
+}
+
 .profilePic {
     width: 100%;
     height: auto;
