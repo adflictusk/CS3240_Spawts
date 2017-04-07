@@ -81,3 +81,19 @@
 .me {
     text-align: right;
 }
+
+.list-group-item {
+    font-size: 12px;
+}
+
+#viewContractButton {
+    display: none;
+}
+
+#successNotif {
+    display: none;
+}
+
+#failNotif {
+    display: none;
+}

@@ -39,6 +39,30 @@
                     $("#actualChat").show();
                 });
                 
+                $("#sendButton").click(function() {
+                    var content = $("#chatBar").val();
+                    $("#chatBar").val("");
+                    
+                    if (content == "contract") {
+                        $("#viewContractButton").slideToggle("fast");
+                    }
+                });
+                
+                $("#accepted").click(function() {
+                    $("#viewContractButton").slideToggle("fast");
+                    setTimeout(function() {
+                        $("#successNotif").slideToggle("fast");
+                    }, 500);
+                    
+                });
+                
+                $("#rejected").click(function() {
+                    $("#viewContractButton").slideToggle("fast");
+                    setTimeout(function() {
+                        $("#failNotif").slideToggle("fast");
+                    }, 500);
+                });
+                
             });
         </script>
         
@@ -188,9 +212,32 @@
                                 </div>
                             </div>
                         </div>
-                       
                    </div> 
                    
+                   <div class="col-md-4 panel panel-default" style="margin-left: 53px" id="viewContractButton">
+                       <br>
+                       <button type="button" class="btn btn-primary btn-lg glyphicon glyphicon-list-alt center-block" data-toggle="modal" aria-pressed="false" data-target="#contract" style="width: 100%" >
+                            <p>View contract</p>
+                        </button>
+                        <br>
+                   </div>
+                   
+                   <div class="col-md-4 panel panel-default" style="margin-left: 53px" id="successNotif">
+                       <br>
+                       <button type="button" class="btn btn-success btn-lg glyphicon glyphicon-list-alt center-block" style="width: 100%" >
+                            <p>Contract accepted</p>
+                        </button>
+                        <br>
+                   </div>
+                   
+                    <div class="col-md-4 panel panel-default" style="margin-left: 53px" id="failNotif">
+                       <br>
+                       <button type="button" class="btn btn-danger btn-lg glyphicon glyphicon-list-alt center-block" style="width: 100%" >
+                            <p>Contract rejected</p>
+                        </button>
+                        <br>
+                   </div>
+                  
                    <div class="col-md-4 panel panel-default" style="margin-left: 53px">
                        <br>
                         <button type="button" class="btn btn-primary btn-lg glyphicon glyphicon-comment
@@ -209,10 +256,21 @@ center-block" data-toggle="button" aria-pressed="false" autocomplete="off" style
                                 <li class="list-group-item me">Alright! :)</li>
                                 <li class="list-group-item"></li>
                             </ul>
-                            
-                            <div>
-                                <input type="text" class="form-control me" placeholder="Type here...">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="input-group"> 
+                                        <input class="form-control" aria-label="chat bar" placeholder="Type here..." id="chatBar"> 
+                                        <div class="input-group-btn"> 
+                                            <button type="button" class="btn btn-default" aria-label="imageUpload">
+                                                <span class="glyphicon glyphicon-plus-sign"></span>
+                                            </button> 
+                                            <button type="button" class="btn btn-default" id="sendButton">Send</button> 
+                                        </div> 
+                                    </div>
+                                </div>
                             </div>
+                            
+                            
                         </div>
                         <br>
                     </div>
@@ -282,6 +340,72 @@ center-block" data-toggle="button" aria-pressed="false" autocomplete="off" style
             <div class="modal-dialog modal-sm" role="document">
                 <div class="modal-content" style="padding: 20px; text-align: center;">
                     Thank you for the report!
+                </div>
+            </div>
+        </div>
+        
+        <div class="modal fade" id="contract" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="myModalLabel">Contract of hire</h4>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="panel panel-default">
+                                    <div class="panel-body">
+                                        <span class="glyphicon glyphicon-calendar" style="font-size: 20px"></span>
+                                        <span class="pull-right" style="font-size: 14px; padding-top:3px;"> 10/4 - 18/4</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="panel panel-default">
+                                    <div class="panel-body">
+                                        <span class="glyphicon glyphicon-usd" style="font-size: 20px"></span>
+                                        <span class="pull-right" style="font-size: 16px;">80</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="row">
+                            <div class="col-md-offset-1 col-md-10 panel panel-default">
+                                <h2>Owner's requirements</h2>
+                                <p>
+                                    Lorem Ipsum
+                                </p>
+                            </div>
+                        </div>
+                        <div class="row">
+                           <div class="col-md-offset-1 col-md-10 panel panel-default">
+                                <h2>Pet's requirements</h2>
+                                <p>
+                                    Lorem Ipsum
+                                </p>
+                            </div>
+                        </div>
+                        <div class="row">
+                           <div class="col-md-offset-1 col-md-10 panel panel-default">
+                                <h2>Additional Clauses</h2>
+                                <p>
+                                    Lorem Ipsum
+                                </p>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="modal-footer">
+                        <div class="col-md-offset-2 col-md-3">
+                            <button type="button" class="btn btn-lg btn-success" data-dismiss="modal" id="accepted">Accept</button>
+                        </div>
+                        <div class="col-md-offset-2 col-md-2">
+                            <button type="button" class="btn btn-lg btn-danger" data-dismiss="modal" id="rejected">Reject</button>
+                        </div>
+                        
+                    </div>
                 </div>
             </div>
         </div>
