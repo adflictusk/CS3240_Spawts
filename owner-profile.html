@@ -113,27 +113,168 @@
 
                 <!--rating-->
                 <div class="row rating-box-div">
-                    <a href="#">
-                    <div class="panel text-center rating-box">
-                        <div class="row">
-                            <h4 class="rating-owner">Ratings & Reviews</h4>
-                        </div>
-                        <div class="row center-block">
-                            <div class="five-cols rating-stars">
-                                <div class="glyphicon glyphicon-star col-xs-1"></div>
-                                <div class="glyphicon glyphicon-star col-xs-1"></div>
-                                <div class="glyphicon glyphicon-star col-xs-1"></div>
-                                <div class="glyphicon glyphicon-star col-xs-1"></div>
-                                <div class="glyphicon glyphicon-star col-xs-1"></div>
+                    <a data-toggle="modal" data-target="#myReviews">
+                        <div class="panel text-center rating-box">
+                            <div class="row">
+                                <h4 class="rating-title">Ratings & Reviews</h4>
                             </div>
-                        </div>
-                        <div class="row center-block review-link">
-                            <p>Based on 5 reviews</p>
-                            <p>Click here to read more</p>
-                        </div>
+                            <div class="the-rating-bar">
+                                <div class="progress">
+                                    <div class="progress-bar progress-bar-success" role="progressbar" style="width: 80%">
+                                        80%
+                                    </div>
+                                    <div class="progress-bar progress-bar-danger" role="progressbar" style="width: 20%">
+                                        20%
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row center-block review-link">
+                                <p>Based on 5 reviews</p>
+                                <p>Click here to read more</p>
+                            </div>
 
-                    </div>
-                </a>
+                        </div>
+                    </a>
+
+                    <div id="myReviews" class="modal fade" role="dialog">
+                        <div class="modal-dialog">
+
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                    <h4 class="modal-title rr-title text-center">Ratings & Reviews</h4>
+                                </div>
+
+                                <div class="modal-body">
+
+                                    <div class="row">
+
+                                        <div class="positive-box">
+                                            <div class="panel panel-default green-vertical-line">
+                                               
+                                                <div class="row center-block reviewer-pic">
+
+                                                    <div class="col-xs-3">
+                                                        <div class="panel">
+                                                            <img src="img/add.png" class="img-responsive">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-xs-7 col-xs-offset-1">
+                                                        <div class="review-comment">
+                                                            <p>Amazing pet-sitting service!</p>
+                                                            <br><br>
+                                                            <p>01/04/17 to 07/04/17</p>
+                                                        </div>
+                                                    </div>
+
+                                                </div> <!--end internal row-->
+
+                                            </div> <!--end panel-->
+                                        </div> <!--end positive-box-->
+
+                                        <div class="positive-box">
+                                            <div class="panel panel-default green-vertical-line">
+                                               
+                                                <div class="row center-block reviewer-pic">
+
+                                                    <div class="col-xs-3">
+                                                        <div class="panel">
+                                                            <img src="img/add.png" class="img-responsive">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-xs-7 col-xs-offset-1">
+                                                        <div class="review-comment">
+                                                            <p>Clara is a good pet-sitter.</p>
+                                                            <br><br>
+                                                            <p>22/03/17 to 26/03/17</p>
+                                                        </div>
+                                                    </div>
+
+                                                </div> <!--end internal row-->
+
+                                            </div> <!--end panel-->
+                                        </div> <!--end positive-box-->
+
+                                        <div class="positive-box">
+                                            <div class="panel panel-default green-vertical-line">
+                                               
+                                                <div class="row center-block reviewer-pic">
+
+                                                    <div class="col-xs-3">
+                                                        <div class="panel">
+                                                            <img src="img/add.png" class="img-responsive">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-xs-7 col-xs-offset-1">
+                                                        <div class="review-comment">
+                                                            <p>Clara has done a great job in taking care of my dog Pepper! Would hire her again.</p>
+                                                            <br>
+                                                            <p>22/02/17 to 26/02/17</p>
+                                                        </div>
+                                                    </div>
+
+                                                </div> <!--end internal row-->
+
+                                            </div> <!--end panel-->
+                                        </div> <!--end positive-box-->
+
+                                        <div class="positive-box">
+                                            <div class="panel panel-default green-vertical-line">
+                                               
+                                                <div class="row center-block reviewer-pic">
+
+                                                    <div class="col-xs-3">
+                                                        <div class="panel">
+                                                            <img src="img/add.png" class="img-responsive">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-xs-7 col-xs-offset-1">
+                                                        <div class="review-comment">
+                                                            <p>Clara is a nice owner who puts in effort to take care of my pet dog named Cookie.</p>
+                                                            <br>
+                                                            <p>11/01/17 to 22/01/17</p>
+                                                        </div>
+                                                    </div>
+
+                                                </div> <!--end internal row-->
+
+                                            </div> <!--end panel-->
+                                        </div> <!--end positive-box-->
+
+                                        <div class="negative-box">
+                                            <div class="panel panel-default red-vertical-line">
+                                               
+                                                <div class="row center-block reviewer-pic">
+
+                                                    <div class="col-xs-3">
+                                                        <div class="panel">
+                                                            <img src="img/add.png" class="img-responsive">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-xs-7 col-xs-offset-1">
+                                                        <div class="reviewer-comment">
+                                                            <p>My dog came back with rashes. Probably due to the environment.</p>
+                                                            <br>
+                                                            <p>27/03/17 to 31/03/17</p>
+                                                        </div>
+                                                    </div>
+
+                                                </div> <!--end internal row-->
+
+                                            </div> <!--end panel-->
+                                        </div> <!--end negative-box-->
+
+                                    </div> <!--end row-->
+                                </div> <!--end modal body-->
+
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+
+                        </div> <!--end modal dialog-->
+                    </div> <!--end modal myreviews-->
+
                 </div>
 
                 <!--personal info-->
@@ -221,10 +362,10 @@
                         </div><!--end row center-block-->
                     </div><!--end list-box-->
                 </div><!--end listing row-->
-                
+
                 <!--Used to balance right and left columns-->
                 <div class="row">
-                
+
                 </div>
 
             </div>
@@ -333,7 +474,7 @@
                                     </div>
                                 </a>
                             </div>
-                            
+
                         </div>
                     </div>
                 </div>
@@ -342,7 +483,7 @@
                 <div class="row">
                     <div class="panel history-box">
                         <h4 class="history-title">History</h4>
-                           <div class="row center-block">
+                        <div class="row center-block">
 
                             <div class="col-xs-2">
                                 <a href="#">
@@ -353,9 +494,9 @@
                                     </div>
                                 </a>
                             </div>
-                            
+
                         </div> 
-                    
+
                     </div>
                 </div>
 
@@ -368,60 +509,60 @@
 
     <!--Date time script-->
     <script>
-    function getDateTime(idTag) {
-        var dateTime = new Date();
-        var month = dateTime.getMonth();
-        var day = dateTime.getDate();
-        var year = dateTime.getFullYear();
+function getDateTime(idTag) {
+    var dateTime = new Date();
+    var month = dateTime.getMonth();
+    var day = dateTime.getDate();
+    var year = dateTime.getFullYear();
 
-        var hour = dateTime.getHours();
-        var min = dateTime.getMinutes();
+    var hour = dateTime.getHours();
+    var min = dateTime.getMinutes();
 
-        var monthNames = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
-        
-        document.getElementById(idTag).innerHTML = day + " " + monthNames[month] + " " + year + "\n" + hour + ":" + min;
-    }
+    var monthNames = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+
+    document.getElementById(idTag).innerHTML = day + " " + monthNames[month] + " " + year + "\n" + hour + ":" + min;
+}
     </script>
 
     <!-- text to status-->
     <script>
-    function textToStatus(text, idTag) {
-        document.getElementById(idTag).innerHTML = text;
-    }
+function textToStatus(text, idTag) {
+    document.getElementById(idTag).innerHTML = text;
+}
     </script>
 
     <!--post script-->
     <script>
-        var template = $(".feed-template");
+var template = $(".feed-template");
 
-        var postId = 1;
-        $(".post-btn").on("click", function() {
-            var newPanel = template.clone();
-            var postText = $("#status-box-text").val();
-            document.getElementById("status-box-text").value = "";
+var postId = 1;
+$(".post-btn").on("click", function() {
+        var newPanel = template.clone();
+        var postText = $("#status-box-text").val();
+        document.getElementById("status-box-text").value = "";
 
-            $(".start-status").prepend(newPanel.fadeIn());
-            var idDt = "date-time-" + postId;
-            var idStatus = "status-" + postId;
-            newPanel.find(".date-time").attr("id", idDt);
-            newPanel.find(".status-text").attr("id", idStatus);
-            newPanel.css("display", "inline");
-            getDateTime(newPanel.find(".date-time").attr("id"));
-            textToStatus(postText, newPanel.find(".status-text").attr("id"));
-            postId++;
+        $(".start-status").prepend(newPanel.fadeIn());
+        var idDt = "date-time-" + postId;
+        var idStatus = "status-" + postId;
+        newPanel.find(".date-time").attr("id", idDt);
+        newPanel.find(".status-text").attr("id", idStatus);
+        newPanel.css("display", "inline");
+        getDateTime(newPanel.find(".date-time").attr("id"));
+        textToStatus(postText, newPanel.find(".status-text").attr("id"));
+        postId++;
         });
     </script>
 
     <!--Join status-->
     <script>
-        var dateTime = new Date();
-        var month = dateTime.getMonth();
-        var day = dateTime.getDate();
-        var year = dateTime.getFullYear();
+var dateTime = new Date();
+var month = dateTime.getMonth();
+var day = dateTime.getDate();
+var year = dateTime.getFullYear();
 
-        var monthNames = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
-        
-        document.getElementById("join-status").innerHTML = "Joined Spawts on " + day + " " + monthNames[month] + " " + year;
+var monthNames = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+
+document.getElementById("join-status").innerHTML = "Joined Spawts on " + day + " " + monthNames[month] + " " + year;
     </script>
 
 </html>
