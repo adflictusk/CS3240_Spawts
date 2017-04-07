@@ -93,64 +93,73 @@
         <div class="create-profile-padding">
             <div class="container">
                 <div class="panel panel-default info-panel">    
-                    
-                    <div class="col-xs-5 img-panel">
-                        <h4 class="img-title text-center">Upload Profile Image</h4>
-                        <div class="form-group">
-                            <div class="input-group">
-                                <span class="input-group-btn">
-                                    <span class="btn btn-default btn-file">
-                                        Browse...<input type="file" id="imgInp">
-                                    </span>
-                                </span>
-                                <input type="text" class="form-control" readonly> 
-                            </div><!--end form input group-->
-                            <div class="panel"></div>
-                            <div class="panel panel-default img-eg-box">
-                                <img id="img-upload">
-                            </div>
-                        </div> <!--end image form group-->
-                        <div class="post-btn">
-                            <button type="button" class="btn btn-success btn-group-justified">Submit</button>
-                        </div>
 
+                    <div class="col-xs-5 img-panel">
+                        <div class="col-xs-12">
+                            <h4 class="img-title text-center">Upload Profile Image</h4>
+                            <div class="form-group">
+                                <div class="input-group">
+                                    <span class="input-group-btn">
+                                        <span class="btn btn-default btn-file">
+                                            Browse...<input type="file" id="imgInp">
+                                        </span>
+                                    </span>
+                                    <input type="text" class="form-control" readonly> 
+                                </div><!--end form input group-->
+                                <div class="panel"></div>
+                                <div class="panel panel-default img-eg-box">
+                                    <img id="img-upload">
+                                </div>
+                            </div> <!--end image form group-->
+                            <div class="post-btn">
+                                <button onclick="window.location.href='./owner-profile.html'" type="button" class="btn btn-success btn-group-justified">Submit</button>
+                            </div>
+                        </div>
                     </div> <!--end img-panel-->
 
                     <div class="col-xs-7 personal-info">
                         <h4 class="info-title text-center">Your Profile Information</h4>
                         <div class="the-form">
                             <form>
-                                <div class="form-group">
+                                <div class="form-group col-xs-12">
+                                    <label for="displayname">Display Name (What you want people to call you):</label>
+                                    <input type="email" class="form-control" id="displayname">
+                                </div>
+                                <div class="form-group col-xs-12">
                                     <label for="fullname">Full Name:</label>
                                     <input type="email" class="form-control" id="fullname">
                                 </div>
-                                <div class="form-group">
+                                <div class="form-group col-xs-6">
                                     <label for="pwd">Password:</label>
                                     <input type="password" class="form-control" id="pwd">
                                 </div>
-                                <div class="form-group">
+                                <div class="form-group col-xs-6">
                                     <label for="pwd">Confirm Password:</label>
                                     <input type="password" class="form-control" id="pwd-c">
                                 </div>
-                                <div class="form-group">
+                                <div class="form-group col-xs-12">
                                     <label for="email">Email:</label>
                                     <input type="email" class="form-control" id="email">
                                 </div>
-                                <div class="form-group">
-                                    <label for="home-address">Home Address:</label>
-                                    <textarea class="form-control" id="home-address" rows="4"></textarea>
+                                <div class="form-group col-xs-6">
+                                    <label for="age">Age:</label>
+                                    <input type="email" class="form-control" id="age">
                                 </div>
-                                <div class="form-group">
-                                    <label for="job">Job:</label>
-                                    <input type="email" class="form-control" id="job">
-                                </div>
-                                <div class="form-group">
+                                <div class="form-group col-xs-6">
                                     <label for="gender">Gender:</label>
                                     <select class="form-control" id="gender">
                                         <option>Male</option>
                                         <option>Female</option>
                                         <option>Others</option>
                                     </select>
+                                </div>
+                                <div class="form-group col-xs-12">
+                                    <label for="home-address">Home Address:</label>
+                                    <textarea class="form-control" id="home-address" rows="4"></textarea>
+                                </div>
+                                <div class="form-group col-xs-12">
+                                    <label for="job">Job:</label>
+                                    <input type="email" class="form-control" id="job">
                                 </div>
                             </form>
                         </div>
