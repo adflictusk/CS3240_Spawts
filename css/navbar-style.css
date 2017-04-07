@@ -1,6 +1,26 @@
-Note: for this .css file, only do it when you have time.
-Warning: it will cause a lot of things to break in the navbar
+/*Note: for this .css file, only do it when you have time.
+Warning: it will cause a lot of things to break in the navbar*/
 
 .navbar-inner {
     height: 9999px;
+}
+
+.navbar {
+    background: #ff99cc;
+}
+
+.glyphicon {
+    color: white;
+}
+
+.btn-basic {
+    background: white;
+    color: #ff99cc;
+    line-height: 1.5;
+    margin-top: 4px;
+    margin-right: 4px; 
+}
+
+li a:active, .dropdown:active, li a:focus, .dropdown:focus {
+    background-color: deeppink;
 }
