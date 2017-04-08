@@ -7,6 +7,7 @@ Warning: it will cause a lot of things to break in the navbar*/
 
 .navbar {
     background: #ff99cc;
+    margin-bottom: 0;
 }
 
 .glyphicon {
@@ -15,19 +16,20 @@ Warning: it will cause a lot of things to break in the navbar*/
 
 .btn-basic {
     background: white;
-    color: #ff99cc;
-    line-height: 1.5;
-    margin-top: 4px;
-    margin-right: 4px; 
+    color: #ff99cc !important;
+    line-height: 1;
+    vertical-align: bottom;
+    padding: 10px !important;
+    margin-right: 5px;
 }
 
-li a:active, .dropdown:active, li a:focus, .dropdown:focus {
-    background-color: deeppink;
+.btn-basic:hover {
+    background: deeppink !important;
+    color: white !important;
 }
 
 .listingTab {
     border: 1px white;
     font-size: 18px;
-    color: white;
     font-family: "Montserrat";
 }
