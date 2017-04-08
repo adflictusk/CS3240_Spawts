@@ -70,8 +70,6 @@ li a:active, .dropdown:active, li a:focus, .dropdown:focus {
 .panel-looking-for-petsitter {
     margin: 1% 2% 1% 2%;
     font-size: 1.5em;
-    background: #ff0080;
-    color: white;
 }
 
 /* Tagged-by live feed */
@@ -132,6 +130,11 @@ li a:active, .dropdown:active, li a:focus, .dropdown:focus {
 }
 
 /* =================================RIGHT CONTENT ================================= */
+.nav-buttons {
+    margin-left: 1%;
+    margin-right: 1%;
+    margin-bottom: 1%;
+}
 
 /* ================================= OTHERS ================================= */
 .display-inline {

@@ -83,7 +83,7 @@
     <link rel="stylesheet" href="css/pet-profile.css">
     <div class="pet-profile container">
         <!-- LEFT: ABOUT ME -->
-        <div class="col-xs-3 left">
+        <div class="col-xs-4 left">
             <div class="row">
                 <div class="jumbotron">
                     <img class="img-responsive" src="images/Lara.jpg">
@@ -147,10 +147,23 @@
             </div>
         </div>
         <!-- MIDDLE: CONTENT -->
-        <div class="col-xs-7 middle">
+        <div class="col-xs-8 middle">
             <div class="row text-center">
-                <div class="panel panel-default panel-looking-for-petsitter">
-                    <div class="panel-body"><b>Hi there human! I'm in need of a pet sitter!</b></div>
+                <div class="jumbotron panel-looking-for-petsitter">
+                    <b>Hi there human! I'm in need of a pet sitter!</b>
+                </div>
+            </div>
+            <div class="row nav-buttons">
+                <div class="btn-group btn-group-justified">
+                    <div class="btn-group">
+                        <button id="other-livefeed" type="button" class="btn btn-basic btn-normal btn-selected">Live feed</button>
+                    </div>
+                    <div class="btn-group">
+                        <button id="other-photos" type="button" class="btn btn-basic btn-normal">Photos</button>
+                    </div>
+                    <div class="btn-group">
+                        <button id="other-history" type="button" class="btn btn-basic btn-normal">History</button>
+                    </div>
                 </div>
             </div>
             <div class="row">
@@ -222,12 +235,13 @@
                                     <li><b>Check for ticks as you brush</b><br>You may notice the bugs themselves or small black
                                         flecks.
                                     </li>
-                                    <li><b>Determine how often you need to brush</b><br>Most short coats require weekly brushing,
+                                    ...
+                                    <!--<li><b>Determine how often you need to brush</b><br>Most short coats require weekly brushing,
                                         but longer coats may require daily attention.</li>
                                     <li><b>For smooth, short coats</b><br>Use a rubber brush, then a bristle brush, and then
                                         polish with a chamois cloth.</li>
                                     <li><b>For short, dense coats</b><br>Use a slicker brush to remove tangles, followed by a
-                                        bristle brush.</li>
+                                        bristle brush.</li>-->
                                 </ul>
                             </p>
                         </div>
@@ -349,7 +363,7 @@
             </div>
         </div>
         <!-- RIGHT: OTHERS -->
-        <div class="col-xs-2 right">
+        <!--<div class="col-xs-2 right">
             <div class="row">
                 <div class="jumbotron">
                     <button id="other-livefeed" class="btn btn-basic btn-block btn-normal btn-selected">Live feed</button>
@@ -357,7 +371,7 @@
                     <button id="other-history" class="btn btn-basic btn-block btn-normal">History</button>
                 </div>
             </div>
-        </div>
+        </div>-->
     </div>
 
     <!-- Modal myReviews -->
