@@ -77,8 +77,8 @@ li a:active, .dropdown:active, li a:focus, .dropdown:focus {
 }
 
 #content-livefeed {
-    max-height: 928px;
-    overflow-y: scroll;
+    /*max-height: 928px;
+    overflow-y: scroll;*/
 }
 
 /* Tagged-by live feed */
