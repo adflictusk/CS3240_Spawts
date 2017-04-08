@@ -113,3 +113,17 @@ div {
 .glyphicon:before{
     font-family:'Glyphicons Halflings';
 }
+
+.color {
+    border: none;
+    background-image: none;
+    background-color: #ff99cc !important;
+}
+
+.color:hover {
+    background-color: #ffa5cc !important;
+}
+
+.imgSend {
+    color: black !important;
+}
