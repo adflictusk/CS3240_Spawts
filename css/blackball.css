@@ -97,3 +97,19 @@
 #failNotif {
     display: none;
 }
+
+div {
+    font-family: 'Droid Sans';
+}
+
+.headerFont {
+    font-family: 'Montserrat', sans-serif !important; 
+    font-weight: bold;
+}
+
+.glyphicon {
+    font-family: inherit;
+}
+.glyphicon:before{
+    font-family:'Glyphicons Halflings';
+}

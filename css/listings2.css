@@ -90,10 +90,3 @@
 .bg {
     background-color: #f7f7f7;
 }
-
-.overlayedHeart {
-    display: none;
-    position: relative;
-    bottom: 240px;
-    left: 255px;
-}
