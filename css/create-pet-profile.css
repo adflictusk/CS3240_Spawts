@@ -19,13 +19,29 @@
     padding-top: 10px;
 }
 
-#home-address {
+.checkboxes {
+    padding-top: 2px;
+}
+
+.friend-animal-text {
+    padding-top: 15px;
+}
+
+#friend-animal {
+    resize: none;
+}
+
+#add-info {
     resize: none;
 }
 
 .info-title {
     text-decoration: underline;
     padding-bottom: 10px;
+}
+
+.info-button {
+    padding-top: 24px;
 }
 
 .btn-file {

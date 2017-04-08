@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Spawts</title>
+        <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+        <!-- Optional theme -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+        <link rel="stylesheet" href="/style.css">
+        <link href="https://fonts.googleapis.com/css?family=Francois+One|Josefin+Slab|Ubuntu+Condensed" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+
+    <body>
+        <nav class="navbar navbar-default navbar-fixed-top" style="padding-top: 10px; padding-bottom: 5px">
+            <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-left" href="#">
+                        <img src="images/SpawtsLogo.png" alt="" style="width: 64px; height: auto; padding-left: 20px;">
+                    </a>
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav navbar-right">
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Action</a></li>
+                            <li><a href="#">Another action</a></li>
+                            <li><a href="#">Something else here</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">Separated link</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">One more separated link</a></li>
+                        </ul>
+
+                        <ul class="nav navbar-nav">
+                            <li><a href="#">Create listing</a></li>
+                            <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-comment" aria-hidden="true"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Chat 1</a></li>
+                                <li><a href="#">Chat 2</a></li>
+                                <li><a href="#">Chat 3</a></li>
+                            </ul>
+                            </li>
+                        </ul>
+
+                        <ul class="nav navbar-nav">
+                            <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-bell" aria-hidden="true"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Notif 1</a></li>
+                                <li><a href="#">Notif 2</a></li>
+                                <li><a href="#">Notif 3</a></li>
+                            </ul>
+                            </li>
+                        </ul>
+
+                        <ul class="nav navbar-nav">
+                            <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-user" aria-hidden="true"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">My Profile</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li><a href="#">Pet 1</a></li>
+                                <li><a href="#">Pet 2</a></li>
+                                <li><a href="#">Pet 3</a></li>
+                            </ul>
+                            </li>
+                        </ul>
+
+                    </ul>                  
+                </div><!-- /.navbar-collapse -->
+            </div><!-- /.container-fluid -->
+        </nav>
+
+        <!--Create pet-->
+        <link rel="stylesheet" href="css/create-pet-profile.css">
+        <div class="create-profile-padding">
+            <div class="container">
+                <div class="panel panel-default info-panel">    
+
+                    <div class="col-xs-5 img-panel">
+                        <div class="col-xs-12">
+                            <h4 class="img-title text-center">Upload Pet Profile Image</h4>
+                            <div class="form-group">
+                                <div class="input-group">
+                                    <span class="input-group-btn">
+                                        <span class="btn btn-default btn-file">
+                                            Browse...<input type="file" id="imgInp">
+                                        </span>
+                                    </span>
+                                    <input type="text" class="form-control" readonly> 
+                                </div><!--end form input group-->
+                                <div class="panel"></div>
+                                <div class="panel panel-default img-eg-box">
+                                    <img id="img-upload">
+                                </div>
+                            </div> <!--end image form group-->
+                            <div class="post-btn">
+                                <button onclick="window.location.href='./owner-profile.html'" type="button" class="btn btn-success btn-group-justified">Submit</button>
+                            </div>
+                        </div>
+                    </div> <!--end img-panel-->
+
+                    <div class="col-xs-7 personal-info">
+                        <h4 class="info-title text-center">Your Pet Information</h4>
+                        <div class="the-form">
+                            <form>
+                                <div class="form-group col-xs-12">
+                                    <label for="petname">Name:</label>
+                                    <input type="email" class="form-control" id="petname">
+                                </div>
+                                <div class="form-group col-xs-6">
+                                    <label for="gender">Type of pet:</label>
+                                    <select class="form-control" id="gender">
+                                        <option>Dog</option>
+                                        <option>Cat</option>
+                                        <option>Rabbit</option>
+                                        <option>Hamster</option>
+                                        <option>Bird</option>
+                                        <option>Others</option>
+                                    </select>
+                                </div>
+                                <div class="form-group col-xs-6">
+                                    <label for="breed">Breed:</label>
+                                    <input type="email" class="form-control" id="breed">
+                                </div>
+                                <div class="form-group col-xs-6">
+                                    <label for="age">Birth Year:</label>
+                                    <input type="email" class="form-control" id="age">
+                                </div>
+                                <div class="form-group col-xs-6">
+                                    <label for="gender">Gender:</label>
+                                    <select class="form-control" id="gender">
+                                        <option>Male</option>
+                                        <option>Female</option>
+                                        <option>Others</option>
+                                    </select>
+                                </div>
+                                <div class="form-group col-xs-9">
+                                    <label for="gender">Size:</label>
+                                    <select class="form-control" id="gender">
+                                        <option>None</option>
+                                        <option>Small</option>
+                                        <option>Medium</option>
+                                        <option>Large</option>
+                                        <option>Giant</option>
+                                    </select>
+                                </div>
+                                <div class="form-group col-xs-3 info-button">
+                                    <button type="button" class="btn btn-info pull-right" data-toggle="modal" data-target="#info-size">Sizing picture</button>
+                                    <div id="info-size" class="modal fade" role="dialog">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                                    <h4 class="modal-title text-center">Sizing Chart</h4>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <img src="img/animal-sizes.png" class="img-responsive">
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 checkboxes">
+                                    <label class="checkbox-inline"><input type="checkbox">Sterilised</label>
+                                    <label class="checkbox-inline"><input type="checkbox">Vaccinated</label>
+                                    <label class="checkbox-inline"><input type="checkbox">Microchipped & Registered</label>
+                                    <label class="checkbox-inline"><input type="checkbox">Friendly with kids</label>
+                                </div>
+                                <div class="form-group col-xs-12 friend-animal-text">
+                                    <label for="friend-animal">Friendly with types of animals:</label>
+                                    <textarea class="form-control" id="friend-animal" rows="1"></textarea>
+                                </div>
+                                <div class="form-group col-xs-12">
+                                    <label for="allergy">Allergies:</label>
+                                    <input type="email" class="form-control" id="allergy">
+                                </div>
+                                <div class="form-group col-xs-12">
+                                    <label for="add-info">Any Additional Information:</label>
+                                    <textarea class="form-control" id="add-info" rows="2"></textarea>
+                                </div>
+
+                            </form>
+                        </div>
+                    </div><!--end pet-info-->
+
+                </div> <!--end info-panel-->
+            </div> <!--ennd container-->
+        </div> <!-- end create-profile-->
+    </body>
+
+    <script>
+$(document).ready( function() {
+        $(document).on('change', '.btn-file :file', function() {
+            var input = $(this),
+            label = input.val().replace(/\\/g, '/').replace(/.*\//, '');
+            input.trigger("fileselect", [label]);
+            });
+
+        $(".btn-file :file").on("fileselect", function(event, label) {
+
+            var input = $(this).parents(".input-group").find(":text"),
+            log = label;
+
+            if( input.length ) {
+            input.val(log);
+            } else {
+            if( log ) alert(log);
+            }
+
+            });
+        function readURL(input) {
+        if (input.files && input.files[0]) {
+            var reader = new FileReader();
+
+            reader.onload = function (e) {
+                $("#img-upload").attr("src", e.target.result);
+            }
+
+            reader.readAsDataURL(input.files[0]);
+        }
+        }
+
+        $("#imgInp").change(function(){
+                readURL(this);
+                }); 	
+});
+    </script>
+
+</html>
