@@ -22,6 +22,10 @@ p {
     margin-bottom: 2%;
 }
 
+a {
+    color: deeppink;
+}
+
 /* ================================= NAVBAR ================================= */
 /* Copy from navbar-style.css */
 .navbar {
