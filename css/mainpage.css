@@ -1,15 +1,28 @@
+body {
+    font-family: 'Droid Sans', sans-serif;
+}
+
 .openlogin-popup {
     background-color:#FFFFFF;
-    border:1px solid #999999;
+    border:5px solid #ff99cc;
     cursor:default;
     display:none;
     margin-top: 15px;
     position:absolute;
+    font-family: 'Montserrat';
     text-align:left;
     height: 300px;
-    width:40%;
+    width:50%;
     z-index:50;
     padding: 0px 25px 20px;
+    border-radius: 10px;
+}
+
+.openlogin-popup li {
+    list-style: none;
+    padding: 8px;
+    font-size: 16px;
+    font-family: 'Droid Sans', sans-serif;
 }
 
 .formbox {
@@ -51,15 +64,111 @@
     text-align: left;
 }
 
+#home .btn {
+  background: #ffffff;
+  border: 2px solid #ffffff;
+  border-radius: 100px;
+  color: #444;
+  font-size: 10px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  padding: 13px 22px;
+  margin-top: 42px;
+  transition: all 0.4s ease-in-out;
+}
+
+#home .btn:hover {
+  background: transparent;
+  border-color: #ffffff;
+  color: #ffffff;
+}
+
+.go-top {
+  background-color: #ffffff;
+  box-shadow: 1px 1.732px 12px 0px rgba( 0, 0, 0, .14 ), 1px 1.732px 3px 0px rgba( 0, 0, 0, .12 );
+  transition : all 1s ease;
+  bottom: 2em;
+  right: 2em;
+  color: #333;
+  font-size: 24px;
+  display: none;
+  position: fixed;
+  width: 40px;
+  height: 40px;
+  line-height: 45px;
+  text-align: center;
+  border-radius: 100%;
+}
+
+.go-top:link {
+    text-decoration: none;
+}
+
+.go-top:hover {
+    background: #ff1493;
+    color: #ffffff;
+}
+
+#welcome_msg {
+    margin-bottom: 10%;
+    margin-left: 10%;
+}
+
+h1 {
+    font-family: 'Montserrat';
+    font-size: 40px;
+}
+
+h2 {
+    font-family: 'Montserrat';
+    
+}
+
 .main-home {
-  background-image: url("../images/Story.jpg");
+  background-image: url("../images/dog_walking4.jpg");
   background-repeat: no-repeat;
-      height: 70vh;
+      height: 80vh;
 
 }
 
-#content {
-    
+.row1 {
+    background-color: #eee;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+.row2 {
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+.row3 {
+    background-color: #fff;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-radius: 10px;
+}
+
+.row4 {
+    background-color: #eee;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-radius: 10px;
+}
+
+.side-pic img{
+    height: 300px;
+}
+
+.side-pic img:hover {
+    opacity: 0.5;
+}
+
+footer {
+    background: #cc648a;
+    font-family: 'Montserrat';
+    color: white;
 }
 
 
