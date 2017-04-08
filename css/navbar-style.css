@@ -24,3 +24,10 @@ Warning: it will cause a lot of things to break in the navbar*/
 li a:active, .dropdown:active, li a:focus, .dropdown:focus {
     background-color: deeppink;
 }
+
+.headerFont {
+    border: 1px white;
+    font-size: 18px;
+    color: white;
+    font-family: "Montserrat";
+}
