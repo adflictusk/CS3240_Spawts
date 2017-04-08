@@ -65,11 +65,20 @@ li a:active, .dropdown:active, li a:focus, .dropdown:focus {
     margin: 3% 2%;
 }
 
+.btn-padding {
+    padding-bottom: 15px;
+}
+
 /* ================================= MIDDLE CONTENT ================================= */
 /* Panel */
 .panel-looking-for-petsitter {
     margin: 1% 2% 1% 2%;
     font-size: 1.5em;
+}
+
+#content-livefeed {
+    max-height: 928px;
+    overflow-y: scroll;
 }
 
 /* Tagged-by live feed */
