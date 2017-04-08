@@ -237,7 +237,7 @@
                 <!-- LIVEFEED ends -->
                 <!-- PHOTOS -->
                 <div id="content-photos" class="jumbotron">
-                    <!-- Post one -->
+                    <!-- Photo one -->
                     <div class="panel tagged-panel">
                         <!-- Tagged post heading-->
                         <div class="tagged-heading">
@@ -259,8 +259,8 @@
                             <img class="img-responsive" src="images/Maltese3.jpg">
                         </div>
                     </div>
-                    <!-- Post one ends -->
-                    <!-- Post two -->
+                    <!-- Photo one ends -->
+                    <!-- Photo two -->
                     <div class="panel tagged-panel">
                         <!-- Tagged post heading-->
                         <div class="tagged-heading">
@@ -282,7 +282,7 @@
                             <img class="img-responsive" src="images/Maltese5.jpg">
                         </div>
                     </div>
-                    <!-- Post two ends -->
+                    <!-- Photo two ends -->
                 </div>
                 <!-- PHOTOS ends -->
                 <!-- HISTORY -->
@@ -292,38 +292,56 @@
                             <div class="card">
                                 <img class="card-img-top img-responsive" src="img/female-smile2.png" alt="Card image cap">
                                 <div class="card-block">
-                                    <h4 class="card-title">XiiaoChiobu94</h4>
-                                    <p class="card-text">Some personal info here</p>
+                                    <h4 class="card-title"><a href="">XiiaoChiobu94</a></h4>
+                                    <p class="card-text">Hello! I'm a super loving pet sitter.</p>
                                 </div>
                                 <div class="card-footer">
-                                    <small class="text-muted">18/3/2017 - 30/3/2017</small>
+                                    <small class="text-muted">18/03/2017 - 30/03/2017</small>
                                 </div>
                             </div>
                         </div>
                         <div class="col-sm-4">
                             <div class="card">
-                                <img class="card-img-top" src="..." alt="Card image cap">
+                                <img class="card-img-top img-responsive" src="img/male-smile.jpg" alt="Card image cap">
                                 <div class="card-block">
-                                    <h4 class="card-title">Card title</h4>
+                                    <h4 class="card-title"><a href="">Someone</a></h4>
                                     <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
                                 </div>
                                 <div class="card-footer">
-                                    <small class="text-muted">Last updated 3 mins ago</small>
+                                    <small class="text-muted">2/01/2017 - 5/01/2017</small>
                                 </div>
                             </div>
                         </div>
                         <div class="col-sm-4">
                             <div class="card">
-                                <img class="card-img-top" src="..." alt="Card image cap">
+                                <img class="card-img-top img-responsive" src="img/female-smile3.jpg" alt="Card image cap">
                                 <div class="card-block">
-                                    <h4 class="card-title">Card title</h4>
+                                    <h4 class="card-title"><a href="">Someone</a></h4>
                                     <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content.
                                         This card has even longer content than the first to show that equal height action.</p>
                                 </div>
                                 <div class="card-footer">
-                                    <small class="text-muted">Last updated 3 mins ago</small>
+                                    <small class="text-muted">30/07/2016 - 2/08/2016</small>
                                 </div>
                             </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <div class="card">
+                                <img class="card-img-top img-responsive" src="img/female-smile4.jpg" alt="Card image cap">
+                                <div class="card-block">
+                                    <h4 class="card-title"><a href="">Someone</a></h4>
+                                    <p class="card-text">Hello! I'm a super loving pet sitter.</p>
+                                </div>
+                                <div class="card-footer">
+                                    <small class="text-muted">23/04/2016 - 27/04/2016</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                        </div>
+                        <div class="col-sm-4">
                         </div>
                     </div>
                 </div>
@@ -334,9 +352,9 @@
         <div class="col-xs-2">
             <div class="row">
                 <div class="jumbotron">
-                    <button id="other-livefeed">Live feed</button>
-                    <button id="other-photos">Photos</button>
-                    <button id="other-history">History</button>
+                    <button id="other-livefeed" class="btn btn-basic btn-block btn-normal btn-selected">Live feed</button>
+                    <button id="other-photos" class="btn btn-basic btn-block btn-normal">Photos</button>
+                    <button id="other-history" class="btn btn-basic btn-block btn-normal">History</button>
                 </div>
             </div>
         </div>
@@ -346,18 +364,27 @@
         $("#content-history").hide();
 
         $("#other-livefeed").click(function () {
+            $("#other-livefeed").addClass("btn-selected");
+            $("#other-photos").removeClass("btn-selected");
+            $("#other-history").removeClass("btn-selected");
             $("#content-livefeed").show();
             $("#content-photos").hide();
             $("#content-history").hide();
         });
 
         $("#other-photos").click(function () {
+            $("#other-livefeed").removeClass("btn-selected");
+            $("#other-photos").addClass("btn-selected");
+            $("#other-history").removeClass("btn-selected");
             $("#content-livefeed").hide();
             $("#content-photos").show();
             $("#content-history").hide();
         });
 
         $("#other-history").click(function () {
+            $("#other-livefeed").removeClass("btn-selected");
+            $("#other-photos").removeClass("btn-selected");
+            $("#other-history").addClass("btn-selected");
             $("#content-livefeed").hide();
             $("#content-photos").hide();
             $("#content-history").show();

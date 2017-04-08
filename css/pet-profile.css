@@ -51,6 +51,11 @@ li a:active, .dropdown:active, li a:focus, .dropdown:focus {
     color: white;
 }
 
+.btn-normal:hover, .btn-normal:focus, .btn-selected {
+    background: deeppink;
+    color: white;
+}
+
 /* Progress bar */
 .progress {
     margin: 3% 2%;
@@ -76,10 +81,6 @@ li a:active, .dropdown:active, li a:focus, .dropdown:focus {
 
 .tagged-by {
     font-size: 110% !important;
-}
-
-.tagged-by a:hover {
-    font-style: underline;
 }
 
 .tagged-by-profile {
@@ -122,6 +123,10 @@ li a:active, .dropdown:active, li a:focus, .dropdown:focus {
 }
 
 /* History cards */
+#content-history .row {
+    margin-bottom: 10px;
+}
+
 /* =================================RIGHT CONTENT ================================= */
 
 /* ================================= OTHERS ================================= */
