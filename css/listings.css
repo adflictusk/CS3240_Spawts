@@ -70,11 +70,11 @@
 
 .parallax {
     /* The image used */
-    background-image: url('../images/pattern1.png');
-    background-color: #E4F1FE;
+    background-image: url('../images/pattern3.png');
+    background-color: #E5E7E1;
 
     /* Set a specific height */
-    min-height: 500px; 
+    min-height: 300px; 
 
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
