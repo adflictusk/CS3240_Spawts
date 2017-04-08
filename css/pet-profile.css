@@ -1,0 +1,130 @@
+/* ================================= GENERAL ================================= */
+/* Fonts */
+p {
+    font-size: 100% !important;
+}
+
+/* Override Bootstrap Jumbotron padding */
+.container .jumbotron {
+    padding-right: 3%;
+    padding-left: 3%;
+}
+
+.jumbotron {
+    padding-top: 3%;
+    padding-bottom: 3%;
+    margin-bottom: 5%;
+    margin-right: 2%;
+    margin-left: 2%;
+}
+
+.jumbotron p {
+    margin-bottom: 2%;
+}
+
+/* ================================= NAVBAR ================================= */
+/* Copy from navbar-style.css */
+.navbar {
+    background: #ff99cc;
+}
+
+.glyphicon {
+    color: white;
+}
+
+.btn-nav {
+    background: white;
+    color: #ff99cc;
+    line-height: 1.5;
+    margin-top: 4px;
+    margin-right: 4px; 
+}
+
+li a:active, .dropdown:active, li a:focus, .dropdown:focus {
+    background-color: deeppink;
+}
+
+/* ================================= LEFT CONTENT ================================= */
+/* Button */
+.btn-normal {
+    background: #ff99cc;
+    color: white;
+}
+
+/* Progress bar */
+.progress {
+    margin: 3% 2%;
+}
+
+/* ================================= MIDDLE CONTENT ================================= */
+/* Panel */
+.panel-looking-for-petsitter {
+    margin: 1% 2% 1% 2%;
+    font-size: 1.5em;
+    background: #ff0080;
+    color: white;
+}
+
+/* Tagged-by live feed */
+.tagged-panel {
+    padding: 1%;
+}
+
+.tagged-post-name-time {
+    vertical-align: top;
+}
+
+.tagged-by {
+    font-size: 110% !important;
+}
+
+.tagged-by a:hover {
+    font-style: underline;
+}
+
+.tagged-by-profile {
+    width: 45px;
+    height: 45px;
+    margin-right: 1%;
+    border: 1px solid darkgrey;
+}
+
+.tagged-by-time {
+    font-size: 90% !important;
+    color: grey;
+}
+
+.tagged-body-video {
+    position: relative;
+	padding-bottom: 56.25%; /* 16:9 */
+	padding-top: 25px;
+	height: 0;
+}
+
+.tagged-body-video iframe {
+    position: absolute;
+    padding-right: 10%;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.tagged-body-photos img {
+    width: 30%;
+    height: 30%;
+    padding-right: 1%;
+    display: inline-block;
+}
+
+.tagged-body-note {
+    border-left: 3px solid darkgrey;
+}
+
+/* History cards */
+/* =================================RIGHT CONTENT ================================= */
+
+/* ================================= OTHERS ================================= */
+.display-inline {
+    display: inline-block;
+}

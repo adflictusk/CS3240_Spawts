@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Spawts!</title>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+        crossorigin="anonymous"></script>
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+            crossorigin="anonymous">
+            <!-- Optional theme -->
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
+                crossorigin="anonymous">
+                <!-- Latest compiled and minified JavaScript -->
+                <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+                    crossorigin="anonymous"></script>
+                    <link href="https://fonts.googleapis.com/css?family=Francois+One|Josefin+Slab|Ubuntu+Condensed" rel="stylesheet">
+                    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    <nav class="navbar navbar-default" style="padding-top: 10px; padding-bottom: 5px">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
+                    aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-left" href="#">
+                        <img src="images/SpawtsLogo.png" alt="" style="width: 64px; height: auto; padding-left: 20px;">
+                    </a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Action</a></li>
+                        <li><a href="#">Another action</a></li>
+                        <li><a href="#">Something else here</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#">Separated link</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#">One more separated link</a></li>
+                    </ul>
+                    <li><button class="btn btn-basic btn-nav">Create listing</button></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-comment" aria-hidden="true"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Chat 1</a></li>
+                            <li><a href="#">Chat 2</a></li>
+                            <li><a href="#">Chat 3</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-bell" aria-hidden="true"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Notif 1</a></li>
+                            <li><a href="#">Notif 2</a></li>
+                            <li><a href="#">Notif 3</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-user" aria-hidden="true"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">My Profile</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">Pet 1</a></li>
+                            <li><a href="#">Pet 2</a></li>
+                            <li><a href="#">Pet 3</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+    <link rel="stylesheet" href="css/pet-profile.css">
+    <div class="pet-profile container">
+        <!-- LEFT: ABOUT ME -->
+        <div class="col-xs-3">
+            <div class="row">
+                <div class="jumbotron">
+                    <img class="img-responsive" src="images/Lara.jpg">
+                </div>
+            </div>
+            <div class="row text-center">
+                <div class="jumbotron">
+                    <h2>About me</h2>
+                    <u>Name</u>
+                    <p>Lara</p>
+                    <br>
+                    <u>Breed</u>
+                    <p>Maltese</p>
+                    <br>
+                    <u>Age</u>
+                    <p>4 human years</p>
+                    <br>
+                    <u>Gender</u>
+                    <p>Female</p>
+                    <br>
+                    <u>Size</u>
+                    <p>Small</p>
+                </div>
+            </div>
+            <div class="row text-center">
+                <div class="jumbotron">
+                    <button class="btn btn-basic btn-block btn-normal">Find My Owner!</button>
+                </div>
+            </div>
+            <div class="row text-center">
+                <div class="jumbotron">
+                    <h2>Basic Info</h2>
+                    <div class="checkbox">
+                        <label><input type="checkbox" value="">Neutered</label>
+                    </div>
+                    <div class="checkbox">
+                        <label><input type="checkbox" value="" checked>Vaccinated</label>
+                    </div>
+                    <div class="checkbox">
+                        <label><input type="checkbox" value="">Friendly with other animals</label>
+                    </div>
+                    <div class="checkbox">
+                        <label><input type="checkbox" value="">Friendly with kids</label>
+                    </div>
+                </div>
+            </div>
+            <div class="row text-center">
+                <div class="jumbotron">
+                    <h2>Reviews</h2>
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-success" role="progressbar" style="width: 70%">
+                            70%
+                        </div>
+                        <div class="progress-bar progress-bar-danger" role="progressbar" style="width: 30%">
+                            30%
+                        </div>
+                    </div>
+                    <p>Based on 10 reviews</p>
+                    <p>Click here to find out more</p>
+                </div>
+            </div>
+        </div>
+        <!-- MIDDLE: CONTENT -->
+        <div class="col-xs-7">
+            <div class="row text-center">
+                <div class="panel panel-default panel-looking-for-petsitter">
+                    <div class="panel-body"><b>Hi there human! I'm in need of a pet sitter!</b></div>
+                </div>
+            </div>
+            <div class="row">
+                <!-- LIVEFEED -->
+                <div id="content-livefeed" class="jumbotron">
+                    <!-- Post one-->
+                    <div class="panel tagged-panel">
+                        <!-- Tagged post heading-->
+                        <div class="tagged-heading">
+                            <div class="display-inline tagged-by-profile">
+                                <img class="img-responsive" src="img/profile-pic1.png">
+                            </div>
+                            <div class="display-inline tagged-post-name-time">
+                                <b class="text-primary tagged-by"><a href="owner-profile">Clara Alfonso</a></b>
+                                <p class="tagged-by-time">5 weeks ago</p>
+                            </div>
+                        </div>
+                        <!-- Tagged post body -->
+                        <div class="tagged-body-text">
+                            <p>A day at the beach with <a href="#">@Lara</a> :D</p>
+                        </div>
+                        <div class="tagged-body-video">
+                            <iframe src="https://www.youtube.com/embed/_YIpEI2eu-I" frameborder="0"></iframe>
+                        </div>
+                    </div>
+                    <!-- Post one ends -->
+                    <!-- Post two-->
+                    <div class="panel tagged-panel">
+                        <!-- Tagged post heading-->
+                        <div class="tagged-heading">
+                            <div class="display-inline tagged-by-profile">
+                                <img class="img-responsive" src="img/female-smile2.png">
+                            </div>
+                            <div class="display-inline tagged-post-name-time">
+                                <b class="text-primary tagged-by"><a href="owner-profile">XiiaoChiobu94</a></b>
+                                <p class="tagged-by-time">10 weeks ago</p>
+                            </div>
+                        </div>
+                        <!-- Tagged post body -->
+                        <div class="tagged-body-text">
+                            <p>Taking care of little Lara. <a href="#">@Lara</a> <a href="owner-profile">@Clara Alfonso</a></p>
+                        </div>
+                        <div class="tagged-body-photos">
+                            <img class="img-responsive" src="images/Maltese1.jpg">
+                            <img class="img-responsive" src="images/Maltese2.jpg">
+                            <img class="img-responsive" src="images/Maltese3.jpg">
+                        </div>
+                    </div>
+                    <!-- Post two ends -->
+                    <!-- Post three-->
+                    <div class="panel tagged-panel">
+                        <!-- Tagged post heading-->
+                        <div class="tagged-heading">
+                            <div class="display-inline tagged-by-profile">
+                                <img class="img-responsive" src="img/male-smile3.png">
+                            </div>
+                            <div class="display-inline tagged-post-name-time">
+                                <b class="text-primary tagged-by"><a href="owner-profile">Yandaoozxc95</a></b>
+                                <p class="tagged-by-time">12 weeks ago</p>
+                            </div>
+                        </div>
+                        <!-- Tagged post body -->
+                        <div class="tagged-body-text">
+                            <p>Some dog grooming tips for you! <a href="#">@Lara</a> <a href="owner-profile">@Clara Alfonso</a></p>
+                        </div>
+                        <div class="tagged-body-note">
+                            <p>
+                                <ul>
+                                    <li><b>Check for ticks as you brush</b><br>You may notice the bugs themselves or small black
+                                        flecks.
+                                    </li>
+                                    <li><b>Determine how often you need to brush</b><br>Most short coats require weekly brushing,
+                                        but longer coats may require daily attention.</li>
+                                    <li><b>For smooth, short coats</b><br>Use a rubber brush, then a bristle brush, and then
+                                        polish with a chamois cloth.</li>
+                                    <li><b>For short, dense coats</b><br>Use a slicker brush to remove tangles, followed by a
+                                        bristle brush.</li>
+                                </ul>
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Post three ends -->
+                </div>
+                <!-- LIVEFEED ends -->
+                <!-- PHOTOS -->
+                <div id="content-photos" class="jumbotron">
+                    <!-- Post one -->
+                    <div class="panel tagged-panel">
+                        <!-- Tagged post heading-->
+                        <div class="tagged-heading">
+                            <div class="display-inline tagged-by-profile">
+                                <img class="img-responsive" src="img/female-smile2.png">
+                            </div>
+                            <div class="display-inline tagged-post-name-time">
+                                <b class="text-primary tagged-by"><a href="owner-profile">XiiaoChiobu94</a></b>
+                                <p class="tagged-by-time">10 weeks ago</p>
+                            </div>
+                        </div>
+                        <!-- Tagged post body -->
+                        <div class="tagged-body-text">
+                            <p>Taking care of little Lara. <a href="#">@Lara</a> <a href="owner-profile">@Clara Alfonso</a></p>
+                        </div>
+                        <div class="tagged-body-photos">
+                            <img class="img-responsive" src="images/Maltese1.jpg">
+                            <img class="img-responsive" src="images/Maltese2.jpg">
+                            <img class="img-responsive" src="images/Maltese3.jpg">
+                        </div>
+                    </div>
+                    <!-- Post one ends -->
+                    <!-- Post two -->
+                    <div class="panel tagged-panel">
+                        <!-- Tagged post heading-->
+                        <div class="tagged-heading">
+                            <div class="display-inline tagged-by-profile">
+                                <img class="img-responsive" src="img/female-smile2.png">
+                            </div>
+                            <div class="display-inline tagged-post-name-time">
+                                <b class="text-primary tagged-by"><a href="owner-profile">XiiaoChiobu94</a></b>
+                                <p class="tagged-by-time">15 weeks ago</p>
+                            </div>
+                        </div>
+                        <!-- Tagged post body -->
+                        <div class="tagged-body-text">
+                            <p>Baby Lara.
+                                <3 <a href="#">@Lara</a> <a href="owner-profile">@Clara Alfonso</a></p>
+                        </div>
+                        <div class="tagged-body-photos">
+                            <img class="img-responsive" src="images/Maltese4.jpg">
+                            <img class="img-responsive" src="images/Maltese5.jpg">
+                        </div>
+                    </div>
+                    <!-- Post two ends -->
+                </div>
+                <!-- PHOTOS ends -->
+                <!-- HISTORY -->
+                <div id="content-history" class="jumbotron">
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <div class="card">
+                                <img class="card-img-top img-responsive" src="img/female-smile2.png" alt="Card image cap">
+                                <div class="card-block">
+                                    <h4 class="card-title">XiiaoChiobu94</h4>
+                                    <p class="card-text">Some personal info here</p>
+                                </div>
+                                <div class="card-footer">
+                                    <small class="text-muted">18/3/2017 - 30/3/2017</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="card">
+                                <img class="card-img-top" src="..." alt="Card image cap">
+                                <div class="card-block">
+                                    <h4 class="card-title">Card title</h4>
+                                    <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                                </div>
+                                <div class="card-footer">
+                                    <small class="text-muted">Last updated 3 mins ago</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="card">
+                                <img class="card-img-top" src="..." alt="Card image cap">
+                                <div class="card-block">
+                                    <h4 class="card-title">Card title</h4>
+                                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content.
+                                        This card has even longer content than the first to show that equal height action.</p>
+                                </div>
+                                <div class="card-footer">
+                                    <small class="text-muted">Last updated 3 mins ago</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- HISTORY ends -->
+            </div>
+        </div>
+        <!-- RIGHT: OTHERS -->
+        <div class="col-xs-2">
+            <div class="row">
+                <div class="jumbotron">
+                    <button id="other-livefeed">Live feed</button>
+                    <button id="other-photos">Photos</button>
+                    <button id="other-history">History</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        $("#content-photos").hide();
+        $("#content-history").hide();
+
+        $("#other-livefeed").click(function () {
+            $("#content-livefeed").show();
+            $("#content-photos").hide();
+            $("#content-history").hide();
+        });
+
+        $("#other-photos").click(function () {
+            $("#content-livefeed").hide();
+            $("#content-photos").show();
+            $("#content-history").hide();
+        });
+
+        $("#other-history").click(function () {
+            $("#content-livefeed").hide();
+            $("#content-photos").hide();
+            $("#content-history").show();
+        });
+    </script>
+</body>
+
+</html>
