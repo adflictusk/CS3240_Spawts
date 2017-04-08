@@ -1,3 +1,8 @@
+.owner-profile {
+    padding-top: 20px;
+    padding-left: 20px;
+}
+
 /* Left Panels */
 .owner-picture {
     max-height: 100%;
@@ -13,11 +18,11 @@
 }
 
 .picture-box {
-    box-shadow: 0px 0px 20px #888888;
+    background-color: #eee;
 }
 
 .name-box {
-    box-shadow: 0px 0px 20px #888888;
+    background-color: #eee;
 }
 
 .rating-title {
@@ -27,7 +32,7 @@
 }
 
 .rating-box {
-   box-shadow: 0px 0px 20px #888888;
+   background-color: #eee;
    color: black;
 }
 
@@ -70,6 +75,10 @@
     border-left: thick solid green;
 }
 
+.panel-rate-box {
+    background-color: #eee;
+}
+
 .reviewer-pic {
     padding-top: 20px;
     padding-left: 20px;
@@ -89,7 +98,7 @@
 }
 
 .personal-info-box {
-    box-shadow: 0px 0px 20px #888888;
+    background-color: #eee;
 }
 
 .info-owner {
@@ -135,7 +144,7 @@
 
 .chat-box {
     background-color: #FFB6C1;
-    box-shadow: 0px 0px 20px #888888;
+    border: 10px #eee solid;
 }
 
 .chat-box:hover {
@@ -153,7 +162,7 @@
 
 .map-box {
     background-color: #89cff0;
-    box-shadow: 0px 0px 20px #888888;
+    border: 10px #eee solid;
 }
 
 .map-box:hover {
@@ -171,7 +180,7 @@
 }
 
 .list-box {
-    box-shadow: 0px 0px 20px #888888;
+    background-color: #eee;
 }
 
 .list-box-pic {
@@ -185,7 +194,7 @@
 
 .balancer {
     min-height: 1px;
-    box-shadow: 0px 0px 20px #888888;
+    background-color: #eee;
 }
 
 
@@ -193,7 +202,7 @@
 
 /* "My Pets" box*/
 .pet-box {
-    box-shadow: 0px 0px 20px #888888;
+    background-color: #eee;
 }
 
 .pet-title {
@@ -210,13 +219,13 @@
 
 /* "Live Feed" box*/
 .livefeed-box {
-    box-shadow: 0px 0px 20px #888888;
+    border: 15px #eee solid;
 }
 
 .feed-activities-box {
-    min-height: 455px;
-    max-height: 455px;
-    overflow-y: scroll;
+    min-height: 432px;
+    max-height: 432px;
+    overflow-y: auto;
 }
 
 hr {
@@ -248,7 +257,7 @@ hr {
 
 /* Photos and Videos box*/
 .pv-box {
-    box-shadow: 0px 0px 20px #888888;
+    background-color: #eee;
 }
 
 .pv-title {
@@ -265,7 +274,7 @@ hr {
 
 /* History box*/
 .history-box {
-    box-shadow: 0px 0px 20px #888888;
+    background-color: #eee;
 }
 
 .history-title {

@@ -20,6 +20,8 @@ crossorigin="anonymous"></script>
 
         <link rel="stylesheet" href="css/navbar-style.css">
         <link href="https://fonts.googleapis.com/css?family=Francois+One|Josefin+Slab|Ubuntu+Condensed" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Droid+Sans" rel="stylesheet">
         <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
 
@@ -36,7 +38,8 @@ crossorigin="anonymous"></script>
                         <span class="icon-bar"></span>
                     </button>
                     <a class="navbar-left" href="#">
-                        <img src="images/SpawtsLogo.png" alt="" style="width: 64px; height: auto; padding-left: 20px;">
+                        <img src="images/SpawtsLogo_inverse.png" alt="" style="width: 64px; height: auto; padding-left: 20px;">
+                        <span><img src="images/SPAWTS.png" alt="" style="width: 128px; height: auto;"></span>
                     </a>
                 </div>
 
@@ -53,9 +56,17 @@ crossorigin="anonymous"></script>
                             <li><a href="#">One more separated link</a></li>
                         </ul>
 
-                        <li><button class="btn btn-basic btn-nav">Create listing</button></li>
                         <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-comment" aria-hidden="true"></span></a>
+                        <a href="#" id="button-listings" class="dropdown-toggle btn btn-basic" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                            <span class="listingTab" aria-hidden="true">Listings</span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="create-listing.html">Creating listing</a></li>
+                            <li><a href="listings.html">View Listing</a></li>
+                        </ul>
+                        </li>
+
+                        <li class="dropdown">
+                        <a href="#" id="button-comment" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-comment" aria-hidden="true"></span></a>
                         <ul class="dropdown-menu">
                             <li><a href="#">Chat 1</a></li>
                             <li><a href="#">Chat 2</a></li>
@@ -64,7 +75,7 @@ crossorigin="anonymous"></script>
                         </li>
 
                         <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-bell" aria-hidden="true"></span></a>
+                        <a href="#" id="button-bell" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-bell" aria-hidden="true"></span></a>
                         <ul class="dropdown-menu">
                             <li><a href="#">Notif 1</a></li>
                             <li><a href="#">Notif 2</a></li>
@@ -73,7 +84,7 @@ crossorigin="anonymous"></script>
                         </li>
 
                         <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-user" aria-hidden="true"></span></a>
+                        <a href="#" id="button-user" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-user" aria-hidden="true"></span></a>
                         <ul class="dropdown-menu">
                             <li><a href="#">My Profile</a></li>
                             <li role="separator" class="divider"></li>
@@ -149,7 +160,7 @@ crossorigin="anonymous"></script>
                                     <div class="row">
 
                                         <div class="positive-box">
-                                            <div class="panel panel-default green-vertical-line">
+                                            <div class="panel panel-rate-box green-vertical-line">
 
                                                 <div class="row center-block reviewer-pic">
 
@@ -172,7 +183,7 @@ crossorigin="anonymous"></script>
                                         </div> <!--end positive-box-->
 
                                         <div class="positive-box">
-                                            <div class="panel panel-default green-vertical-line">
+                                            <div class="panel panel-rate-box green-vertical-line">
 
                                                 <div class="row center-block reviewer-pic">
 
@@ -195,7 +206,7 @@ crossorigin="anonymous"></script>
                                         </div> <!--end positive-box-->
 
                                         <div class="positive-box">
-                                            <div class="panel panel-default green-vertical-line">
+                                            <div class="panel panel-rate-box green-vertical-line">
 
                                                 <div class="row center-block reviewer-pic">
 
@@ -218,7 +229,7 @@ crossorigin="anonymous"></script>
                                         </div> <!--end positive-box-->
 
                                         <div class="positive-box">
-                                            <div class="panel panel-default green-vertical-line">
+                                            <div class="panel panel-rate-box green-vertical-line">
 
                                                 <div class="row center-block reviewer-pic">
 
@@ -241,7 +252,7 @@ crossorigin="anonymous"></script>
                                         </div> <!--end positive-box-->
 
                                         <div class="negative-box">
-                                            <div class="panel panel-default red-vertical-line">
+                                            <div class="panel panel-rate-box red-vertical-line">
 
                                                 <div class="row center-block reviewer-pic">
 
@@ -370,7 +381,8 @@ crossorigin="anonymous"></script>
             </div>
 
             <!--Right panels-->
-            <div class="col-xs-8 pull-right">
+            <div class="col-xs-9">
+                <div class="col-xs-12">
                 <!--owner pets-->
                 <div class="row">
                     <div class="panel pet-box">
@@ -498,12 +510,12 @@ crossorigin="anonymous"></script>
 
                     </div>
                 </div>
+            </div>
 
 
             </div>
         </div>
     </body>
-
     <!--All Scripts-->
 
     <!--Date time script-->
@@ -563,4 +575,5 @@ var monthNames = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep",
 
 document.getElementById("join-status").innerHTML = "Joined Spawts on " + day + " " + monthNames[month] + " " + year;
     </script>
+
 </html>
