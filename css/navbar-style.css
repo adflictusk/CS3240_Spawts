@@ -23,7 +23,7 @@ Warning: it will cause a lot of things to break in the navbar*/
     margin-right: 5px;
 }
 
-.btn-basic:hover {
+.btn-basic:hover, .btn-basic:focus {
     background: deeppink !important;
     color: white !important;
 }
@@ -32,4 +32,11 @@ Warning: it will cause a lot of things to break in the navbar*/
     border: 1px white;
     font-size: 18px;
     font-family: "Montserrat";
+}
+
+#button-comment:hover, #button-comment:focus,
+#button-bell:hover, #button-bell:focus,
+#button-bell:hover, #button-bell:focus {
+    background: deeppink !important;
+    color: white !important;
 }
