@@ -25,7 +25,7 @@ li a:active, .dropdown:active, li a:focus, .dropdown:focus {
     background-color: deeppink;
 }
 
-.headerFont {
+.listingTab {
     border: 1px white;
     font-size: 18px;
     color: white;
