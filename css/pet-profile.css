@@ -26,6 +26,18 @@ a {
     color: deeppink;
 }
 
+.pet-profile {
+    position: relative;
+}
+
+.fixed {
+    position: fixed;
+}
+
+.absolute {
+    position: absolute;
+}
+
 /* ================================= NAVBAR ================================= */
 /* Copy from navbar-style.css */
 .navbar {

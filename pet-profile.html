@@ -5,6 +5,8 @@
     <title>Spawts!</title>
     <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
         crossorigin="anonymous"></script>
+        <!--<script src="node_modules/jquery/dist/jquery.min.js"></script>-->
+        <script src="js/jquery.sticky-kit.min.js"></script>
         <!-- Latest compiled and minified CSS -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
             crossorigin="anonymous">
@@ -83,283 +85,363 @@
     <link rel="stylesheet" href="css/pet-profile.css">
     <div class="pet-profile container">
         <!-- LEFT: ABOUT ME -->
-        <div class="col-xs-4 left">
-            <div class="row">
-                <div class="jumbotron">
-                    <img class="img-responsive" src="images/Lara.jpg">
-                </div>
-            </div>
-            <div class="row text-center">
-                <div class="jumbotron">
-                    <h2>About me</h2>
-                    <u>Name</u>
-                    <p>Lara</p>
-                    <br>
-                    <u>Breed</u>
-                    <p>Maltese</p>
-                    <br>
-                    <u>Age</u>
-                    <p>4 human years</p>
-                    <br>
-                    <u>Gender</u>
-                    <p>Female</p>
-                    <br>
-                    <u>Size</u>
-                    <p>Small</p>
-                </div>
-            </div>
-            <div class="row text-center">
-                <div class="jumbotron">
-                    <a href="owner-profile.html" class="btn btn-basic btn-block btn-normal">Find My Owner!</a>
-                </div>
-            </div>
-            <div class="row text-center">
-                <div class="jumbotron">
-                    <h2>Basic Info</h2>
-                    <div class="checkbox">
-                        <label><input type="checkbox" value="">Neutered</label>
-                    </div>
-                    <div class="checkbox">
-                        <label><input type="checkbox" value="" checked>Vaccinated</label>
-                    </div>
-                    <div class="checkbox">
-                        <label><input type="checkbox" value="">Friendly with other animals</label>
-                    </div>
-                    <div class="checkbox">
-                        <label><input type="checkbox" value="">Friendly with kids</label>
+        <div id="leftPanel" class="col-xs-4 left">
+            <div id="sidebar">
+                <div class="row">
+                    <div class="jumbotron">
+                        <img class="img-responsive" src="images/Lara.jpg">
                     </div>
                 </div>
-            </div>
-            <div class="row text-center">
-                <div class="jumbotron">
-                    <h2>Reviews</h2>
-                    <div class="progress">
-                        <div class="progress-bar progress-bar-success" role="progressbar" style="width: 50%">
-                            50%
+                <div class="row text-center">
+                    <div class="jumbotron">
+                        <h2>About me</h2>
+                        <u>Name</u>
+                        <p>Lara</p>
+                        <br>
+                        <u>Breed</u>
+                        <p>Maltese</p>
+                        <br>
+                        <u>Age</u>
+                        <p>4 human years</p>
+                        <br>
+                        <u>Gender</u>
+                        <p>Female</p>
+                        <br>
+                        <u>Size</u>
+                        <p>Small</p>
+                    </div>
+                </div>
+                <div class="row text-center">
+                    <div class="jumbotron">
+                        <a href="owner-profile.html" class="btn btn-basic btn-block btn-normal">Find My Owner!</a>
+                    </div>
+                </div>
+                <div class="row text-center">
+                    <div class="jumbotron">
+                        <h2>Basic Info</h2>
+                        <div class="checkbox">
+                            <label><input type="checkbox" value="">Neutered</label>
                         </div>
-                        <div class="progress-bar progress-bar-danger" role="progressbar" style="width: 50%">
-                            50%
+                        <div class="checkbox">
+                            <label><input type="checkbox" value="" checked>Vaccinated</label>
+                        </div>
+                        <div class="checkbox">
+                            <label><input type="checkbox" value="">Friendly with other animals</label>
+                        </div>
+                        <div class="checkbox">
+                            <label><input type="checkbox" value="">Friendly with kids</label>
                         </div>
                     </div>
-                    <p>Based on 2 reviews</p>
-                    <button class="btn btn-basic btn-block btn-normal" data-toggle="modal" data-target="#myReviews">Click here to find out more</button>
+                </div>
+                <div class="row text-center">
+                    <div class="jumbotron">
+                        <h2>Reviews</h2>
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-success" role="progressbar" style="width: 50%">
+                                50%
+                            </div>
+                            <div class="progress-bar progress-bar-danger" role="progressbar" style="width: 50%">
+                                50%
+                            </div>
+                        </div>
+                        <p>Based on 2 reviews</p>
+                        <button class="btn btn-basic btn-block btn-normal" data-toggle="modal" data-target="#myReviews">Click here to find out more</button>
+                    </div>
                 </div>
             </div>
         </div>
         <!-- MIDDLE: CONTENT -->
-        <div class="col-xs-8 middle">
-            <div class="row text-center">
-                <div class="jumbotron panel-looking-for-petsitter">
-                    <b>Hi there human! I'm in need of a pet sitter!</b>
-                </div>
-            </div>
-            <div class="row nav-buttons">
-                <div class="btn-group btn-group-justified">
-                    <div class="btn-group">
-                        <button id="other-livefeed" type="button" class="btn btn-basic btn-normal btn-selected">Live feed</button>
-                    </div>
-                    <div class="btn-group">
-                        <button id="other-photos" type="button" class="btn btn-basic btn-normal">Photos</button>
-                    </div>
-                    <div class="btn-group">
-                        <button id="other-history" type="button" class="btn btn-basic btn-normal">History</button>
+        <div id="middlePanel" class="col-xs-8 middle">
+            <div id="content">
+                <div class="row text-center">
+                    <div class="jumbotron panel-looking-for-petsitter">
+                        <b>Hi there human! I'm in need of a pet sitter!</b>
                     </div>
                 </div>
-            </div>
-            <div class="row">
-                <!-- LIVEFEED -->
-                <div id="content-livefeed" class="jumbotron">
-                    <!-- Post one-->
-                    <div class="panel tagged-panel">
-                        <!-- Tagged post heading-->
-                        <div class="tagged-heading">
-                            <div class="display-inline tagged-by-profile">
-                                <img class="img-responsive" src="img/profile-pic1.png">
-                            </div>
-                            <div class="display-inline tagged-post-name-time">
-                                <b class="text-primary tagged-by"><a href="owner-profile">Clara Alfonso</a></b>
-                                <p class="tagged-by-time">5 weeks ago</p>
-                            </div>
+                <div class="row nav-buttons">
+                    <div class="btn-group btn-group-justified">
+                        <div class="btn-group">
+                            <button id="other-livefeed" type="button" class="btn btn-basic btn-normal btn-selected">Live feed</button>
                         </div>
-                        <!-- Tagged post body -->
-                        <div class="tagged-body-text">
-                            <p>A day at the beach with <a href="#">@Lara</a> :D</p>
+                        <div class="btn-group">
+                            <button id="other-photos" type="button" class="btn btn-basic btn-normal">Photos</button>
                         </div>
-                        <div class="tagged-body-video">
-                            <iframe src="https://www.youtube.com/embed/_YIpEI2eu-I" frameborder="0"></iframe>
-                        </div>
-                    </div>
-                    <!-- Post one ends -->
-                    <!-- Post two-->
-                    <div class="panel tagged-panel">
-                        <!-- Tagged post heading-->
-                        <div class="tagged-heading">
-                            <div class="display-inline tagged-by-profile">
-                                <img class="img-responsive" src="img/female-smile2.png">
-                            </div>
-                            <div class="display-inline tagged-post-name-time">
-                                <b class="text-primary tagged-by"><a href="owner-profile">XiiaoChiobu94</a></b>
-                                <p class="tagged-by-time">10 weeks ago</p>
-                            </div>
-                        </div>
-                        <!-- Tagged post body -->
-                        <div class="tagged-body-text">
-                            <p>Taking care of little Lara. <a href="#">@Lara</a> <a href="owner-profile">@Clara Alfonso</a></p>
-                        </div>
-                        <div class="tagged-body-photos">
-                            <img class="img-responsive" src="images/Maltese1.jpg">
-                            <img class="img-responsive" src="images/Maltese2.jpg">
-                            <img class="img-responsive" src="images/Maltese3.jpg">
-                        </div>
-                    </div>
-                    <!-- Post two ends -->
-                    <!-- Post three-->
-                    <div class="panel tagged-panel">
-                        <!-- Tagged post heading-->
-                        <div class="tagged-heading">
-                            <div class="display-inline tagged-by-profile">
-                                <img class="img-responsive" src="img/male-smile3.png">
-                            </div>
-                            <div class="display-inline tagged-post-name-time">
-                                <b class="text-primary tagged-by"><a href="owner-profile">Yandaoozxc95</a></b>
-                                <p class="tagged-by-time">12 weeks ago</p>
-                            </div>
-                        </div>
-                        <!-- Tagged post body -->
-                        <div class="tagged-body-text">
-                            <p>Some dog grooming tips for you! <a href="#">@Lara</a> <a href="owner-profile">@Clara Alfonso</a></p>
-                        </div>
-                        <div class="tagged-body-note">
-                            <p>
-                                <ul>
-                                    <li><b>Check for ticks as you brush</b><br>You may notice the bugs themselves or small black
-                                        flecks.
-                                    </li>
-                                    ...
-                                    <!--<li><b>Determine how often you need to brush</b><br>Most short coats require weekly brushing,
-                                        but longer coats may require daily attention.</li>
-                                    <li><b>For smooth, short coats</b><br>Use a rubber brush, then a bristle brush, and then
-                                        polish with a chamois cloth.</li>
-                                    <li><b>For short, dense coats</b><br>Use a slicker brush to remove tangles, followed by a
-                                        bristle brush.</li>-->
-                                </ul>
-                            </p>
-                        </div>
-                    </div>
-                    <!-- Post three ends -->
-                </div>
-                <!-- LIVEFEED ends -->
-                <!-- PHOTOS -->
-                <div id="content-photos" class="jumbotron">
-                    <!-- Photo one -->
-                    <div class="panel tagged-panel">
-                        <!-- Tagged post heading-->
-                        <div class="tagged-heading">
-                            <div class="display-inline tagged-by-profile">
-                                <img class="img-responsive" src="img/female-smile2.png">
-                            </div>
-                            <div class="display-inline tagged-post-name-time">
-                                <b class="text-primary tagged-by"><a href="owner-profile">XiiaoChiobu94</a></b>
-                                <p class="tagged-by-time">10 weeks ago</p>
-                            </div>
-                        </div>
-                        <!-- Tagged post body -->
-                        <div class="tagged-body-text">
-                            <p>Taking care of little Lara. <a href="#">@Lara</a> <a href="owner-profile">@Clara Alfonso</a></p>
-                        </div>
-                        <div class="tagged-body-photos">
-                            <img class="img-responsive" src="images/Maltese1.jpg">
-                            <img class="img-responsive" src="images/Maltese2.jpg">
-                            <img class="img-responsive" src="images/Maltese3.jpg">
-                        </div>
-                    </div>
-                    <!-- Photo one ends -->
-                    <!-- Photo two -->
-                    <div class="panel tagged-panel">
-                        <!-- Tagged post heading-->
-                        <div class="tagged-heading">
-                            <div class="display-inline tagged-by-profile">
-                                <img class="img-responsive" src="img/female-smile2.png">
-                            </div>
-                            <div class="display-inline tagged-post-name-time">
-                                <b class="text-primary tagged-by"><a href="owner-profile">XiiaoChiobu94</a></b>
-                                <p class="tagged-by-time">15 weeks ago</p>
-                            </div>
-                        </div>
-                        <!-- Tagged post body -->
-                        <div class="tagged-body-text">
-                            <p>Baby Lara.
-                                <3 <a href="#">@Lara</a> <a href="owner-profile">@Clara Alfonso</a></p>
-                        </div>
-                        <div class="tagged-body-photos">
-                            <img class="img-responsive" src="images/Maltese4.jpg">
-                            <img class="img-responsive" src="images/Maltese5.jpg">
-                        </div>
-                    </div>
-                    <!-- Photo two ends -->
-                </div>
-                <!-- PHOTOS ends -->
-                <!-- HISTORY -->
-                <div id="content-history" class="jumbotron">
-                    <div class="row">
-                        <div class="col-sm-4">
-                            <div class="card">
-                                <img class="card-img-top img-responsive" src="img/female-smile2.png" alt="Card image cap">
-                                <div class="card-block">
-                                    <h4 class="card-title"><a href="">XiiaoChiobu94</a></h4>
-                                    <p class="card-text">Hello! I'm a super loving pet sitter.</p>
-                                </div>
-                                <div class="card-footer">
-                                    <small class="text-muted">18/03/2017 - 30/03/2017</small>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-4">
-                            <div class="card">
-                                <img class="card-img-top img-responsive" src="img/male-smile.jpg" alt="Card image cap">
-                                <div class="card-block">
-                                    <h4 class="card-title"><a href="">Someone</a></h4>
-                                    <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-                                </div>
-                                <div class="card-footer">
-                                    <small class="text-muted">2/01/2017 - 5/01/2017</small>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-4">
-                            <div class="card">
-                                <img class="card-img-top img-responsive" src="img/female-smile3.jpg" alt="Card image cap">
-                                <div class="card-block">
-                                    <h4 class="card-title"><a href="">Someone</a></h4>
-                                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content.
-                                        This card has even longer content than the first to show that equal height action.</p>
-                                </div>
-                                <div class="card-footer">
-                                    <small class="text-muted">30/07/2016 - 2/08/2016</small>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-sm-4">
-                            <div class="card">
-                                <img class="card-img-top img-responsive" src="img/female-smile4.jpg" alt="Card image cap">
-                                <div class="card-block">
-                                    <h4 class="card-title"><a href="">Someone</a></h4>
-                                    <p class="card-text">Hello! I'm a super loving pet sitter.</p>
-                                </div>
-                                <div class="card-footer">
-                                    <small class="text-muted">23/04/2016 - 27/04/2016</small>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-4">
-                        </div>
-                        <div class="col-sm-4">
+                        <div class="btn-group">
+                            <button id="other-history" type="button" class="btn btn-basic btn-normal">History</button>
                         </div>
                     </div>
                 </div>
-                <!-- HISTORY ends -->
+                <div class="row">
+                    <!-- LIVEFEED -->
+                    <div id="content-livefeed" class="jumbotron">
+                        <!-- Post one-->
+                        <div class="panel tagged-panel">
+                            <!-- Tagged post heading-->
+                            <div class="tagged-heading">
+                                <div class="display-inline tagged-by-profile">
+                                    <img class="img-responsive" src="img/profile-pic1.png">
+                                </div>
+                                <div class="display-inline tagged-post-name-time">
+                                    <b class="text-primary tagged-by"><a href="owner-profile">Clara Alfonso</a></b>
+                                    <p class="tagged-by-time">5 weeks ago</p>
+                                </div>
+                            </div>
+                            <!-- Tagged post body -->
+                            <div class="tagged-body-text">
+                                <p>A day at the beach with <a href="#">@Lara</a> :D</p>
+                            </div>
+                            <div class="tagged-body-video">
+                                <iframe src="https://www.youtube.com/embed/_YIpEI2eu-I" frameborder="0"></iframe>
+                            </div>
+                        </div>
+                        <!-- Post one ends -->
+                        <!-- Post two-->
+                        <div class="panel tagged-panel">
+                            <!-- Tagged post heading-->
+                            <div class="tagged-heading">
+                                <div class="display-inline tagged-by-profile">
+                                    <img class="img-responsive" src="img/female-smile2.png">
+                                </div>
+                                <div class="display-inline tagged-post-name-time">
+                                    <b class="text-primary tagged-by"><a href="owner-profile">XiiaoChiobu94</a></b>
+                                    <p class="tagged-by-time">10 weeks ago</p>
+                                </div>
+                            </div>
+                            <!-- Tagged post body -->
+                            <div class="tagged-body-text">
+                                <p>Taking care of little Lara. <a href="#">@Lara</a> <a href="owner-profile">@Clara Alfonso</a></p>
+                            </div>
+                            <div class="tagged-body-photos">
+                                <img class="img-responsive" src="images/Maltese1.jpg">
+                                <img class="img-responsive" src="images/Maltese2.jpg">
+                                <img class="img-responsive" src="images/Maltese3.jpg">
+                            </div>
+                        </div>
+                        <!-- Post two ends -->
+                        <!-- Post three-->
+                        <div class="panel tagged-panel">
+                            <!-- Tagged post heading-->
+                            <div class="tagged-heading">
+                                <div class="display-inline tagged-by-profile">
+                                    <img class="img-responsive" src="img/male-smile3.png">
+                                </div>
+                                <div class="display-inline tagged-post-name-time">
+                                    <b class="text-primary tagged-by"><a href="owner-profile">Yandaoozxc95</a></b>
+                                    <p class="tagged-by-time">12 weeks ago</p>
+                                </div>
+                            </div>
+                            <!-- Tagged post body -->
+                            <div class="tagged-body-text">
+                                <p>Some dog grooming tips for you! <a href="#">@Lara</a> <a href="owner-profile">@Clara Alfonso</a></p>
+                            </div>
+                            <div class="tagged-body-note">
+                                <p>
+                                    <ul>
+                                        <li><b>Check for ticks as you brush</b><br>You may notice the bugs themselves or small
+                                            black flecks.
+                                        </li>
+                                        <li><b>Determine how often you need to brush</b><br>Most short coats require weekly brushing,
+                                            but longer coats may require daily attention.</li>
+                                        <li><b>For smooth, short coats</b><br>Use a rubber brush, then a bristle brush, and then
+                                            polish with a chamois cloth.</li>
+                                        <li><b>For short, dense coats</b><br>Use a slicker brush to remove tangles, followed
+                                            by a bristle brush.</li>
+                                    </ul>
+                                </p>
+                            </div>
+                        </div>
+                        <!-- Post three ends --><!-- Post one-->
+                        <div class="panel tagged-panel">
+                            <!-- Tagged post heading-->
+                            <div class="tagged-heading">
+                                <div class="display-inline tagged-by-profile">
+                                    <img class="img-responsive" src="img/profile-pic1.png">
+                                </div>
+                                <div class="display-inline tagged-post-name-time">
+                                    <b class="text-primary tagged-by"><a href="owner-profile">Clara Alfonso</a></b>
+                                    <p class="tagged-by-time">5 weeks ago</p>
+                                </div>
+                            </div>
+                            <!-- Tagged post body -->
+                            <div class="tagged-body-text">
+                                <p>A day at the beach with <a href="#">@Lara</a> :D</p>
+                            </div>
+                            <div class="tagged-body-video">
+                                <iframe src="https://www.youtube.com/embed/_YIpEI2eu-I" frameborder="0"></iframe>
+                            </div>
+                        </div>
+                        <!-- Post one ends -->
+                        <!-- Post two-->
+                        <div class="panel tagged-panel">
+                            <!-- Tagged post heading-->
+                            <div class="tagged-heading">
+                                <div class="display-inline tagged-by-profile">
+                                    <img class="img-responsive" src="img/female-smile2.png">
+                                </div>
+                                <div class="display-inline tagged-post-name-time">
+                                    <b class="text-primary tagged-by"><a href="owner-profile">XiiaoChiobu94</a></b>
+                                    <p class="tagged-by-time">10 weeks ago</p>
+                                </div>
+                            </div>
+                            <!-- Tagged post body -->
+                            <div class="tagged-body-text">
+                                <p>Taking care of little Lara. <a href="#">@Lara</a> <a href="owner-profile">@Clara Alfonso</a></p>
+                            </div>
+                            <div class="tagged-body-photos">
+                                <img class="img-responsive" src="images/Maltese1.jpg">
+                                <img class="img-responsive" src="images/Maltese2.jpg">
+                                <img class="img-responsive" src="images/Maltese3.jpg">
+                            </div>
+                        </div>
+                        <!-- Post two ends -->
+                        <!-- Post three-->
+                        <div class="panel tagged-panel">
+                            <!-- Tagged post heading-->
+                            <div class="tagged-heading">
+                                <div class="display-inline tagged-by-profile">
+                                    <img class="img-responsive" src="img/male-smile3.png">
+                                </div>
+                                <div class="display-inline tagged-post-name-time">
+                                    <b class="text-primary tagged-by"><a href="owner-profile">Yandaoozxc95</a></b>
+                                    <p class="tagged-by-time">12 weeks ago</p>
+                                </div>
+                            </div>
+                            <!-- Tagged post body -->
+                            <div class="tagged-body-text">
+                                <p>Some dog grooming tips for you! <a href="#">@Lara</a> <a href="owner-profile">@Clara Alfonso</a></p>
+                            </div>
+                            <div class="tagged-body-note">
+                                <p>
+                                    <ul>
+                                        <li><b>Check for ticks as you brush</b><br>You may notice the bugs themselves or small
+                                            black flecks.
+                                        </li>
+                                        <li><b>Determine how often you need to brush</b><br>Most short coats require weekly brushing,
+                                            but longer coats may require daily attention.</li>
+                                        <li><b>For smooth, short coats</b><br>Use a rubber brush, then a bristle brush, and then
+                                            polish with a chamois cloth.</li>
+                                        <li><b>For short, dense coats</b><br>Use a slicker brush to remove tangles, followed
+                                            by a bristle brush.</li>
+                                    </ul>
+                                </p>
+                            </div>
+                        </div>
+                        <!-- Post three ends -->
+                    </div>
+                    <!-- LIVEFEED ends -->
+                    <!-- PHOTOS -->
+                    <div id="content-photos" class="jumbotron">
+                        <!-- Photo one -->
+                        <div class="panel tagged-panel">
+                            <!-- Tagged post heading-->
+                            <div class="tagged-heading">
+                                <div class="display-inline tagged-by-profile">
+                                    <img class="img-responsive" src="img/female-smile2.png">
+                                </div>
+                                <div class="display-inline tagged-post-name-time">
+                                    <b class="text-primary tagged-by"><a href="owner-profile">XiiaoChiobu94</a></b>
+                                    <p class="tagged-by-time">10 weeks ago</p>
+                                </div>
+                            </div>
+                            <!-- Tagged post body -->
+                            <div class="tagged-body-text">
+                                <p>Taking care of little Lara. <a href="#">@Lara</a> <a href="owner-profile">@Clara Alfonso</a></p>
+                            </div>
+                            <div class="tagged-body-photos">
+                                <img class="img-responsive" src="images/Maltese1.jpg">
+                                <img class="img-responsive" src="images/Maltese2.jpg">
+                                <img class="img-responsive" src="images/Maltese3.jpg">
+                            </div>
+                        </div>
+                        <!-- Photo one ends -->
+                        <!-- Photo two -->
+                        <div class="panel tagged-panel">
+                            <!-- Tagged post heading-->
+                            <div class="tagged-heading">
+                                <div class="display-inline tagged-by-profile">
+                                    <img class="img-responsive" src="img/female-smile2.png">
+                                </div>
+                                <div class="display-inline tagged-post-name-time">
+                                    <b class="text-primary tagged-by"><a href="owner-profile">XiiaoChiobu94</a></b>
+                                    <p class="tagged-by-time">15 weeks ago</p>
+                                </div>
+                            </div>
+                            <!-- Tagged post body -->
+                            <div class="tagged-body-text">
+                                <p>Baby Lara.
+                                    <3 <a href="#">@Lara</a> <a href="owner-profile">@Clara Alfonso</a></p>
+                            </div>
+                            <div class="tagged-body-photos">
+                                <img class="img-responsive" src="images/Maltese4.jpg">
+                                <img class="img-responsive" src="images/Maltese5.jpg">
+                            </div>
+                        </div>
+                        <!-- Photo two ends -->
+                    </div>
+                    <!-- PHOTOS ends -->
+                    <!-- HISTORY -->
+                    <div id="content-history" class="jumbotron">
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <div class="card">
+                                    <img class="card-img-top img-responsive" src="img/female-smile2.png" alt="Card image cap">
+                                    <div class="card-block">
+                                        <h4 class="card-title"><a href="">XiiaoChiobu94</a></h4>
+                                        <p class="card-text">Hello! I'm a super loving pet sitter.</p>
+                                    </div>
+                                    <div class="card-footer">
+                                        <small class="text-muted">18/03/2017 - 30/03/2017</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="card">
+                                    <img class="card-img-top img-responsive" src="img/male-smile.jpg" alt="Card image cap">
+                                    <div class="card-block">
+                                        <h4 class="card-title"><a href="">Someone</a></h4>
+                                        <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                                    </div>
+                                    <div class="card-footer">
+                                        <small class="text-muted">2/01/2017 - 5/01/2017</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="card">
+                                    <img class="card-img-top img-responsive" src="img/female-smile3.jpg" alt="Card image cap">
+                                    <div class="card-block">
+                                        <h4 class="card-title"><a href="">Someone</a></h4>
+                                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+                                            content. This card has even longer content than the first to show that equal
+                                            height action.</p>
+                                    </div>
+                                    <div class="card-footer">
+                                        <small class="text-muted">30/07/2016 - 2/08/2016</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <div class="card">
+                                    <img class="card-img-top img-responsive" src="img/female-smile4.jpg" alt="Card image cap">
+                                    <div class="card-block">
+                                        <h4 class="card-title"><a href="">Someone</a></h4>
+                                        <p class="card-text">Hello! I'm a super loving pet sitter.</p>
+                                    </div>
+                                    <div class="card-footer">
+                                        <small class="text-muted">23/04/2016 - 27/04/2016</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                            </div>
+                            <div class="col-sm-4">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- HISTORY ends -->
+                </div>
             </div>
         </div>
         <!-- RIGHT: OTHERS -->
@@ -464,6 +546,8 @@
             $("#content-photos").hide();
             $("#content-history").show();
         });
+
+        $("#leftPanel").stick_in_parent();
     </script>
 </body>
 
