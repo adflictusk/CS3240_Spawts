@@ -10,7 +10,7 @@ Warning: it will cause a lot of things to break in the navbar*/
     margin-bottom: 0;
 }
 
-.glyphicon {
+nav .glyphicon {
     color: white;
 }
 
