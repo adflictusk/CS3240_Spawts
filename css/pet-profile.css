@@ -52,7 +52,7 @@ li a:active, .dropdown:active, li a:focus, .dropdown:focus {
 /* Button */
 .btn-normal {
     background: #ff99cc;
-    color: white;
+    color: white !important;
 }
 
 .btn-normal:hover, .btn-normal:focus, .btn-selected {
