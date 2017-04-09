@@ -118,7 +118,7 @@
                                 <div class="input-group">
                                     <span class="input-group-btn">
                                         <span class="btn btn-default btn-file">
-                                            Browse...<input type="file" id="imgInp">
+                                            Browse<input type="file" id="imgInp">
                                         </span>
                                     </span>
                                     <input type="text" class="form-control" readonly>
@@ -177,7 +177,7 @@
                                     <!-- START DATE -->
                                     <div class='col-md-5'>
 
-                                        <div class='form-group internal input-group input-append date' id="datePicker">
+                                        <div class='form-group internal input-group input-append date' id="startDatePicker">
 
                                             <span class='input-group-addon'>
                                                     <i class='glyphicon glyphicon-calendar'></i>
@@ -192,7 +192,7 @@
 
                                     <!-- END DATE -->
                                     <div class='col-md-5'>
-                                        <div class='form-group internal input-group input-append date' id="datePicker">
+                                        <div class='form-group internal input-group input-append date' id="endDatePicker">
                                             <span class='input-group-addon'>
                                                 <i class='glyphicon glyphicon-calendar'></i>
                                             </span>
@@ -226,10 +226,17 @@
                             <!-- END PRICES -->
 
                             <!-- ADDITIONAL INFO -->
+                            <h5 class="details-title text-center">Additional Information</h5>
                             <div class='form-group'>
-                                <label class='control-label col-md-3' for='id_additionalInfo'>Additional Information</label>
+                                <label class='control-label col-md-3' for='id_ownerreq'>Owner's Requirements</label>
                                 <div class='col-md-9'>
-                                    <textarea class='form-control' id='id_comments' placeholder='Additional Information' rows='8'></textarea>
+                                    <textarea class='form-control' id='id_comments' placeholder='Additional Information' rows='4'></textarea>
+                                </div>
+                            </div>
+                            <div class='form-group'>
+                                <label class='control-label col-md-3' for='id_petreq'>Pet's Requirements</label>
+                                <div class='col-md-9'>
+                                    <textarea class='form-control' id='id_comments' placeholder='Additional Information' rows='4'></textarea>
                                 </div>
                             </div>
 
@@ -245,7 +252,6 @@
                             </div>
                         </form>
                     </div>
-
                 </div>
             </div>
         </div>
