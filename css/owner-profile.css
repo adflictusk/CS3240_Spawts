@@ -15,6 +15,7 @@
 
 .name-owner {
     font-size: 25px;
+    font-family: "Montserrat";
 }
 
 .picture-box {
@@ -29,11 +30,13 @@
     text-decoration: underline;
     padding-top: 5px;
     font-size: 20px;
+    font-family: "Montserrat";
 }
 
 .rating-box {
    background-color: #eee;
    color: black;
+   font-family: "Droid Sans";
 }
 
 .rating-box-div a {
@@ -61,18 +64,21 @@
 
 .rr-title {
     text-decoration: underline;
+    font-family: "Montserrat";
 }
 
 .negative-box {
     padding-top: 10px;
     padding-left: 20px;
     padding-right: 20px;
+    font-family: "Droid Sans";
 }
 
 .positive-box {
     padding-top: 10px;
     padding-left: 20px;
     padding-right: 20px;
+    font-family: "Droid Sans";
 }
 
 .red-vertical-line {
@@ -113,16 +119,19 @@
     padding-top: 5px;
     text-decoration: underline;
     font-size: 20px;
+    font-family: "Montserrat";
 }
 
 .full-name-owner {
     padding-top: 15px;
+    font-family: "Droid Sans";
 }
 
 #title {
     font-size: 13px;
     font-style: italic;
     font-weight: bold;
+    font-family: "Droid Sans";
 }
 
 .age-owner {
@@ -151,6 +160,7 @@
 
 .chat-box {
     border: 10px #eee solid;
+    font-family: "Montserrat";
 }
 
 .btn-map-pink {
@@ -166,6 +176,7 @@
 
 .map-box {
     border: 10px #eee solid;
+    font-family: "Montserrat";
 }
 
 .btn-map-blue {
@@ -182,6 +193,7 @@
     text-decoration: underline;
     font-size: 20px;
     padding-top: 5px;
+    font-family: "Montserrat";
 }
 
 .list-box {
@@ -208,6 +220,7 @@
 .list-link {
     color: white !important;
     padding-bottom: 5px;
+    font-family: "Droid Sans";
 }
 
 .balancer {
@@ -229,6 +242,7 @@
     padding-bottom: 5px;
     text-decoration: underline;
     font-size: 20px;
+    font-family: "Montserrat";
 }
 
 .pet-img-style {
@@ -254,6 +268,7 @@
 /* "Live Feed" box*/
 .livefeed-box {
     border: 15px #eee solid;
+    font-family: "Droid Sans";
 }
 
 .feed-activities-box {
@@ -273,6 +288,7 @@ hr {
     padding-top: 5px;
     text-decoration: underline;
     font-size: 20px;
+    font-family: "Montserrat";
 }
 
 .start-status {
@@ -300,6 +316,7 @@ hr {
     padding-bottom: 5px;
     text-decoration: underline;
     font-size: 20px;
+    font-family: "Montserrat";
 }
 
 .pv-pic:hover {
@@ -317,6 +334,7 @@ hr {
     padding-bottom: 5px;
     text-decoration: underline;
     font-size: 20px;
+    font-family: "Montserrat";
 }
 
 .history-pic:hover {

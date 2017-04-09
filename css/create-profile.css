@@ -9,6 +9,7 @@
 .img-title {
     text-decoration: underline;
     padding-bottom: 10px;
+    font-family: "Montserrat";
 }
 
 .img-panel {
@@ -19,6 +20,10 @@
     padding-top: 10px;
 }
 
+.the-form {
+    font-family: "Droid Sans";
+}
+
 #home-address {
     resize: none;
 }
@@ -26,11 +31,13 @@
 .info-title {
     text-decoration: underline;
     padding-bottom: 10px;
+    font-family: "Montserrat";
 }
 
 .btn-file {
     position: relative;
     overflow: hidden;
+    font-family: "Droid Sans";
 }
 .btn-file input[type=file] {
     position: absolute;
@@ -46,6 +53,10 @@
     background: white;
     cursor: inherit;
     display: block;
+}
+
+.post-btn {
+    font-family: "Droid Sans";
 }
 
 .img-eg-box {
