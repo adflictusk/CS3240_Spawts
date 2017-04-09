@@ -55,7 +55,7 @@ body {
     border-left: 3px solid #ff99cc;
 }
 
-#username-display {
+#username-display, #username-prompt {
     color: deeppink;
 }
 
@@ -95,7 +95,6 @@ body {
   color: #ffffff;
 }
 
-
 #content .btn {
   background: #ff99cc;
   border: 2px solid #ffffff;
@@ -115,6 +114,11 @@ body {
   background: transparent;
   border-color: deeppink;
   color: deeppink;
+}
+
+#content .header {
+    background: #ff99cc;
+    color: white;
 }
 
 .go-top {

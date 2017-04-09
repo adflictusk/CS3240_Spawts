@@ -35,7 +35,7 @@ nav .glyphicon {
 
 #button-comment:hover, #button-comment:focus,
 #button-bell:hover, #button-bell:focus,
-#button-bell:hover, #button-bell:focus {
+#button-user:hover, #button-user:focus {
     background: deeppink !important;
     color: white !important;
 }
