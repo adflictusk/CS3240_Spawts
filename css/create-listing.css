@@ -1,9 +1,23 @@
-.create-listing-padding {
-    padding-top: 90px;
+.backgroundwallpaper {
+    padding-top: 10px;
+    height: 750px;
+    /* The image used */
+    background-image: url('../images/pattern3.png');
+    background-color: #E5E7E1;
+}
+
+.formheader {
+    height: 50px;
+    padding-top: 10px;
+    padding-left: 10px;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    color: white;
+    background: #ff99cc;
 }
 
 .info-panel {
-    min-height: 650px;
+    height: inherit;
 }
 
 .img-title {
