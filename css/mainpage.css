@@ -84,6 +84,28 @@ body {
   color: #ffffff;
 }
 
+
+#content .btn {
+  background: #ff99cc;
+  border: 2px solid #ffffff;
+  border-radius: 100px;
+  color: #fff;
+  font-size: 10px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  padding: 13px 22px;
+  margin-top: 42px;
+  transition: all 0.4s ease-in-out;
+}
+
+
+#content .btn:hover {
+  background: transparent;
+  border-color: deeppink;
+  color: deeppink;
+}
+
 .go-top {
   background-color: #ffffff;
   box-shadow: 1px 1.732px 12px 0px rgba( 0, 0, 0, .14 ), 1px 1.732px 3px 0px rgba( 0, 0, 0, .12 );
@@ -91,18 +113,14 @@ body {
   bottom: 2em;
   right: 2em;
   color: #333;
-  font-size: 24px;
+  font-size: 20px;
   display: none;
   position: fixed;
   width: 40px;
   height: 40px;
-  line-height: 45px;
+  line-height: 40px;
   text-align: center;
   border-radius: 100%;
-}
-
-.go-top:link {
-    text-decoration: none;
 }
 
 .go-top:hover {
@@ -128,8 +146,7 @@ h2 {
 .main-home {
   background-image: url("../images/dog_walking4.jpg");
   background-repeat: no-repeat;
-      height: 80vh;
-
+  height: 80vh;
 }
 
 .row1 {
@@ -147,6 +164,7 @@ h2 {
     background-color: #fff;
     padding-top: 20px;
     padding-bottom: 20px;
+    padding-left: 20px;
     border-radius: 10px;
 }
 
@@ -154,15 +172,51 @@ h2 {
     background-color: #eee;
     padding-top: 20px;
     padding-bottom: 20px;
+    padding-left: 20px;
     border-radius: 10px;
 }
 
 .side-pic img{
     height: 300px;
+    margin: auto;
 }
 
 .side-pic img:hover {
     opacity: 0.5;
+}
+
+.side-pic .container-fluid {
+    text-align: center;
+}
+
+.rank {
+    text-align: center;
+}
+
+.rank-img {
+    height: 150px;
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-top: 13px;
+    padding-right: 5px;
+}
+
+.ownerProfile {
+    position: relative;
+    margin: auto;
+    width: 100px;
+    height: auto;
+    border-radius: 100px;
+    border: 3px solid black;
+    transition: all 0.4s ease-in-out;
+}
+
+.ownerProfile:hover {
+    bottom: 10px;
+    border: 3px solid deeppink;
 }
 
 footer {
@@ -171,4 +225,38 @@ footer {
     color: white;
 }
 
+.social-icon {
+    position: relative;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.social-icon li {
+    display: inline-block;
+    list-style: none;
+}
+
+.social-icon li a {
+    border: 2px solid #ff99cc;
+    color: #ff99cc;
+    border-radius: 100px;
+    cursor: pointer;
+    font-size: 16px;
+    text-decoration: none;
+    transition: all 0.4s ease-in-out;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    vertical-align: middle;
+    position: relative;
+    margin: 22px 12px 10px 12px;
+}
+
+.social-icon li a:hover {
+    border-color: deeppink;
+    color: #fff;
+    transform: scale(1.1);
+}
 
