@@ -2,20 +2,23 @@ body {
     font-family: 'Droid Sans', sans-serif;
 }
 
-.openlogin-popup {
+.openlogin-popup, .openNewUser-popup {
     background-color:#FFFFFF;
     border:5px solid #ff99cc;
     cursor:default;
     display:none;
-    margin-top: 15px;
     position:absolute;
     font-family: 'Montserrat';
     text-align:left;
-    height: 300px;
-    width:50%;
+    width:800px;
     z-index:50;
     padding: 0px 25px 20px;
     border-radius: 10px;
+}
+
+.openlogin-popup h3 {
+    background: #ff99cc;
+    color: #ffffff;
 }
 
 .openlogin-popup li {
@@ -25,27 +28,35 @@ body {
     font-family: 'Droid Sans', sans-serif;
 }
 
+.openlogin-popup .btn, .openNewUser-popup .btn {
+    background: #ff99cc;
+    border: 2px solid #ffffff;
+    border-radius: 100px;
+    color: #ffffff;
+    font-size: 10px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    padding: 13px 22px;
+    transition: all 0.4s ease-in-out;
+}
+
+.openlogin-popup .btn:hover, .openNewUser-popup .btn:hover {
+    background: transparent;
+    border-color: deeppink;
+    color: deeppink;
+}
+
 .formbox {
-    padding-top: 25px;
+    margin-top: 25px;
 }
 
-#divider {
-    position:relative;
-    display: block;
-    align-items: center;
-    margin-left: auto;
-    margin-right: auto;
+.formbox-right {
+    border-left: 3px solid #ff99cc;
 }
 
-.overlay {
-  background: rgba(0,0,0,0.7 );
-  width: 100%;
-  height: 100vh;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
+#username-display {
+    color: deeppink;
 }
 
 .parallax-section {
