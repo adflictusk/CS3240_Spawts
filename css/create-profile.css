@@ -2,8 +2,12 @@
     padding-top: 90px;
 }
 
+.the-heading {
+    font-family: "Montserrat";
+}
+
 .info-panel {
-    min-height: 650px;
+    min-height: 700px;
 }
 
 .img-title {
