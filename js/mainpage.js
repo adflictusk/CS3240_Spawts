@@ -34,15 +34,19 @@ function getParameterByName(name, url) {
     return decodeURIComponent(results[2].replace(/\+/g, " "));
 }
 
-var username = getParameterByName('username');
 var password = getParameterByName('password');
 var email = getParameterByName('email');
+var i = email.indexOf('@');
 
 $(document).ready(function () {
-    if(username == "newuser" && password == "password123" && email != "") {
-        document.getElementById('username-display').innerHTML = username;
-        $('#openNewUser').popup('show');
+    if(i > 0) {
+        var id = email.substring(0, i);
+        document.getElementById('username-display').innerHTML = id;
     }
+    /*if(password == "password123" && email == "newuser@gmail.com") {
+        document.getElementById('username-prompt').innerHTML = ;
+        $('#openNewUser').popup('show');
+    }*/
 });
 
 /* Back top
