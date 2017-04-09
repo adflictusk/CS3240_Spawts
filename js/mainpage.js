@@ -11,12 +11,48 @@ $(document).ready(function () {
 });
 
 $(document).ready(function () {
+    $('#openForce').popup({
+        offsettop: 100,
+        offsetleft: -200,
+        opacity: 0.3,
+        transition: 'all 0.5s',
+        outline: true
+    });
+});
+
+$(document).ready(function () {
     $('#openNewUser').popup({
         offsettop: 100,
         offsetleft: -200,
         opacity: 0.3,
         transition: 'all 0.5s',
         outline: true
+    });
+});
+
+$(document).ready(function(){
+    $('#login-nav').on('submit', function(e){
+        e.preventDefault();
+        var email = $('#email').val();
+        var password = $('#password').val();
+        if(email == "petlover500@gmail.com" && password == "password"){
+            this.submit();
+        } else {
+            $('#error-msg').empty().append("The email address or the password you entered is incorrect. Please try again or register an account.");
+        }
+    });
+});
+
+$(document).ready(function(){
+    $('#login-pop').on('submit', function(e){
+        e.preventDefault();
+        var email = $('#email-pop').val();
+        var password = $('#password-pop').val();
+        if(email == "petlover500@gmail.com" && password == "password"){
+            this.submit();
+        } else {
+            $('#replace-msg').empty().append("The email address or the password you entered is incorrect. Please try again or register an account.");
+        }
     });
 });
 
@@ -36,7 +72,10 @@ function getParameterByName(name, url) {
 
 var password = getParameterByName('password');
 var email = getParameterByName('email');
-var i = email.indexOf('@');
+var i = -1;
+if(email != null){
+    i = email.indexOf('@');
+}
 
 $(document).ready(function () {
     if(i > 0) {

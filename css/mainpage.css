@@ -2,7 +2,7 @@ body {
     font-family: 'Droid Sans', sans-serif;
 }
 
-.openlogin-popup, .openNewUser-popup {
+.openlogin-popup, .openNewUser-popup , .openForce-popup {
     background-color:#FFFFFF;
     border:5px solid #ff99cc;
     cursor:default;
@@ -16,11 +16,13 @@ body {
     border-radius: 10px;
 }
 
+.openForce-popup h3,
 .openlogin-popup h3 {
     background: #ff99cc;
     color: #ffffff;
 }
 
+.openForce-popup li,
 .openlogin-popup li {
     list-style: none;
     padding: 8px;
@@ -28,6 +30,7 @@ body {
     font-family: 'Droid Sans', sans-serif;
 }
 
+.openForce-popup .btn,
 .openlogin-popup .btn, .openNewUser-popup .btn {
     background: #ff99cc;
     border: 2px solid #ffffff;
@@ -41,10 +44,16 @@ body {
     transition: all 0.4s ease-in-out;
 }
 
+.openForce-popup .btn:hover,
 .openlogin-popup .btn:hover, .openNewUser-popup .btn:hover {
     background: transparent;
     border-color: deeppink;
     color: deeppink;
+}
+
+#openForce h2,
+#openlogin h2 {
+    color: red;
 }
 
 .formbox {

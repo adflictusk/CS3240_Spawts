@@ -83,7 +83,7 @@
                                 <h2>Pepper is not Feeling Well</h2>
                                 <br>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                                <button class="btn btn-default">Read More</button>
+                                <a class="btn btn-default openForce_open" href="#openForce">Read More</a>
                             </div>
                         </div>
                     </div>
@@ -101,7 +101,7 @@
                                 <h2>Leonard, the Prancing Parrot </h2>
                                 <br>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                                <button class="btn btn-default">Read More</button>
+                                <a class="btn btn-default openForce_open" href="#openForce">Read More</a>
                             </div>
                         </div>
                     </div>
@@ -112,24 +112,24 @@
                         <div class="row row3">
                             <h4>Give a paw to these awesome pet-sitters</h4>
                             <div class="col-md-4 rank">
-                                <div class="rank-img" style="background-image: url('../images/gold-laurel-wreath.jpg');">
-                                    <a href="owner-profile.html"><img src="img/profile-pic1.png" alt="" class="img-responsive ownerPicStyle ownerProfile"></a>
+                                <div class="rank-img" style="background-image: url('../images/gold_laurel_wreath.jpg');">
+                                    <a class="openForce_open" href="#openForce"><img src="img/profile-pic1.png" alt="" class="img-responsive ownerPicStyle ownerProfile"></a>
                                 </div>
                                 
                                 <h3>Clara Alfonso</h3>
                                 <h4>Rank Stars: 31</h4>
                             </div>
                             <div class="col-md-4 rank">
-                                <div class="rank-img" style="background-image: url('../images/silver-laurel-wreath.jpg');">
-                                    <a href="owner-profile.html"><img src="img/alex-strov.jpg" alt="" class="img-responsive ownerPicStyle ownerProfile"></a>
+                                <div class="rank-img" style="background-image: url('../images/silver_laurel_wreath.jpg');">
+                                    <a class="openForce_open" href="#openForce"><img src="img/alex-strov.jpg" alt="" class="img-responsive ownerPicStyle ownerProfile"></a>
                                 </div>
                                 
                                 <h3>Alexandria Strovanov</h3>
                                 <h4>Rank Stars: 18</h4>
                             </div>
                             <div class="col-md-4 rank">
-                                <div class="rank-img" style="background-image: url('../images/bronze-laurel-wreath.jpg');">
-                                    <a href="owner-profile.html"><img src="img/male-smile.jpg" alt="" class="img-responsive ownerProfile"></a>
+                                <div class="rank-img" style="background-image: url('../images/bronze_laurel_wreath.jpg');">
+                                    <a class="openForce_open" href="#openForce"><img src="img/male-smile.jpg" alt="" class="img-responsive ownerProfile"></a>
                                 </div>
                                 
                                 <h3>Thomas Engine</h3>
@@ -143,16 +143,44 @@
         <a href="#back-top" class="go-top"><span class="glyphicon glyphicon-chevron-up"></span></a>
         <!---------------------------------- Pop up layout ------------------------------------------>
         <div id="openlogin" class="openlogin-popup">
+            <h2 id="error-msg"></h2>
             <div class='col-md-5 formbox'>
-                <form id="login" action="mainpage-loggedin.html" method="get">
+                <form id="login-nav" action="mainpage-loggedin.html">
                     <h3>Log in</h3>
                     <li class="row">
                         <label class="col-md-6">Email: </label>
-                        <input class="col-md-6" type="text" name="email" id="email" placeholder="id@mail.com">
+                        <input class="col-md-6 required" type="text" name="email" id="email" placeholder="id@mail.com">
                     </li>                    
                     <li class="row">
                         <label class="col-md-6">Password: </label>
-                        <input class="col-md-6" type="password" name="password" id="password" placeholder="Password">
+                        <input class="col-md-6 required" type="password" name="password" id="password" placeholder="Password">
+                    </li>
+                    <li class="row">
+                        <input class="col-md-offset-8 col-md-4 btn btn-default" type="submit" value="Submit">
+                    </li>
+                </form>
+            </div>  
+            <div class='col-md-offset-1 col-md-6 formbox formbox-right'>
+                <h3>Register</h3>
+                <br>
+                <h4>Sign up with us to gain access to the many features of our pet-sitter platform. Be a Spawt-er today!</h4>
+                <li class="col-md-offset-8 col-md-6">
+                    <a class="btn btn-default" href="create-profile.html">Register</a>
+                </li>
+            </div>
+        </div>
+        <div id="openForce" class="openForce-popup">
+            <h2 id="replace-msg">Sorry, you have to be logged in to read this ...</h2>
+            <div class='col-md-5 formbox'>
+                <form id="login-pop" action="mainpage-loggedin.html" method="get">
+                    <h3>Log in</h3>
+                    <li class="row">
+                        <label class="col-md-6">Email: </label>
+                        <input class="col-md-6 required" type="text" name="email" id="email-pop" placeholder="id@mail.com">
+                    </li>                    
+                    <li class="row">
+                        <label class="col-md-6">Password: </label>
+                        <input class="col-md-6 required" type="password" name="password" id="password-pop" placeholder="Password">
                     </li>
                     <li class="row">
                         <input class="col-md-offset-8 col-md-4 btn btn-default" type="submit" value="Submit">
