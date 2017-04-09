@@ -1,3 +1,9 @@
+.background-wallpaper {
+    height: 93.5vh;
+    background-image: url("../images/pattern3.png");
+    background-color: #E5E7E1;
+}
+
 .create-profile-padding {
     padding-top: 90px;
 }

@@ -1,9 +1,16 @@
 .backgroundwallpaper {
-    padding-top: 10px;
-    height: 750px;
+    height: 93.5vh;
     /* The image used */
     background-image: url('../images/pattern3.png');
     background-color: #E5E7E1;
+}
+
+.title {
+    font-family: "Montserrat";
+}
+
+.padding-content {
+    padding-top: 90px;
 }
 
 .info-panel {
