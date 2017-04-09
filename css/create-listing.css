@@ -6,16 +6,6 @@
     background-color: #E5E7E1;
 }
 
-.formheader {
-    height: 50px;
-    padding-top: 10px;
-    padding-left: 10px;
-    border-top-left-radius: 3px;
-    border-top-right-radius: 3px;
-    color: white;
-    background: #ff99cc;
-}
-
 .info-panel {
     height: inherit;
 }
