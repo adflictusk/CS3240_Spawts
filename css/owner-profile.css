@@ -38,17 +38,25 @@
 
 .rating-box-div a {
     text-decoration: none;
-    cursor: pointer;
-}
-
-.rating-box:hover {
-    opacity: 0.5;
 }
 
 .the-rating-bar {
     padding-left: 10px;
     padding-right: 10px;
     padding-top: 10px;
+}
+
+.btn-pink {
+    color: white !important;
+    background-color: #ff99cc;
+}
+
+.btn-pink:hover {
+    background-color: hotpink;
+}
+
+.button-review {
+    padding-bottom: 5px;
 }
 
 .rr-title {
@@ -137,40 +145,37 @@
     padding-bottom: 5px;
 }
 
-.chat-box-div a {
-    text-decoration: none;
-    color: hotpink;
+.find-me-style:hover {
+    opacity: 0.5;
 }
 
 .chat-box {
-    background-color: #FFB6C1;
     border: 10px #eee solid;
 }
 
-.chat-box:hover {
-    background-color: #ffcbd3;
-}
-
-.chat-owner {
+.btn-map-pink {
+    color: hotpink !important;
     font-size: 20px;
+    background-color: #FFB6C1;
 }
 
-.map-box-div a {
-    text-decoration: none;
-    color: #1C6BA0;
+.btn-map-pink:hover {
+    background-color: #ffcbd3;
+    opacity: 0.8;
 }
 
 .map-box {
-    background-color: #89cff0;
     border: 10px #eee solid;
 }
 
-.map-box:hover {
-    background-color: #D9EBFA;
+.btn-map-blue {
+    color: #1C6BA0 !important;
+    font-size: 20px;
+    background-color: #89cff0;
 }
 
-.map-owner {
-    font-size: 20px;
+.btn-map-blue:hover {
+    background-color: #D9EBFA;
 }
 
 .list-owner {
@@ -213,8 +218,24 @@
     font-size: 20px;
 }
 
+.pet-img-style {
+    min-height: 113px;
+}
+
 .pet-box-pic:hover {
     opacity: 0.5;
+}
+
+.add-glyp {
+    text-align: center;
+}
+
+.add-glyp span {
+    line-height: 113px;
+}
+
+.add-glyp-size {
+    font-size: 40px;
 }
 
 /* "Live Feed" box*/
@@ -223,8 +244,8 @@
 }
 
 .feed-activities-box {
-    min-height: 432px;
-    max-height: 432px;
+    min-height: 415px;
+    max-height: 415px;
     overflow-y: auto;
 }
 

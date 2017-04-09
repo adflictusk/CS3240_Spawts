@@ -115,7 +115,6 @@ crossorigin="anonymous"></script>
 
                 <!--rating-->
                 <div class="row rating-box-div">
-                    <a data-toggle="modal" data-target="#myReviews">
                         <div class="panel text-center rating-box">
                             <div class="row">
                                 <h4 class="rating-title">Ratings & Reviews</h4>
@@ -132,11 +131,10 @@ crossorigin="anonymous"></script>
                             </div>
                             <div class="row center-block review-link">
                                 <p>Based on 5 reviews</p>
-                                <p>Click here to read more</p>
+                                <div class="col-xs-12 button-review"><a data-toggle="modal" data-target="#myReviews"><button type="button" class="btn btn-pink btn-group-justified">Click here to read more</button></a></div>
                             </div>
 
                         </div>
-                    </a>
 
                     <div id="myReviews" class="modal fade" role="dialog">
                         <div class="modal-dialog">
@@ -298,13 +296,13 @@ crossorigin="anonymous"></script>
                         <div class="row social-media-owner">
                             <p id="title">Find Me</p>
                             <div class="col-xs-4 sm-icon">
-                                <img src="img/add.png" href="#" class="img-responsive">
+                                <a href="https://www.facebook.com/"><img src="img/facebook-logo.png" class="img-responsive find-me-style"></a>
                             </div>
                             <div class="col-xs-4 sm-icon">
-                                <img src="img/add.png" href="#" class="img-responsive">
+                                <a href="https://twitter.com/?lang=en"><img src="img/twitter-logo.png" class="img-responsive find-me-style"></a>
                             </div>
                             <div class="col-xs-4 sm-icon">
-                                <img src="img/add.png" href="#" class="img-responsive">
+                                <a href="https://www.instagram.com/?hl=en"><img src="img/Instagram-logo.png" class="img-responsive find-me-style"></a>
                             </div>
                         </div>
                     </div>
@@ -312,20 +310,16 @@ crossorigin="anonymous"></script>
 
                 <!--chat-->
                 <div class="row chat-box-div">
-                    <a href="#">
-                        <div class="panel text-center chat-box">
-                            <h4 class="chat-owner">Chat With Me!</h4>
-                        </div>
-                    </a>
+                    <div class="panel text-center chat-box">
+                        <button type="button" class="btn btn-map-pink btn-group-justified">Chat With Me!</button>
+                    </div>
                 </div>
 
                 <!--map-->
                 <div class="row map-box-div">
-                    <a href="#">
-                        <div class="panel text-center map-box">
-                            <h4 class="map-owner">Find Me On Maps!</h4>
-                        </div>
-                    </a>
+                    <div class="panel text-center map-box">
+                        <button type="button" class="btn btn-map-blue btn-group-justified">Find Me On Maps!</button>
+                    </div>
                 </div>
 
                 <!--listing-->
@@ -382,20 +376,20 @@ crossorigin="anonymous"></script>
                         <div class="row center-block">
                             <!--clickable link to pet creation-->
                             <div class="col-xs-2">
-                                <a href="#">
+                                <a href="./pet-profile-test.html">
                                     <div class="pet-box-pic">
                                         <div class="panel panel-default">
-                                            <img src="img/add.png" class="img-responsive">
+                                            <img src="images/Lara.jpg" class="img-responsive pet-img-style">
                                         </div>
                                     </div>
                                 </a>
                             </div>
                             <div class="col-xs-2">
                                 <!--for pets. yet to code out get json file not done-->
-                                <a href="#">
+                                <a href="./create-pet-profile.html">
                                     <div class="pet-box-pic">
-                                        <div class="panel panel-default">
-                                            <img src="img/add.png" class="img-responsive">
+                                        <div class="panel panel-default add-glyp">
+                                            <span class="glyphicon glyphicon-plus add-glyp-size" aria-hidden="true"></span>
                                         </div>
                                     </div>
                                 </a>
@@ -469,10 +463,60 @@ crossorigin="anonymous"></script>
                         <div class="row center-block">
 
                             <div class="col-xs-2">
+                                <a href="./photo-video.html">
+                                    <div class="pet-box-pic">
+                                        <div class="panel panel-default">
+                                            <img src="images/Maltese1.jpg" class="img-responsive pet-img-style">
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="col-xs-2">
+                                <a href="./photo-video.html">
+                                    <div class="pet-box-pic">
+                                        <div class="panel panel-default">
+                                            <img src="images/Maltese2.jpg" class="img-responsive pet-img-style">
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="col-xs-2">
+                                <a href="./photo-video.html">
+                                    <div class="pet-box-pic">
+                                        <div class="panel panel-default">
+                                            <img src="images/Maltese3.jpg" class="img-responsive pet-img-style">
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="col-xs-2">
+                                <a href="./photo-video.html">
+                                    <div class="pet-box-pic">
+                                        <div class="panel panel-default">
+                                            <img src="images/Maltese4.jpg" class="img-responsive pet-img-style">
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="col-xs-2">
+                                <a href="./photo-video.html">
+                                    <div class="pet-box-pic">
+                                        <div class="panel panel-default">
+                                            <img src="images/Maltese5.jpg" class="img-responsive pet-img-style">
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="col-xs-2">
                                 <a href="#">
                                     <div class="pv-pic">
-                                        <div class="panel panel-default">
-                                            <img src="img/add.png" class="img-responsive">
+                                        <div class="panel panel-default add-glyp">
+                                            <span class="glyphicon glyphicon-plus add-glyp-size" aria-hidden="true"></span>
                                         </div>
                                     </div>
                                 </a>
@@ -490,9 +534,19 @@ crossorigin="anonymous"></script>
 
                             <div class="col-xs-2">
                                 <a href="#">
-                                    <div class="history-pic">
+                                    <div class="pet-box-pic">
                                         <div class="panel panel-default">
-                                            <img src="img/add.png" class="img-responsive">
+                                            <img src="images/FuFu.jpg" class="img-responsive pet-img-style">
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="col-xs-2">
+                                <a href="#">
+                                    <div class="history-pic">
+                                        <div class="panel panel-default add-glyp">
+                                            <span class="glyphicon glyphicon-plus add-glyp-size" aria-hidden="true"></span>
                                         </div>
                                     </div>
                                 </a>

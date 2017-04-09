@@ -1,10 +1,9 @@
 .nav-bar-padding {
-    padding-top: 90px;
+    padding-top: 20px;
 }
 
 .photo-box {
-    box-shadow: 0px 0px 20px #888888;
-    min-height: 840px;
+    background-color: #eee;
     max-height: 840px;
 }
 
@@ -22,6 +21,39 @@
 }
 
 .panel-photo {
-    padding-top: 40px;
-    padding-bottom: 40px;
+    min-height: 200px;
+    max-height: 200px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.add-glyp {
+    text-align: center;
+}
+
+.add-glyp span {
+    line-height: 200px;
+}
+
+.add-glyp-size {
+    font-size: 80px;
+}
+
+.btn-pink {
+    color: white !important;
+    background-color: #ff99cc;
+}
+
+.btn-pink:hover {
+    opacity: 0.5;
+}
+
+.back-button a {
+    text-decoration: none;
+}
+
+.back-button {
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 15px;
 }
