@@ -19,9 +19,12 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Droid+Sans" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
     <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
     <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+
+    <!-- Bootstrap Date-Picker Plugin -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/js/bootstrap-datepicker.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/css/bootstrap-datepicker3.css" />
 
 </head>
 
@@ -33,70 +36,70 @@
 
     <!-- TOP NAVIGATION BAR -->
     <nav class="navbar navbar-default" style="padding-top: 10px; padding-bottom: 5px">
-    <div class="container-fluid">
-      <!-- Brand and toggle get grouped for better mobile display -->
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
-          aria-expanded="false">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
           <span class="sr-only">Toggle navigation</span>
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
           </button>
-          <a class="navbar-left" href="mainpage-loggedin.html">
-            <img src="images/SpawtsLogo_inverse.png" alt="" style="width: 64px; height: auto; padding-left: 20px;">
-            <span><img src="images/SPAWTS.png" alt="" style="width: 128px; height: auto;"></span>
-          </a>
-      </div>
+                <a class="navbar-left" href="mainpage-loggedin.html">
+                    <img src="images/SpawtsLogo_inverse.png" alt="" style="width: 64px; height: auto; padding-left: 20px;">
+                    <span><img src="images/SPAWTS.png" alt="" style="width: 128px; height: auto;"></span>
+                </a>
+            </div>
 
-      <!-- Collect the nav links, forms, and other content for toggling -->
-      <div class="collapse navbar-collapse">
-        <ul class="nav navbar-nav navbar-right">
-            <li class="dropdown">
-                <a href="#" id="button-listings" class="dropdown-toggle btn btn-basic" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                <span class="listingTab" aria-hidden="true">Listings</span></a>
-                <ul class="dropdown-menu">
-                    <li><a href="create-listing.html">Creating listing</a></li>
-                    <li><a href="listings.html">View Listing</a></li>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="dropdown">
+                        <a href="#" id="button-listings" class="dropdown-toggle btn btn-basic" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                            <span class="listingTab" aria-hidden="true">Listings</span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="create-listing.html">Creating listing</a></li>
+                            <li><a href="listings.html">View Listing</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="dropdown">
+                        <a href="#" id="button-comment" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-comment" aria-hidden="true"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Chat 1</a></li>
+                            <li><a href="#">Chat 2</a></li>
+                            <li><a href="#">Chat 3</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="dropdown">
+                        <a href="#" id="button-bell" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-bell" aria-hidden="true"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Notif 1</a></li>
+                            <li><a href="#">Notif 2</a></li>
+                            <li><a href="#">Notif 3</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="dropdown">
+                        <a href="#" id="button-user" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-user" aria-hidden="true"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="owner-profile.html">My Profile</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">Pet 1</a></li>
+                            <li><a href="#">Pet 2</a></li>
+                            <li><a href="#">Pet 3</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="mainpage-loggedout.html">Log Out</a></li>
+                        </ul>
+                    </li>
                 </ul>
-            </li>
-          
-          <li class="dropdown">
-            <a href="#" id="button-comment" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-comment" aria-hidden="true"></span></a>
-            <ul class="dropdown-menu">
-              <li><a href="#">Chat 1</a></li>
-              <li><a href="#">Chat 2</a></li>
-              <li><a href="#">Chat 3</a></li>
-            </ul>
-          </li>
-
-          <li class="dropdown">
-            <a href="#" id="button-bell" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-bell" aria-hidden="true"></span></a>
-            <ul class="dropdown-menu">
-              <li><a href="#">Notif 1</a></li>
-              <li><a href="#">Notif 2</a></li>
-              <li><a href="#">Notif 3</a></li>
-            </ul>
-          </li>
-
-          <li class="dropdown">
-            <a href="#" id="button-user" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-user" aria-hidden="true"></span></a>
-            <ul class="dropdown-menu">
-              <li><a href="owner-profile.html">My Profile</a></li>
-              <li role="separator" class="divider"></li>
-              <li><a href="#">Pet 1</a></li>
-              <li><a href="#">Pet 2</a></li>
-              <li><a href="#">Pet 3</a></li>
-              <li role="separator" class="divider"></li>
-              <li><a href="mainpage-loggedout.html">Log Out</a></li> 
-            </ul>
-          </li>
-        </ul>
-      </div>
-      <!-- /.navbar-collapse -->
-    </div>
-    <!-- /.container-fluid -->
-  </nav>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+    <!-- END TOP NAVIGATION BAR -->
 
     <link rel="stylesheet" href="css/create-listing.css">
     <div class="backgroundwallpaper">
@@ -107,11 +110,40 @@
                 </div>
 
                 <div class='panel-body'>
-                    <form class='form-horizontal' role='form'>
-                        <div class='form-group'>
-                            <label class='control-label col-md-2' for='id_Pet'>Choose a pet</label>
-                            <div class='col-md-2'>
-                                <select class='form-control' id='id_accomodation'>
+                    <!-- LEFT IMAGE PANEL -->
+                    <div class="col-xs-5 img-panel">
+                        <div class="col-xs-12">
+                            <h4 class="img-title text-center">Upload Pet Image</h4>
+                            <div class="form-group">
+                                <div class="input-group">
+                                    <span class="input-group-btn">
+                                        <span class="btn btn-default btn-file">
+                                            Browse...<input type="file" id="imgInp">
+                                        </span>
+                                    </span>
+                                    <input type="text" class="form-control" readonly>
+                                </div>
+                                <!--end form input group-->
+                                <div class="panel"></div>
+                                <div class="panel panel-default img-eg-box">
+                                    <img id="img-upload">
+                                </div>
+                            </div>
+                            <!--end image form group-->
+                        </div>
+                    </div>
+                    <!--END LEFT IMAGE PANEL-->
+
+                    <div class="col-xs-7 img-panel">
+                        <!-- RIGHT DETAILS PANEL -->
+                        <form class='form-horizontal' role='form'>
+                            <h4 class="details-title text-center">Listing Details</h4>
+
+                            <!-- CHOOSE A PET -->
+                            <div class='form-group'>
+                                <label class='control-label col-md-3' for='id_Pet'>Choose a pet</label>
+                                <div class='col-md-3'>
+                                    <select class='form-control' id='id_pettype'>
                                     <option>Dog</option>
                                     <option>Cat</option>
                                     <option>Terrapin</option>
@@ -120,81 +152,100 @@
                                     <option>Lizard</option>
                                     <option>Hamster</option>
                                 </select>
+                                </div>
                             </div>
-                        </div>
+                            <!-- END CHOOSE A PET -->
 
-                        <div class='form-group'>
-                            <label class='control-label col-md-2' for='id_tags'>Tags</label>
-                            <div class='col-md-6'>
-                                <div class='form-group internal'>
-                                    <div class='col-md-11'>
-                                        <input class='form-control' id='id_tagsearch' placeholder='Search tags' type='text'>
+                            <!-- TAGS -->
+                            <div class='form-group'>
+                                <label class='control-label col-md-3' for='id_tags'>Tags</label>
+                                <div class='col-md-9'>
+                                    <div class='form-group internal'>
+                                        <div class='col-md-12'>
+                                            <input class='form-control' input type="text" id='id_tagsearch' placeholder='Search tags' type='text'>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                            <!-- END TAGS -->
 
+                            <!-- DATES -->
+                            <div class='form-group'>
+                                <label class='control-label col-md-3'>Dates</label>
+                                <div class='col-md-9'>
 
-                        <div class='form-group'>
-                            <label class='control-label col-md-2' for='id_checkin'>Dates</label>
-                            <div class='col-md-8'>
-                                <div class='col-md-3'>
-                                    <div class='form-group internal input-group'>
-                                        <input class='form-control datepicker' id='id_checkin'>
-                                        <span class='input-group-addon'>
-                                            <i class='glyphicon glyphicon-calendar'></i>
-                                        </span>
+                                    <!-- START DATE -->
+                                    <div class='col-md-5'>
+
+                                        <div class='form-group internal input-group input-append date' id="datePicker">
+
+                                            <span class='input-group-addon'>
+                                                    <i class='glyphicon glyphicon-calendar'></i>
+                                                </span>
+                                            <input class='form-control' type="text" placeholder="DD/MM/YY" id='id_startdate' name="startdate">
+                                        </div>
                                     </div>
-                                </div>
-                                <label class='control-label col-md-2 indent-small' for='id_checkout'>to</label>
-                                <div class='col-md-3'>
-                                    <div class='form-group internal input-group'>
-                                        <input class='form-control datepicker' id='id_checkout'>
-                                        <span class='input-group-addon'>
-                                            <i class='glyphicon glyphicon-calendar'></i>
-                                        </span>
+                                    <!-- START DATE END -->
+
+
+                                    <div class='col-md-2'>To </div>
+
+                                    <!-- END DATE -->
+                                    <div class='col-md-5'>
+                                        <div class='form-group internal input-group input-append date' id="datePicker">
+                                            <span class='input-group-addon'>
+                                                <i class='glyphicon glyphicon-calendar'></i>
+                                            </span>
+                                            <input class='form-control' type="text" placeholder="DD/MM/YY" id='id_enddate' name="enddate">
+                                        </div>
                                     </div>
-                                </div>
-                            </div>
-                        </div>
-
-
-                        <div class='form-group'>
-                            <label class='control-label col-md-2'>Price Range</label>
-                            <div class='col-md-8'>
-                                <div class='col-md-3'>
-                                    <div class='form-group internal input-group'>
-                                        <input class='form-control datepicker' id='id_minPrice'>
-                                    </div>
-                                </div>
-
-                                <label class='control-label col-md-2' for='id_checkout'> to</label>
-                                <div class='col-md-3'>
-                                    <div class='form-group internal input-group'>
-                                        <input class='form-control datepicker' id='id_maxPrice'>
-
-                                    </div>
+                                    <!-- END DATE END -->
                                 </div>
                             </div>
-                        </div>
+                            <!-- END DATES -->
 
-                        <div class='form-group'>
-                            <label class='control-label col-md-2' for='id_additionalInfo'>Additional Information</label>
-                            <div class='col-md-6'>
-                                <textarea class='form-control' id='id_comments' placeholder='Additional Information' rows='5'></textarea>
+                            <!-- PRICES -->
+                            <div class='form-group'>
+                                <label class='control-label col-md-3'>Price Range</label>
+                                <div class='col-md-9'>
+                                    <div class='col-md-5'>
+                                        <div class='form-group internal input-group'>
+                                            <span class="input-group-addon">$</span>
+                                            <input class='form-control' id='id_minPrice' placeholder="minimum price">
+                                        </div>
+                                    </div>
+                                    <div class='col-md-2'> To </div>
+                                    <div class='col-md-5'>
+                                        <div class='form-group internal input-group'>
+                                            <span class="input-group-addon">$</span>
+                                            <input class='form-control datepicker' id='id_maxPrice' placeholder="maximum price">
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
+                            <!-- END PRICES -->
 
+                            <!-- ADDITIONAL INFO -->
+                            <div class='form-group'>
+                                <label class='control-label col-md-3' for='id_additionalInfo'>Additional Information</label>
+                                <div class='col-md-9'>
+                                    <textarea class='form-control' id='id_comments' placeholder='Additional Information' rows='8'></textarea>
+                                </div>
+                            </div>
 
-                        <div class='form-group'>
-                            <div class='col-md-offset-2 col-md-3'>
-                                <button type=" button " class='btn-lg btn-success'><a href="end-of-create-listing.html" style="color: white">Create!</a></button>
+                            <!-- END ADDITIONAL INFO -->
+
+                            <div class='form-group'>
+                                <div class='col-md-offset-3 col-md-2'>
+                                    <button type=" button " class='btn-lg btn-success'><a href="end-of-create-listing.html" style="color: white">Create!</a></button>
+                                </div>
+                                <div class='col-md-offset-4 col-md-3'>
+                                    <button class='btn-lg btn-danger' style='float:right' type='submit'><a href="listings.html" style="color: white">Cancel</a></button>
+                                </div>
                             </div>
-                            <div class='col-md-3'>
-                                <button class='btn-lg btn-danger' style='float:right' type='submit'><a href="listings.html" style="color: white">Cancel</a></button>
-                            </div>
-                        </div>
-                    </form>
+                        </form>
+                    </div>
+
                 </div>
             </div>
         </div>

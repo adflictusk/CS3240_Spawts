@@ -11,36 +11,11 @@
 }
 
 .img-title {
-    text-decoration: underline;
     padding-bottom: 10px;
 }
 
-.img-panel {
-    padding-top: 10px;
-}
-
-.vertical-line {
-    width: 1px;
-    background-color: grey;
-    height: 100%;
-}
-
-.personal-info {
-    padding-top: 10px;
-}
-
-#home-address {
-    resize: none;
-}
-
-.info-title {
-    text-decoration: underline;
+.details-title {
     padding-bottom: 10px;
-}
-
-.btn-file {
-    position: relative;
-    overflow: hidden;
 }
 
 .btn-file input[type=file] {
@@ -60,7 +35,7 @@
 }
 
 .img-eg-box {
-    min-height: 452px;
+    min-height: 462px;
 }
 
 #img-upload {
