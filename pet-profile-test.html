@@ -18,65 +18,72 @@
                     crossorigin="anonymous"></script>
                     <link href="https://fonts.googleapis.com/css?family=Francois+One|Josefin+Slab|Ubuntu+Condensed" rel="stylesheet">
                     <meta name="viewport" content="width=device-width, initial-scale=1">
+                    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+            <link href="https://fonts.googleapis.com/css?family=Droid+Sans" rel="stylesheet">
+            <link rel="stylesheet" href="css/navbar-style.css">
 </head>
 
 <body>
     <nav class="navbar navbar-default" style="padding-top: 10px; padding-bottom: 5px">
-        <div class="container-fluid">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
-                    aria-expanded="false">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-left" href="#">
-                        <img src="images/SpawtsLogo.png" alt="" style="width: 64px; height: auto; padding-left: 20px;">
-                    </a>
-            </div>
+    <div class="container-fluid">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
+          aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-left" href="mainpage-loggedin.html">
+            <img src="images/SpawtsLogo_inverse.png" alt="" style="width: 64px; height: auto; padding-left: 20px;">
+            <span><img src="images/SPAWTS.png" alt="" style="width: 128px; height: auto;"></span>
+          </a>
+      </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse">
-                <ul class="nav navbar-nav navbar-right">
-                    <ul class="dropdown-menu">
-                        <li><a href="#">Action</a></li>
-                        <li><a href="#">Another action</a></li>
-                        <li><a href="#">Something else here</a></li>
-                        <li role="separator" class="divider"></li>
-                        <li><a href="#">Separated link</a></li>
-                        <li role="separator" class="divider"></li>
-                        <li><a href="#">One more separated link</a></li>
-                    </ul>
-                    <li><button class="btn btn-basic btn-nav">Create listing</button></li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-comment" aria-hidden="true"></span></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="#">Chat 1</a></li>
-                            <li><a href="#">Chat 2</a></li>
-                            <li><a href="#">Chat 3</a></li>
-                        </ul>
-                    </li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-bell" aria-hidden="true"></span></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="#">Notif 1</a></li>
-                            <li><a href="#">Notif 2</a></li>
-                            <li><a href="#">Notif 3</a></li>
-                        </ul>
-                    </li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-user" aria-hidden="true"></span></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="#">My Profile</a></li>
-                            <li role="separator" class="divider"></li>
-                            <li><a href="#">Pet 1</a></li>
-                            <li><a href="#">Pet 2</a></li>
-                            <li><a href="#">Pet 3</a></li>
-                        </ul>
-                    </li>
+        <ul class="nav navbar-nav navbar-right">
+            <li class="dropdown">
+                <a href="#" id="button-listings" class="dropdown-toggle btn btn-basic" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                <span class="listingTab" aria-hidden="true">Listings</span></a>
+                <ul class="dropdown-menu">
+                    <li><a href="create-listing.html">Creating listing</a></li>
+                    <li><a href="listings.html">View Listing</a></li>
                 </ul>
-            </div>
+            </li>
+          
+          <li class="dropdown">
+            <a href="#" id="button-comment" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-comment" aria-hidden="true"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Chat 1</a></li>
+              <li><a href="#">Chat 2</a></li>
+              <li><a href="#">Chat 3</a></li>
+            </ul>
+          </li>
+
+          <li class="dropdown">
+            <a href="#" id="button-bell" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-bell" aria-hidden="true"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Notif 1</a></li>
+              <li><a href="#">Notif 2</a></li>
+              <li><a href="#">Notif 3</a></li>
+            </ul>
+          </li>
+
+          <li class="dropdown">
+            <a href="#" id="button-user" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-user" aria-hidden="true"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="owner-profile.html">My Profile</a></li>
+              <li role="separator" class="divider"></li>
+              <li><a href="#">Pet 1</a></li>
+              <li><a href="#">Pet 2</a></li>
+              <li><a href="#">Pet 3</a></li>
+              <li role="separator" class="divider"></li>
+              <li><a href="mainpage-loggedout.html">Log Out</a></li> 
+            </ul>
+          </li>
+        </ul>
+      </div>
             <!-- /.navbar-collapse -->
         </div>
         <!-- /.container-fluid -->
@@ -94,7 +101,8 @@
                 </div>
                 <div class="row text-center">
                     <div class="jumbotron">
-                        <h2>About me</h2>
+                        <h2 class="title">About me</h2>
+                        <div class="content-body">
                         <u>Name</u>
                         <p>Lara</p>
                         <br>
@@ -109,16 +117,18 @@
                         <br>
                         <u>Size</u>
                         <p>Small</p>
+                        </div>
                     </div>
                 </div>
                 <div class="row text-center">
-                    <div class="jumbotron">
+                    <div class="jumbotron content-body">
                         <a href="owner-profile.html" class="btn btn-basic btn-block btn-normal">Find My Owner!</a>
                     </div>
                 </div>
                 <div class="row text-center">
                     <div class="jumbotron">
-                        <h2>Basic Info</h2>
+                        <h2 class="title">Basic Info</h2>
+                        <div class="content-body">
                         <div class="checkbox">
                             <label><input type="checkbox" value="">Neutered</label>
                         </div>
@@ -131,12 +141,13 @@
                         <div class="checkbox">
                             <label><input type="checkbox" value="">Friendly with kids</label>
                         </div>
+                        </div>
                     </div>
                 </div>
                 <div class="row text-center">
                     <div class="jumbotron">
-                        <h2>Reviews</h2>
-                        <div class="progress">
+                        <h2 class="title">Reviews</h2>
+                        <div class="progress content-body">
                             <div class="progress-bar progress-bar-success" role="progressbar" style="width: 50%">
                                 50%
                             </div>
@@ -144,8 +155,8 @@
                                 50%
                             </div>
                         </div>
-                        <p>Based on 2 reviews</p>
-                        <button class="btn btn-basic btn-block btn-normal" data-toggle="modal" data-target="#myReviews">Click here to find out more</button>
+                        <p class="content-body">Based on 2 reviews</p>
+                        <button class="btn btn-basic btn-block btn-normal content-body" data-toggle="modal" data-target="#myReviews">Click here to find out more</button>
                     </div>
                 </div>
             </div>
@@ -155,10 +166,10 @@
             <div id="content">
                 <div class="row text-center">
                     <div class="jumbotron panel-looking-for-petsitter">
-                        <b>Hi there human! I'm in need of a pet sitter!</b>
+                        <b class="title">Hi there human! I'm in need of a pet sitter!</b>
                     </div>
                 </div>
-                <div class="row nav-buttons">
+                <div class="row nav-buttons content-body">
                     <div class="btn-group btn-group-justified">
                         <div class="btn-group">
                             <button id="other-livefeed" type="button" class="btn btn-basic btn-normal btn-selected">Live feed</button>
@@ -182,15 +193,15 @@
                                     <img class="img-responsive" src="img/profile-pic1.png">
                                 </div>
                                 <div class="display-inline tagged-post-name-time">
-                                    <b class="text-primary tagged-by"><a href="owner-profile">Clara Alfonso</a></b>
-                                    <p class="tagged-by-time">5 weeks ago</p>
+                                    <b class="text-primary tagged-by title"><a href="owner-profile">Clara Alfonso</a></b>
+                                    <p class="tagged-by-time content-body">5 weeks ago</p>
                                 </div>
                             </div>
                             <!-- Tagged post body -->
-                            <div class="tagged-body-text">
+                            <div class="tagged-body-text content-body">
                                 <p>A day at the beach with <a href="#">@Lara</a> :D</p>
                             </div>
-                            <div class="tagged-body-video">
+                            <div class="tagged-body-video content-body">
                                 <iframe src="https://www.youtube.com/embed/_YIpEI2eu-I" frameborder="0"></iframe>
                             </div>
                         </div>
@@ -203,12 +214,12 @@
                                     <img class="img-responsive" src="img/female-smile2.png">
                                 </div>
                                 <div class="display-inline tagged-post-name-time">
-                                    <b class="text-primary tagged-by"><a href="owner-profile">XiiaoChiobu94</a></b>
-                                    <p class="tagged-by-time">10 weeks ago</p>
+                                    <b class="text-primary tagged-by title"><a href="#">Amanda Petterson</a></b>
+                                    <p class="tagged-by-time content-body">10 weeks ago</p>
                                 </div>
                             </div>
                             <!-- Tagged post body -->
-                            <div class="tagged-body-text">
+                            <div class="tagged-body-text content-body">
                                 <p>Taking care of little Lara. <a href="#">@Lara</a> <a href="owner-profile">@Clara Alfonso</a></p>
                             </div>
                             <div class="tagged-body-photos">
@@ -226,15 +237,15 @@
                                     <img class="img-responsive" src="img/male-smile3.png">
                                 </div>
                                 <div class="display-inline tagged-post-name-time">
-                                    <b class="text-primary tagged-by"><a href="owner-profile">Yandaoozxc95</a></b>
-                                    <p class="tagged-by-time">12 weeks ago</p>
+                                    <b class="text-primary tagged-by title"><a href="owner-profile">Jonathan Perry</a></b>
+                                    <p class="tagged-by-time content-body">12 weeks ago</p>
                                 </div>
                             </div>
                             <!-- Tagged post body -->
-                            <div class="tagged-body-text">
+                            <div class="tagged-body-text content-body">
                                 <p>Some dog grooming tips for you! <a href="#">@Lara</a> <a href="owner-profile">@Clara Alfonso</a></p>
                             </div>
-                            <div class="tagged-body-note">
+                            <div class="tagged-body-note content-body">
                                 <p>
                                     <ul>
                                         <li><b>Check for ticks as you brush</b><br>You may notice the bugs themselves or small
@@ -258,12 +269,12 @@
                                     <img class="img-responsive" src="img/profile-pic1.png">
                                 </div>
                                 <div class="display-inline tagged-post-name-time">
-                                    <b class="text-primary tagged-by"><a href="owner-profile">Clara Alfonso</a></b>
-                                    <p class="tagged-by-time">5 weeks ago</p>
+                                    <b class="text-primary tagged-by title"><a href="owner-profile">Clara Alfonso</a></b>
+                                    <p class="tagged-by-time content-body">5 weeks ago</p>
                                 </div>
                             </div>
                             <!-- Tagged post body -->
-                            <div class="tagged-body-text">
+                            <div class="tagged-body-text content-body">
                                 <p>A day at the beach with <a href="#">@Lara</a> :D</p>
                             </div>
                             <div class="tagged-body-video">
@@ -279,12 +290,12 @@
                                     <img class="img-responsive" src="img/female-smile2.png">
                                 </div>
                                 <div class="display-inline tagged-post-name-time">
-                                    <b class="text-primary tagged-by"><a href="owner-profile">XiiaoChiobu94</a></b>
-                                    <p class="tagged-by-time">10 weeks ago</p>
+                                    <b class="text-primary tagged-by title"><a href="owner-profile">Amanda Petterson</a></b>
+                                    <p class="tagged-by-time content-body">10 weeks ago</p>
                                 </div>
                             </div>
                             <!-- Tagged post body -->
-                            <div class="tagged-body-text">
+                            <div class="tagged-body-text content-body">
                                 <p>Taking care of little Lara. <a href="#">@Lara</a> <a href="owner-profile">@Clara Alfonso</a></p>
                             </div>
                             <div class="tagged-body-photos">
@@ -302,15 +313,15 @@
                                     <img class="img-responsive" src="img/male-smile3.png">
                                 </div>
                                 <div class="display-inline tagged-post-name-time">
-                                    <b class="text-primary tagged-by"><a href="owner-profile">Yandaoozxc95</a></b>
+                                    <b class="text-primary tagged-by"><a href="owner-profile">Jonathan Perry</a></b>
                                     <p class="tagged-by-time">12 weeks ago</p>
                                 </div>
                             </div>
                             <!-- Tagged post body -->
-                            <div class="tagged-body-text">
+                            <div class="tagged-body-text content-body">
                                 <p>Some dog grooming tips for you! <a href="#">@Lara</a> <a href="owner-profile">@Clara Alfonso</a></p>
                             </div>
-                            <div class="tagged-body-note">
+                            <div class="tagged-body-note content-body">
                                 <p>
                                     <ul>
                                         <li><b>Check for ticks as you brush</b><br>You may notice the bugs themselves or small
@@ -339,12 +350,12 @@
                                     <img class="img-responsive" src="img/female-smile2.png">
                                 </div>
                                 <div class="display-inline tagged-post-name-time">
-                                    <b class="text-primary tagged-by"><a href="owner-profile">XiiaoChiobu94</a></b>
-                                    <p class="tagged-by-time">10 weeks ago</p>
+                                    <b class="text-primary tagged-by title"><a href="owner-profile">Amanda Petterson</a></b>
+                                    <p class="tagged-by-time content-body">10 weeks ago</p>
                                 </div>
                             </div>
                             <!-- Tagged post body -->
-                            <div class="tagged-body-text">
+                            <div class="tagged-body-text content-body">
                                 <p>Taking care of little Lara. <a href="#">@Lara</a> <a href="owner-profile">@Clara Alfonso</a></p>
                             </div>
                             <div class="tagged-body-photos">
@@ -362,14 +373,14 @@
                                     <img class="img-responsive" src="img/female-smile2.png">
                                 </div>
                                 <div class="display-inline tagged-post-name-time">
-                                    <b class="text-primary tagged-by"><a href="owner-profile">XiiaoChiobu94</a></b>
-                                    <p class="tagged-by-time">15 weeks ago</p>
+                                    <b class="text-primary tagged-by title"><a href="owner-profile">Amanda Petterson</a></b>
+                                    <p class="tagged-by-time content-body">15 weeks ago</p>
                                 </div>
                             </div>
                             <!-- Tagged post body -->
-                            <div class="tagged-body-text">
+                            <div class="tagged-body-text content-body">
                                 <p>Baby Lara.
-                                    <3 <a href="#">@Lara</a> <a href="owner-profile">@Clara Alfonso</a></p>
+                                    <a href="#">@Lara</a> <a href="owner-profile">@Clara Alfonso</a></p>
                             </div>
                             <div class="tagged-body-photos">
                                 <img class="img-responsive" src="images/Maltese4.jpg">
@@ -386,11 +397,11 @@
                                 <div class="card">
                                     <img class="card-img-top img-responsive" src="img/female-smile2.png" alt="Card image cap">
                                     <div class="card-block">
-                                        <h4 class="card-title"><a href="">XiiaoChiobu94</a></h4>
-                                        <p class="card-text">Hello! I'm a super loving pet sitter.</p>
+                                        <h4 class="card-title title"><a href="">Amanda Petterson</a></h4>
+                                        <p class="card-text content-body">Hello! I'm a super loving pet sitter.</p>
                                     </div>
                                     <div class="card-footer">
-                                        <small class="text-muted">18/03/2017 - 30/03/2017</small>
+                                        <small class="text-muted content-body">18/03/2017 - 30/03/2017</small>
                                     </div>
                                 </div>
                             </div>
@@ -398,11 +409,11 @@
                                 <div class="card">
                                     <img class="card-img-top img-responsive" src="img/male-smile.jpg" alt="Card image cap">
                                     <div class="card-block">
-                                        <h4 class="card-title"><a href="">Someone</a></h4>
-                                        <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                                        <h4 class="card-title title"><a href="">Jack Russell</a></h4>
+                                        <p class="card-text content-body">I enjoy taking care of pets.</p>
                                     </div>
                                     <div class="card-footer">
-                                        <small class="text-muted">2/01/2017 - 5/01/2017</small>
+                                        <small class="text-muted content-body">2/01/2017 - 5/01/2017</small>
                                     </div>
                                 </div>
                             </div>
@@ -410,13 +421,11 @@
                                 <div class="card">
                                     <img class="card-img-top img-responsive" src="img/female-smile3.jpg" alt="Card image cap">
                                     <div class="card-block">
-                                        <h4 class="card-title"><a href="">Someone</a></h4>
-                                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
-                                            content. This card has even longer content than the first to show that equal
-                                            height action.</p>
+                                        <h4 class="card-title title"><a href="">Alice MacDonalds</a></h4>
+                                        <p class="card-text content-body">Chat with me if you are finding for pets to baby-sit!</p>
                                     </div>
                                     <div class="card-footer">
-                                        <small class="text-muted">30/07/2016 - 2/08/2016</small>
+                                        <small class="text-muted content-body">30/07/2016 - 2/08/2016</small>
                                     </div>
                                 </div>
                             </div>
@@ -426,11 +435,11 @@
                                 <div class="card">
                                     <img class="card-img-top img-responsive" src="img/female-smile4.jpg" alt="Card image cap">
                                     <div class="card-block">
-                                        <h4 class="card-title"><a href="">Someone</a></h4>
-                                        <p class="card-text">Hello! I'm a super loving pet sitter.</p>
+                                        <h4 class="card-title title"><a href="">Carrie Timberwood</a></h4>
+                                        <p class="card-text content-body">No pets I can't handle.</p>
                                     </div>
                                     <div class="card-footer">
-                                        <small class="text-muted">23/04/2016 - 27/04/2016</small>
+                                        <small class="text-muted content-body">23/04/2016 - 27/04/2016</small>
                                     </div>
                                 </div>
                             </div>

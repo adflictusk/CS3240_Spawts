@@ -10,6 +10,10 @@ p {
     padding-left: 3%;
 }
 
+.pet-profile {
+    padding-top: 20px;
+}
+
 .jumbotron {
     padding-top: 3%;
     padding-bottom: 3%;
@@ -24,6 +28,14 @@ p {
 
 a {
     color: deeppink;
+}
+
+.title {
+    font-family: "Montserrat";
+}
+
+.content-body {
+    font-family: "Droid Sans";
 }
 
 /* ================================= NAVBAR ================================= */
