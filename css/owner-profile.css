@@ -197,6 +197,19 @@
     opacity: 0.5;
 }
 
+.add-glyp-size-listing {
+    line-height: 57px;
+}
+
+.list-link a {
+    text-decoration: none;
+}
+
+.list-link {
+    color: white !important;
+    padding-bottom: 5px;
+}
+
 .balancer {
     min-height: 1px;
     background-color: #eee;
@@ -244,8 +257,8 @@
 }
 
 .feed-activities-box {
-    min-height: 415px;
-    max-height: 415px;
+    min-height: 454px;
+    max-height: 454px;
     overflow-y: auto;
 }
 
