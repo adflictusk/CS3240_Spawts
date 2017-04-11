@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Spawts</title>
+        <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+        <!-- Optional theme -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+        <link rel="stylesheet" href="css/blackball.css">
+        <link rel="stylesheet" href="css/navbar-style.css">
+
+        <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Droid+Sans" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <script>
+            $(document).ready(function(){
+                $("#choice1").click(function(){
+                    var newImg = $("#choice1").attr('src');
+                    $("#mainPetPic").attr("src", newImg);
+                });
+                
+                $("#choice2").click(function(){
+                    var newImg = $("#choice2").attr('src');
+                    $("#mainPetPic").attr("src", newImg);
+                });
+                
+                $("#choice3").click(function(){
+                    var newImg = $("#choice3").attr('src');
+                    $("#mainPetPic").attr("src", newImg);
+                });
+                
+                $("#chatButton").click(function() {
+                    $("#chatButton").hide();
+                    $("#actualChat").show();
+                });
+                
+                $("#sendButton").click(function() {
+                    var content = $("#chatBar").val();
+                    $("#chatBar").val("");
+                    
+                    if (content == "contract") {
+                        $("#viewContractButton").slideToggle("fast");
+                    }
+                });
+                
+                $("#accepted").click(function() {
+                    $("#viewContractButton").slideToggle("fast");
+                    setTimeout(function() {
+                        $("#successNotif").slideToggle("fast");
+                    }, 500);
+                    
+                });
+                
+                $("#rejected").click(function() {
+                    $("#viewContractButton").slideToggle("fast");
+                    setTimeout(function() {
+                        $("#failNotif").slideToggle("fast");
+                    }, 500);
+                });
+                
+            });
+        </script>
+        
+    </head>
+    
+    <body class="bg">
+        <nav class="navbar navbar-default" style="padding-top: 10px; padding-bottom: 5px">
+    <div class="container-fluid">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
+          aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-left" href="mainpage-loggedin.html">
+            <img src="images/SpawtsLogo_inverse.png" alt="" style="width: 64px; height: auto; padding-left: 20px;">
+            <span><img src="images/SPAWTS.png" alt="" style="width: 128px; height: auto;"></span>
+          </a>
+      </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse">
+        <ul class="nav navbar-nav navbar-right">
+            <li class="dropdown">
+                <a href="#" id="button-listings" class="dropdown-toggle btn btn-basic" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                <span class="listingTab" aria-hidden="true">Listings</span></a>
+                <ul class="dropdown-menu">
+                    <li><a href="create-listing.html">Creating listing</a></li>
+                    <li><a href="listings.html">View Listing</a></li>
+                </ul>
+            </li>
+          
+          <li class="dropdown">
+            <a href="#" id="button-comment" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-comment" aria-hidden="true"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Chat 1</a></li>
+              <li><a href="#">Chat 2</a></li>
+              <li><a href="#">Chat 3</a></li>
+            </ul>
+          </li>
+
+          <li class="dropdown">
+            <a href="#" id="button-bell" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-bell" aria-hidden="true"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Notif 1</a></li>
+              <li><a href="#">Notif 2</a></li>
+              <li><a href="#">Notif 3</a></li>
+            </ul>
+          </li>
+
+          <li class="dropdown">
+            <a href="#" id="button-user" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-user" aria-hidden="true"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="owner-profile.html">My Profile</a></li>
+              <li role="separator" class="divider"></li>
+              <li><a href="#">Pet 1</a></li>
+              <li><a href="#">Pet 2</a></li>
+              <li><a href="#">Pet 3</a></li>
+              <li role="separator" class="divider"></li>
+              <li><a href="mainpage-loggedout.html">Log Out</a></li> 
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container-fluid -->
+  </nav>
+        
+        <div class="container" style="margin-top: 2%">
+
+            <div class="row">
+               
+                <div class="col-md-7">
+                    <div class="row">
+                       
+                       <div class="col-md-4 jumbotron">
+                            <div> 
+                                 <img src="images/Maltese1.jpg" alt="" class="side-img img-rounded" id="choice1">
+                            </div>
+                            <br>
+                            <div> 
+                                 <img src="images/Maltese2.jpg" alt="" class="side-img img-rounded" id="choice2">
+                            </div>
+                            <br>
+                            <div> 
+                                 <img src="images/Maltese3.jpg" alt="" class="side-img img-rounded" id="choice3">
+                            </div>
+                       </div>
+                        
+                         
+                       <div class="col-md-8">
+                           <img src="images/Maltese3.jpg" alt="..." class="profilePic" id="mainPetPic">
+                           <a href="owner-profile.html"><img src="img/profile-pic1.png" alt="" class="img-responsive ownerPicStyle ownerProfile"></a>
+                       </div>
+                       
+                    </div>
+                    
+                    <div class="row">
+                        <div class="col-md-12 panel panel-default">
+                            <h2>Owner's requirements</h2>
+                            <p>
+                                I need someone who is experienced with puppies. Malt Tease is a very enegetic dog.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row">
+                       <div class="col-md-12 panel panel-default">
+                            <h2>Pet's requirements</h2>
+                            <p>
+                                Dog is 1 year old, needs special attention as its very playful!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                   <div class="col-md-4 panel panel-default" style="margin-left:53px">
+                       <div class="col-md-8">
+                           <h2 class="headerFont">Malt Tease</h2>
+                           <h4><span class="label label-default glyphicon glyphicon-asterisk"> Maltese</span></h4>
+                           <h4><span class="label label-default glyphicon glyphicon-map-marker"> Novena</span></h4>
+                       </div>
+                       <div class="col-md-offset-1 col-md-3" style="padding-top:15px;">
+                           <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#reportModal">Report</button>
+                       </div>
+                       <br>
+                       
+                       <div class="col-md-6">
+                            <div class="panel panel-default">
+                                <div class="panel-body">
+                                    <span class="glyphicon glyphicon-calendar" style="font-size: 20px"></span>
+                                    <span class="pull-right" style="font-size: 14px; padding-top:3px;"> 12/8 - 14/8</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="panel panel-default">
+                                <div class="panel-body">
+                                    <span class="glyphicon glyphicon-usd" style="font-size: 20px"></span>
+                                    <span class="pull-right" style="font-size: 16px;">135</span>
+                                </div>
+                            </div>
+                        </div>
+                   </div> 
+                   
+                   <div class="col-md-4 panel panel-default" style="margin-left: 53px" id="viewContractButton">
+                       <br>
+                       <button type="button" class="btn btn-primary btn-lg glyphicon glyphicon-list-alt center-block color" data-toggle="modal" aria-pressed="false" data-target="#contract" style="width: 100%" >
+                            <p class="headerFont">View contract</p>
+                        </button>
+                        <br>
+                   </div>
+                   
+                   <div class="col-md-4 panel panel-default" style="margin-left: 53px" id="successNotif">
+                       <br>
+                       <button type="button" class="btn btn-success btn-lg glyphicon glyphicon-list-alt center-block" data-toggle="modal" aria-pressed="false" data-target="#contractSuccess" style="width: 100%" >
+                            <p class="headerFont">Contract accepted</p>
+                        </button>
+                        <br>
+                   </div>
+                   
+                    <div class="col-md-4 alert alert-danger alert-dismissible" style="margin-left: 53px" id="failNotif">
+                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                       <br>
+                            <p>Contract rejected</p>
+
+                        <br>
+                   </div>
+                  
+                   <div class="col-md-4 panel panel-default" style="margin-left: 53px">
+                       <br>
+                        <button type="button" class="btn btn-primary btn-lg glyphicon glyphicon-comment center-block color" data-toggle="button" aria-pressed="false" autocomplete="off" style="width: 100%" id="chatButton">
+                            <p class="headerFont">Chat with owner!</p>
+                        </button>
+                        
+                        <div class="panel panel-default" id="actualChat">
+                            <div class="panel-heading">
+                                <h3 class="panel-title headerFont">Chat</h3>
+                            </div>
+                            <ul class="list-group">
+                                <li class="list-group-item me">Hello!</li>
+                                <li class="list-group-item me">Can i schedule a meetup to meet Black Ball?</li>
+                                <li class="list-group-item other">Hey! Sure!</li>
+                                <li class="list-group-item me">Alright! :)</li>
+                                <li class="list-group-item"></li>
+                            </ul>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="input-group"> 
+                                        <input class="form-control" aria-label="chat bar" placeholder="Type here..." id="chatBar"> 
+                                        <div class="input-group-btn"> 
+                                            <button type="button" class="btn btn-default" aria-label="imageUpload">
+                                                <span class="glyphicon glyphicon-plus-sign imgSend"></span>
+                                            </button> 
+                                            <button type="button" class="btn btn-default" id="sendButton">Send</button> 
+                                        </div> 
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            
+                        </div>
+                        <br>
+                    </div>
+                   
+                </div>        
+                    
+            </div>
+        </div>
+        
+        <div class="modal fade" id="reportModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="myModalLabel">Report</h4>
+                    </div>
+                    <div class="modal-body">
+                        <div class="checkbox">
+                           <div>
+                               <span>
+                                    <label>
+                                        <input type="checkbox" value="">
+                                        Animal Abuse
+                                    </label>
+                                </span>
+                                
+                                <span style="margin-left: 50px">
+                                    <label>
+                                        <input type="checkbox" value="">
+                                        Fake Listing
+                                    </label>
+                                </span>
+                                
+                                <span style="margin-left: 50px">
+                                    <label>
+                                        <input type="checkbox" value="">
+                                        Scam
+                                    </label>
+                                </span>
+                            </div>
+                            <div>
+                                <span>
+                                    <label>
+                                        <input type="checkbox" value="">
+                                        Exotic Animal
+                                    </label>
+                                </span>
+                                
+                                <span style="margin-left: 50px">
+                                    <label>
+                                        <input type="checkbox" value="">
+                                        Pet milling
+                                    </label>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-danger" data-toggle="modal" data-dismiss="modal" data-target=".thankYouModal" >Report</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="modal fade thankYouModal" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
+            <div class="modal-dialog modal-sm" role="document">
+                <div class="modal-content" style="padding: 20px; text-align: center;">
+                    Thank you for the report!
+                </div>
+            </div>
+        </div>
+        
+        <div class="modal fade" id="contract" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="myModalLabel">Contract of hire</h4>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="panel panel-default">
+                                    <div class="panel-body">
+                                        <span class="glyphicon glyphicon-calendar" style="font-size: 20px"></span>
+                                        <span class="pull-right" style="font-size: 14px; padding-top:3px;"> 12/8 - 14/8</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="panel panel-default">
+                                    <div class="panel-body">
+                                        <span class="glyphicon glyphicon-usd" style="font-size: 20px"></span>
+                                        <span class="pull-right" style="font-size: 16px;">135</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="row">
+                            <div class="col-md-offset-1 col-md-10 panel panel-default">
+                                <h2 class="headerFont">Owner's requirements</h2>
+                                <p>
+                                    I need someone who is experienced with puppies. Malt Tease is a very enegetic dog.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="row">
+                           <div class="col-md-offset-1 col-md-10 panel panel-default">
+                                <h2 class="headerFont">Pet's requirements</h2>
+                                <p>
+                                    Dog is 1 year old, needs special attention as its very playful!
+                                </p>
+                            </div>
+                        </div>
+                        <div class="row">
+                           <div class="col-md-offset-1 col-md-10 panel panel-default">
+                                <h2>Additional Clauses</h2>
+                                <p>
+                                    Nil.
+                                </p>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="modal-footer">
+                        <div class="col-md-offset-2 col-md-3">
+                            <button type="button" class="btn btn-lg btn-success" data-dismiss="modal" id="accepted">Accept</button>
+                        </div>
+                        <div class="col-md-offset-2 col-md-2">
+                            <button type="button" class="btn btn-lg btn-danger" data-dismiss="modal" id="rejected">Reject</button>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="modal fade" id="contractSuccess" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="myModalLabel">Contract of hire <span class="glyphicon glyphicon-ok-sign" style="color: green; font-size: 20px; margin-left: 20px;"></span></h4>
+                        
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="panel panel-default">
+                                    <div class="panel-body">
+                                        <span class="glyphicon glyphicon-calendar" style="font-size: 20px"></span>
+                                        <span class="pull-right" style="font-size: 14px; padding-top:3px;"> 12/8 - 14/8</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="panel panel-default">
+                                    <div class="panel-body">
+                                        <span class="glyphicon glyphicon-usd" style="font-size: 20px"></span>
+                                        <span class="pull-right" style="font-size: 16px;">135</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="row">
+                            <div class="col-md-offset-1 col-md-10 panel panel-default">
+                                <h2>Owner's requirements</h2>
+                                <p>
+                                    I need someone who is experienced with puppies. Malt Tease is a very enegetic dog.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="row">
+                           <div class="col-md-offset-1 col-md-10 panel panel-default">
+                                <h2>Pet's requirements</h2>
+                                <p>
+                                    Dog is 1 year old, needs special attention as its very playful!
+                                </p>
+                            </div>
+                        </div>
+                        <div class="row">
+                           <div class="col-md-offset-1 col-md-10 panel panel-default">
+                                <h2>Additional Clauses</h2>
+                                <p>
+                                    Nil.
+                                </p>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="modal-footer">
+                        <div class="col-md-offset-3 col-md-6">
+                            <div class="alert alert-success" role="alert" style="text-align: center">Contract Accepted</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </body>
+</html>
